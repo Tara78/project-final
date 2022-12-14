@@ -4,13 +4,11 @@ import styled from 'styled-components';
 
 
 const Menu = () => {
-
-
   return ( 
     <nav>
       <MenuItem href="/">Home</MenuItem>
       <MenuItem href="/about">About</MenuItem>
-      <MenuItem href="/contact">Contact</MenuItem>
+      <MenuItem href="/booking">Booking</MenuItem>
     </nav>
    );
 }

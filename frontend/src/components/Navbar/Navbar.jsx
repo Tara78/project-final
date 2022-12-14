@@ -1,16 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
+
 const Navbar = () => {
   return (
       <Menu>
-      {/* <MenuItem><a href="/">Home</a></MenuItem> */}
-      <MenuItem href="/" className="active">
-      {/* <Icon className="fa solid fa-house-user"></Icon> */}
-        Home</MenuItem>
+        <MenuItem href="/" className="active">
+           Home</MenuItem>
       <MenuItem href="/about">About</MenuItem>
-      <MenuItem href="/contact">Contact</MenuItem>
-      <MenuItem href="/">Booking</MenuItem>
+      <MenuItem href="/booking">Booking</MenuItem>
     </Menu>
    
   )
@@ -19,7 +17,7 @@ const Navbar = () => {
 export default Navbar;
 
 
-const Menu =styled.ul`
+const Menu =styled.div`
 display: flex;
 align-items: center;
 justify-content: space-around;
@@ -27,7 +25,7 @@ padding:  20px 30px;
 box-shadow: 0 15px 15px rgba(0, 0, 0, 0.8);
   `
 
-const MenuItem =styled.li`
+const MenuItem =styled.a`
 list-style: none;
 padding: 0 20px;
 position: relative;
