@@ -7,8 +7,7 @@ import bcrypt from "bcrypt";
 import userRouth from "./routes/user.js";
 import registerRouth from "./routes/register.js";
 import loginRouth from "./routes/login.js";
-import adminRouth from "./routes/admin.js";
-// import calendar from "./routes/calendar.js";
+import bookingRouth from "./routes/booking.js";
 
 
 const mongoUrl = process.env.MONGO_URL || "mongodb://127.0.0.1/final-project-user";
@@ -44,11 +43,11 @@ app.use(express.json())
 app.use("/user", userRouth);
 app.use("/login", loginRouth);
 app.use("/register", registerRouth);
-app.use("/admin", adminRouth);
+app.use("/booking", bookingRouth)
 
 app.use((err, req, res, next) => {
   const errorStatus= err.status || 500;
-  const errorMessage= err.message || "Somthig went wrong"
+  const errorMessage= err.message || "Somthing went wrong"
   return res.status(errorStatus).json(
     {success:false,
       statuse:err.status,

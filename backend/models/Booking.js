@@ -24,4 +24,4 @@ const BookingSchema = new mongoose.Schema({
 
 
  
-export default mongoose.model("Calendar", CalendarSchema);
+export default mongoose.model("Booking", BookingSchema);

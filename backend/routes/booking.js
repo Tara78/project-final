@@ -1,5 +1,5 @@
 import express from "express";
-import Calendar from "../models/Calendar.js";
+import Booking from "../models/Booking.js";
 
 import {
   adminAuthMiddleFunction,

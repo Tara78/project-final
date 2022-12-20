@@ -1,5 +1,4 @@
 
-
 export const errorMessage = (err, message) => {
   return {
     success: false,
