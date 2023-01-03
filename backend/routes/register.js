@@ -1,6 +1,7 @@
 import express from "express";
 import User from "../models/User.js";
 import bcrypt from "bcrypt";
+import error from "../utils/error.js";
 
 const router = express.Router();
 
@@ -19,7 +20,7 @@ router.post("/register", async (req, res) => {
         name: name,
         email: email,
         password: hash,
-      }).save();
+      }).save()
       res.status(201).json({
         success: true,
         response: {
@@ -30,7 +31,8 @@ router.post("/register", async (req, res) => {
         },
       });
     } catch (err) {
-      res.status(400).json(errorMessage(err, 'Can not register a new Client, try it again!'))
+      res.status(400).json(err)
+      // (errorMessage(err, 'Can not register a new Client, try it again!'))
     }
   }
 });

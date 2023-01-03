@@ -19,9 +19,6 @@ router.get("/user", async (req, res, next) => {
 /** Get All Users */
 //localhost:8000/user/allUsers
 router.get("/allUsers", async (req, res) => {
-const failed= true;
-if(failed) return next (createError(401, "You are not authenticated"))
-
   try {
     const allUsers = await User.find({}).exec();
     res.status(200).json({ success: true, data: allUsers });
