@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
+
 export const GlobalStyles = createGlobalStyle`
   html, body {
     margin: 0;
@@ -23,11 +24,11 @@ export const GlobalStyles = createGlobalStyle`
     text-align: center;
     text-transform: uppercase;
   }
-  img {
+  /* img {
     border-radius: 5px;
     height: auto;
     width: 10rem;
-  }
+  } */
   div {
     text-align: center;
   }

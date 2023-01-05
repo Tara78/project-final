@@ -27,7 +27,7 @@ export default NewBar;
 
 const Nav = styled.div`
   height: 80px;
-  background-color: #5284b9;
+  /* background-color: #e5e9ee; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -38,7 +38,8 @@ const NavItem = styled.a`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #3e580c;
+  color: #110738;
+  font-weight: bold;
   text-align: center;
   padding: 14px;
   text-decoration: none;

@@ -7,6 +7,7 @@ import error from "../utils/error.js";
 const router = express.Router();
 
 /*Get Users*/
+// localhost: 8000 / user / user
 router.get("/user", async (req, res, next) => {
   try {
     const user = await User.findById(req.params.id);
