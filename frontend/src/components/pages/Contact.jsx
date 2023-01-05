@@ -49,11 +49,11 @@ const HeroText = styled.p`
 
 const WrapperSecondPart = styled.div`
   width: 95%;
-  height: 100px;
+  height: 400px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   column-gap: 2.5rem;
-  background-color: #435aa6;
+  /* background-color: #435aa6; */
   
 `;
 
