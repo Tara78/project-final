@@ -50,7 +50,7 @@ const Contact = () => {
               <Input
                 type="text"
                 name="user_name"
-                placeholder="Name"
+                placeholder="Votre prénom et votre nom"
                 // size="10px"
               />
             </Label>
@@ -58,14 +58,25 @@ const Contact = () => {
               <Input
                 type="email"
                 name="user_email"
-                placeholder="Email"
+                placeholder="Votre adresse email"
                 // size="10px"
               />
             </Label>
-            <Label>Write your message below!</Label>
-            <InputMessage type="text"></InputMessage>
+            <Label>
+              <Input
+                type="telephone"
+                name="number"
+                placeholder="Votre Téléphone (sans espace ni point)"
+                // size="10px"
+              />
+            </Label>
+            <Label>Votre Message</Label>
+            <InputMessage
+              type="text"
+              placeholder="Votre Message ... "
+            ></InputMessage>
             {/* <Textarea name="message" /> */}
-            <InputButton type="submit" value="Send" />
+            <InputButton type="submit" value="Envoyer"  />
           </Form>
         </SectionForm>
         <SectionContactInfo>
@@ -80,9 +91,7 @@ const Contact = () => {
           </AddressDetaile>
           <Tarifs>Pour les consultations, cf la page Tarifs et RDV</Tarifs>
           <Mobile>Mobile:+33.6.11.69.89.27 </Mobile>
-          <Email 
-            as= "a" href="mailto:nverdeille@outlook.com"
-            > 
+          <Email as="a" href="mailto:nverdeille@outlook.com">
             nverdeille@outlook.com
           </Email>
         </SectionContactInfo>
@@ -110,7 +119,7 @@ const WrapperSecondPart = styled.div`
 `;
 
 const SectionForm = styled.div`
-  height: auto;
+  height: 600px;
   margin-bottom: 1rem;
   font-size: 25px;
   cursor: pointer;
@@ -123,12 +132,11 @@ const SectionForm = styled.div`
 `;
 
 const SectionContactInfo = styled.div`
-  height: auto;
-  margin-bottom: 1rem;
+  height: 600px;
   font-size: 25px;
   cursor: pointer;
   border-radius: 10px;
-  background-color: #d9dee1;
+  background-color: #edf1f3;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -142,7 +150,7 @@ const SectionContactInfo = styled.div`
 const Address = styled.h5`
   font-size: 22px;
   color: #413e3e;
-  padding:1rem;
+  padding-top:3rem;
 `;
 const Tarifs = styled.p`
   font-size: 22px;
@@ -151,6 +159,7 @@ const Tarifs = styled.p`
 `;
 const Mobile = styled.p`
   font-size: 22px;
+  padding-top: 5rem;
 `;
 
 const AddressDetaile = styled.p`
@@ -188,6 +197,7 @@ const Input = styled.input.attrs( props => ({
   font-size: 1em;
   border: 1px solid ;
   border-radius: 5px;
+  width: 60%;
 
   /* here I used the dynamically computed prop */
   margin: ${ props => props.size};
@@ -217,4 +227,5 @@ const InputMessage = styled.input`
   margin: 1rem;
   border: 1px solid #2e1eab;
   border-radius: 5px;
+  font-size: bold;
 `;

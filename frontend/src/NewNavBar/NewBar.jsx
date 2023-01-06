@@ -15,6 +15,7 @@ const NewBar = (props) => {
       <NavItem href="/about">About</NavItem>
       <NavItem href="/booking">Booking</NavItem>
       <NavItem href="/contact">Contact</NavItem>
+      <NavItem href="/tarif">Tarif et RDV</NavItem>
 
       <a onClick={showSettings} className="menu-item--small" href="/">
         test
