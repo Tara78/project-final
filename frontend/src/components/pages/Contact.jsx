@@ -81,7 +81,9 @@ const Contact = () => {
           <Tarifs>Pour les consultations, cf la page Tarifs et RDV</Tarifs>
           <Mobile>Mobile:+33.6.11.69.89.27 </Mobile>
           <Email 
-            as= "a" href="mailto:nverdeille@outlook.com"> nverdeille@outlook.com
+            as= "a" href="mailto:nverdeille@outlook.com"
+            > 
+            nverdeille@outlook.com
           </Email>
         </SectionContactInfo>
       </WrapperSecondPart>
