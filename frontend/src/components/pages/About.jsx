@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import img from "./../../img/3e055bda12f27b45a8da74749e6fde53.png"
+import img from "./../../img/enfant-interieur.jpg";
 
 const About = () => {
   return (
@@ -21,8 +21,8 @@ const HeroTitle= styled.h1`
 `
 
 const HeroBackgroundImg = styled.div`
-  height: 800px;
-  width: 100vw;
+  height: 400px;
+  max-width: 100%;
   background-image: url(${img});
   background-repeat: no-repeat;
   /* background-size: contain; */

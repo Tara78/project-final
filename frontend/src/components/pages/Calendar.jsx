@@ -1,6 +1,6 @@
 import React from "react";
 // import "@mobiscroll/react/dist/css/mobiscroll.min.css";
-import { Datepicker, Page, setOptions, localeFr } from "@mobiscroll/react";
+import { Datepicker, setOptions, localeFr } from "@mobiscroll/react";
 
 setOptions({
   locale: localeFr,
@@ -8,41 +8,14 @@ setOptions({
   themeVariant: "light",
 });
 
-function App() {
+function Calendar() {
   return (
-    <Page>
-      <Datepicker
-        controls={["calendar"]}
-        selectMultiple={false}
-        inputProps={{
-          label: "Date",
-          inputStyle: "box",
-          labelStyle: "stacked",
-          placeholder: "Please Select...",
-        }}
-      />
-      <Datepicker
-        controls={["calendar", "time"]}
-        selectMultiple={false}
-        inputProps={{
-          label: "Date & time",
-          inputStyle: "box",
-          labelStyle: "stacked",
-          placeholder: "Please Select...",
-        }}
-      />
-      <Datepicker
-        controls={["calendar", "timegrid"]}
-        selectMultiple={false}
-        inputProps={{
-          label: "Date & timegrid",
-          inputStyle: "box",
-          labelStyle: "stacked",
-          placeholder: "Please Select...",
-        }}
-      />
-    </Page>
+    <div>
+      <Datepicker controls={["calendar", "time"]} display="inline" />
+      <Datepicker controls={["calendar", "timegrid"]} display="inline" />
+    </div>
   );
 }
 
-export default App;
+export default Calendar;
+

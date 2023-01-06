@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import img from "../../img/stons.avif";
+import img from "./../../img/Stons.png.jpg";
 
 const Home = () => {
   return (
@@ -31,14 +31,16 @@ const Home = () => {
         du vivant.
       </HeroSubSubText>
 
-      <wrapperSecondPart>
+      <WrapperSecondPart>
         <Section>
           <SectionItem>
             <Title>Les consultations</Title>
+             <SubTilte>
             La maïeusthésie se pratique en face à face, je vous accompagne par
             la parole sur un chemin intérieur de rencontre avec les parts de
             vous-même qui appellent à être vues, reconnues, réhabilitées, à ce
             moment-là.
+            </SubTilte>
           </SectionItem>
 
           <SectionItem>
@@ -61,7 +63,7 @@ const Home = () => {
             </SubTilte>
           </SectionItem>
         </Section>
-      </wrapperSecondPart>
+      </WrapperSecondPart>
     </div>
   );
 };
@@ -78,7 +80,8 @@ const Hero = styled.div`
 
 const HeroBackgroundImg = styled.div`
   height: 300px;
-  width: 100vw;
+  width: 100%;
+  display:fixed;
   filter: blur(3px);
   background-image: url(${img});
   background-repeat: no-repeat;
@@ -115,12 +118,15 @@ const HeroSubSubText = styled.h4`
   text-align: center;
 `;
 
+const WrapperSecondPart= styled.div`
+  
+`
 const Section = styled.div`
-  width: 95%;
+  width: 100wv;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
   column-gap: 1.5rem;
-  /* margin-left: 1rem; */
+  margin: 1rem;
 `;
 const SectionItem = styled.div`
   height: auto;
@@ -128,10 +134,11 @@ const SectionItem = styled.div`
   font-size: 25px;
   cursor: pointer;
   border-radius: 10px;
-  background-color: #e6e8ec;
+  background-color: #d9dee1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem;
 `;
 const Title = styled.h3`
   font-size: 24px;

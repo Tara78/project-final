@@ -48,10 +48,10 @@ const NavItem = styled.a`
   margin: 1rem;
   margin-left: 20px;
   &:hover {
-    background-color: lightblue;
+    background-color: #d9dee1;
   }
-  &:active {
+  /* &:active {
     background-color: dodgerblue;
     color: white;
-  }
+  } */
 `;
