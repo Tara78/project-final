@@ -11,11 +11,12 @@ const NewBar = (props) => {
   return (
     <Nav {...props}>
       <span className="logo">logo</span>
-      <NavItem href="/">Home</NavItem>
-      <NavItem href="/about">About</NavItem>
-      <NavItem href="/booking">Booking</NavItem>
+      <NavItem href="/">Accueil</NavItem>
+      <NavItem href="/about">A propos de</NavItem>
+      <NavItem href="/booking">Prendre RV</NavItem>
       <NavItem href="/contact">Contact</NavItem>
-      <NavItem href="/tarif">Tarif et RDV</NavItem>
+      <NavItem href="/tarif">Tarif</NavItem>
+      <NavItem href="/why">Pourquoi la Gestalt-thérapie </NavItem>
 
       <a onClick={showSettings} className="menu-item--small" href="/">
         test

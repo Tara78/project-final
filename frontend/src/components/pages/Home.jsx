@@ -7,40 +7,36 @@ const Home = () => {
     <div>
       <Hero>
         <HeroBackgroundImg></HeroBackgroundImg>
-        <HeroTitle>Psychothérapie brève</HeroTitle>
-        <HeroText>
-          Pacifier toutes les parts de vous-m'aime, apaiser les blessures du
-          passé et déployer votre potentiel avec la maïeusthésie
-        </HeroText>
+        <HeroTitle1>
+          DEVIENS QUI TU ES 
+        </HeroTitle1>
+        <HeroTitle2>
+AVEC L’APPUI DE LA GESTALT-THERAPIE
+        </HeroTitle2>
+        <HeroText></HeroText>
       </Hero>
       <HeroSubText>
-        Vous vivez un conflit qui s'éternise, un état apathique, un deuil qui
-        n'en fini pas, des schémas répétitifs qui vous limitent, vous vous
-        sentez coincé.e dans un eco-système familial ou professionnel, vous
-        luttez contre une dépendance, des états émotionnels ou des comportements
-        qui vous desservent... Vous êtes bloqué.e dans une situation, subissez
-        des schémas transgénérationnels, vous êtes fatigué.e de vos croyances
-        limitantes... autant de motifs pour choisir la psychothérapie brève.
+        La Gestalt-thérapie est née aux Etats-Unis dans les années 50 et est
+        connue en Europe depuis les années 70. C'est Fritz Perls, psychologue
+        allemand qui a mis au point cette thérapie dont le nom "Gestalt"
+        signifie en allemand prendre forme, se construire. Ici, on ne se demande
+        donc pas pourquoi on souffre, mais comment est-on arrivé à cette
+        souffrance et on place la personne qui vient consulter au cœur de sa
+        propre reconstruction.
       </HeroSubText>
-      <HeroSubSubText>
-        C'est votre dialogue intérieur que j'accompagne, avec délicatesse. Vous
-        allez rencontrer la part de vous qui, par une manifestation désagréable
-        ou un symptôme, appelle votre attention. La reconnaître, la réhabiliter,
-        la reconnecter aux autres parts de votre être vous ramène à l'unité et
-        apaise les symptômes. Vous vous déployez alors pleinement dans le flow
-        du vivant.
-      </HeroSubSubText>
+      <HeroSubSubText>Additional text</HeroSubSubText>
 
       <WrapperSecondPart>
         <Section>
           <SectionItem>
-            <Title>Les consultations</Title>
-             <SubTilte>
-            La maïeusthésie se pratique en face à face, je vous accompagne par
-            la parole sur un chemin intérieur de rencontre avec les parts de
-            vous-même qui appellent à être vues, reconnues, réhabilitées, à ce
-            moment-là.
+            <Title>Quels sont les principes de la Gestalt?</Title>
+            <SubTilte>
+              Cette thérapie a pour but de ne pas penser l'être humain en tant
+              qu'individu, mais s'intéresse aux interactions : la façon dont
+              nous entrons en contact avec nous-même, avec les autres, mais
+              aussi avec le monde.
             </SubTilte>
+            <ReadMore>En savoir plus</ReadMore>
           </SectionItem>
 
           <SectionItem>
@@ -99,11 +95,21 @@ const HeroText = styled.p`
   top: 50px;
   left: 0;
 `;
-const HeroTitle = styled.h1`
+const HeroTitle1 = styled.h1`
   z-index: 28;
   position: absolute;
   top: 0;
   left: 20px;
+  /* margin-bottom: 3rem; */
+`;
+const HeroTitle2 = styled.h2`
+  font-size: 22px;
+  font-style: italic;
+  font-weight: bold;
+  /* z-index: 28; */
+  position: absolute;
+  top: 90px;
+  left: 0;
 `;
 const HeroSubText = styled.h4`
   width: 80%;
@@ -150,3 +156,5 @@ const SubTilte = styled.p`
   color: #242426;
   padding-bottom: 1rem;
 `;
+const ReadMore = styled.p`
+`

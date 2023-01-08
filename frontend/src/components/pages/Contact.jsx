@@ -76,7 +76,7 @@ const Contact = () => {
               placeholder="Votre Message ... "
             ></InputMessage>
             {/* <Textarea name="message" /> */}
-            <InputButton type="submit" value="Envoyer"  />
+            <InputButton type="submit" value="Envoyer" />
           </Form>
         </SectionForm>
         <SectionContactInfo>
@@ -91,8 +91,8 @@ const Contact = () => {
           </AddressDetaile>
           <Tarifs>Pour les consultations, cf la page Tarifs et RDV</Tarifs>
           <Mobile>Mobile:+33.6.11.69.89.27 </Mobile>
-          <Email as="a" href="mailto:nverdeille@outlook.com">
-            nverdeille@outlook.com
+          <Email as="a" href="nicolasgestalt92@gmail.com">
+            nicolasgestalt92@gmail.com
           </Email>
         </SectionContactInfo>
       </WrapperSecondPart>

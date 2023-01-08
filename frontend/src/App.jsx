@@ -8,6 +8,7 @@ import Booking from "./components/pages/Booking";
 import NewBar from "./NewNavBar/NewBar";
 import Contact from "./components/pages/Contact";
 import Tarif from "./components/pages/Tarifs";
+import Why from "./components/pages/Why";
 // import Calendar from "./components/pages/Calendar"
 
 
@@ -24,6 +25,7 @@ function App() {
       <Route path="/booking" element={ <Booking /> } />
       <Route path="/contact" element={ <Contact /> } />
       <Route path="/tarif" element={ <Tarif /> } />
+      <Route path="/why" element={ <Why /> } />
       {/* <Route path="/calendar" element= {<Calendar /> } /> */}
       
     </Routes>
