@@ -1,18 +1,35 @@
 import React from "react";
 import styled from "styled-components";
 import img from "./../../img/Stons.png.jpg";
+import { Routes, Route, useNavigate } from "react-router-dom";
+import About from "./About";
+import WhyPage from "./Why";
+import Tarif from "./Tarif";
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const navigateToAbout = () => {
+    navigate("/about");
+  };
+
+  const navigateToWhy = () => {
+    navigate("/why");
+  };
+  // const navigateHome = () => {
+  //   navigate("/");
+  // };
+
+  const navigateToTarif= () => {
+    navigate("/tarif");
+  }
+
   return (
     <div>
       <Hero>
         <HeroBackgroundImg></HeroBackgroundImg>
-        <HeroTitle1>
-          DEVIENS QUI TU ES 
-        </HeroTitle1>
-        <HeroTitle2>
-AVEC L’APPUI DE LA GESTALT-THERAPIE
-        </HeroTitle2>
+        <HeroTitle1>DEVIENS QUI TU ES</HeroTitle1>
+        <HeroTitle2>AVEC L’APPUI DE LA GESTALT-THERAPIE</HeroTitle2>
         <HeroText></HeroText>
       </Hero>
       <HeroSubText>
@@ -36,7 +53,14 @@ AVEC L’APPUI DE LA GESTALT-THERAPIE
               nous entrons en contact avec nous-même, avec les autres, mais
               aussi avec le monde.
             </SubTilte>
-            <ReadMore>En savoir plus</ReadMore>
+            <div>
+              <Button onClick={navigateToAbout}>En savoir plus ... </Button>
+
+              <Routes>
+                <Route path="/about" element={<About />} />
+                {/* <Route path="/" element={<Home/>}/> */}
+              </Routes>
+            </div>
           </SectionItem>
 
           <SectionItem>
@@ -47,16 +71,30 @@ AVEC L’APPUI DE LA GESTALT-THERAPIE
               l'objet d'un diagnostic. Ce peut aussi être difficile à nommer,
               dans le domaine du.
             </SubTilte>
+            <div>
+              <ReadMore onClick={navigateToWhy}>En savoir plus ... </ReadMore>
+              <Routes>
+                <Route path="/why" element={<WhyPage />} />
+              </Routes>
+            </div>
           </SectionItem>
 
           <SectionItem>
             <Title>Infos pratiques et prise de rdv</Title>
             <SubTilte>
-              {/* <Link></Link> */}
               Si vous avez des questions préalables, je vous offre 30 minutes
               d'échange par téléphone afin de clarifier vos besoins et vous
               décider.
             </SubTilte>
+            <div>
+              <ReadMore onClick={navigateToTarif}>
+                Pratiques et prise ici
+              </ReadMore>
+
+              <Routes>
+                <Route path="/tarif" element={<Tarif />} />                
+              </Routes>
+            </div>
           </SectionItem>
         </Section>
       </WrapperSecondPart>
@@ -66,6 +104,16 @@ AVEC L’APPUI DE LA GESTALT-THERAPIE
 
 export default Home;
 
+const Button = styled.div`
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 14px;
+  color: #621010;
+  &:hover {
+    /* background-color: #d9dee1; */
+    color: #951111;
+  }
+`;
 const Hero = styled.div`
   height: 300px;
   width: 100vw;
@@ -77,7 +125,7 @@ const Hero = styled.div`
 const HeroBackgroundImg = styled.div`
   height: 300px;
   width: 100%;
-  display:fixed;
+  display: fixed;
   filter: blur(3px);
   background-image: url(${img});
   background-repeat: no-repeat;
@@ -124,13 +172,11 @@ const HeroSubSubText = styled.h4`
   text-align: center;
 `;
 
-const WrapperSecondPart= styled.div`
-  
-`
+const WrapperSecondPart = styled.div``;
 const Section = styled.div`
   width: 100wv;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   column-gap: 1.5rem;
   margin: 1rem;
 `;
@@ -157,4 +203,5 @@ const SubTilte = styled.p`
   padding-bottom: 1rem;
 `;
 const ReadMore = styled.p`
-`
+  color: #621010;
+`;

@@ -35,10 +35,15 @@ const Contact = () => {
         <HeroSubText>
           Les rdv se prennent de vive voix au 06 23 16 65 75 ou en ligne.
         </HeroSubText>
+
         <HeroText>
           Pour les commandes de livres dédicacés et tout autre sujet,
           envoyez-moi un message via le formulaire ci-dessous.
         </HeroText>
+        {/* <LoginRegister>
+          <Login>Login</Login>
+          <Register>Register</Register>
+        </LoginRegister> */}
       </Hero>
 
       <WrapperSecondPart>
@@ -101,6 +106,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
 const Hero = styled.div``;
 const HeroBackgroundImg = styled.div``;
 
@@ -113,10 +119,21 @@ const WrapperSecondPart = styled.div`
   width: 95%;
   height: 400px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
   column-gap: 2.5rem;
   /* background-color: #435aa6; */
 `;
+// const LoginRegister= styled.div`
+//   display: flex;
+//   flex-direction: row;
+//   margin-left: 1rem;
+
+// `
+// const Login= styled.h4`
+// margin-right: 1rem;
+  
+// `
+// const Register= styled.h4``;
 
 const SectionForm = styled.div`
   height: 600px;
@@ -124,7 +141,8 @@ const SectionForm = styled.div`
   font-size: 25px;
   cursor: pointer;
   border-radius: 10px;
-  background-color: #d9dee1;
+  /* background-color: #d9dee1; */
+  background-color: #edf1f3;
   display: flex;
   flex-direction: column;
   align-items: center;

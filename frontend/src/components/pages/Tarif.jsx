@@ -3,7 +3,7 @@ import styled from "styled-components";
 import img from "./../../img/redplant.png";
 
 
-const Tarifs = () => {
+const Tarif = () => {
   return (
     <>
       <Hero>
@@ -21,7 +21,7 @@ const Tarifs = () => {
   );
 }
 
-export default Tarifs
+export default Tarif
 
 const Hero = styled.div``
 
