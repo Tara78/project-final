@@ -65,22 +65,23 @@ const Contact = () => {
                 name="user_email"
                 placeholder="Votre adresse email"
                 // size="10px"
+
               />
             </Label>
             <Label>
               <Input
-                type="telephone"
+                type="number"
                 name="number"
                 placeholder="Votre Téléphone (sans espace ni point)"
                 // size="10px"
               />
             </Label>
-            <Label>Votre Message</Label>
-            <InputMessage
+           
+            <Textarea
+              name="message"
               type="text"
               placeholder="Votre Message ... "
-            ></InputMessage>
-            {/* <Textarea name="message" /> */}
+            />
             <InputButton type="submit" value="Envoyer" />
           </Form>
         </SectionForm>
@@ -95,7 +96,7 @@ const Contact = () => {
             99 avenue Achille Peretti 92200 Neuilly-sur-Seine
           </AddressDetaile>
           <Tarifs>Pour les consultations, cf la page Tarifs et RDV</Tarifs>
-          <Mobile>Mobile:+33.6.11.69.89.27 </Mobile>
+          <Mobile>Mobile: +33 611 69 8927 </Mobile>
           <Email as="a" href="nicolasgestalt92@gmail.com">
             nicolasgestalt92@gmail.com
           </Email>
@@ -106,6 +107,8 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
 
 const Hero = styled.div``;
 const HeroBackgroundImg = styled.div``;
@@ -159,6 +162,15 @@ const SectionContactInfo = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 1rem;
+`;
+const Textarea = styled.textarea`
+  height: 200px;
+  margin: 1rem;
+  border: 1px solid #2e1eab;
+  border-radius: 5px;
+  font-size: bold;
+  padding-top:1rem;
+  padding-left: 1rem;
 `;
 
 // const FontAwesomeIcon = styled.i`
@@ -240,10 +252,3 @@ const InputButton = styled.input`
   margin: 1.3rem;
 `;
 
-const InputMessage = styled.input`
-  height: 200px;
-  margin: 1rem;
-  border: 1px solid #2e1eab;
-  border-radius: 5px;
-  font-size: bold;
-`;
