@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Calendar from "moedim";
 // import Calendar from "react-calendar";
 import styled from "styled-components";
-// import DatePicker from "react-datepicker";
+// import React from "react";
+// import { InlineWidget } from "react-calendly";
 
 const Booking = () => {
   const [date, setDate] = useState(new Date());
@@ -11,17 +12,14 @@ const Booking = () => {
   const onChange = () => {
     setDate(date);
   };
-  // const [startDate, setStartDate] = useState(new Date());
+ 
+
   return (
     <Wrapper>
-  
       <Calendar onChange={onChange} value={date} />
-      {/* <Date>{date.toString}</Date> */}
 
-      {/* <DatePicker
-        selected={startDate}
-        onChange={(date) => setStartDate(date)}
-      /> */}
+      {/* <InlineWidget url="https://calendly.com/your_scheduling_page" /> */}
+      
     </Wrapper>
   );
 };
