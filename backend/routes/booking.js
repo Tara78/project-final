@@ -65,5 +65,8 @@ router.post("/create/:year/:month", async (req, res) => {
     res.status(500).json(err);
   }
 });
+// Occupy time (user)
+router.post("/:id", userAuthMiddleFunction,
+async (req, res) => {})
 
 export default router;
