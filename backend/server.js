@@ -3,9 +3,7 @@ import cors from "cors";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
-import bcrypt from "bcrypt";
 import userRouth from "./routes/user.js";
-import registerRouth from "./routes/register.js";
 import loginRouth from "./routes/login.js";
 import bookingRouth from "./routes/booking.js";
 
@@ -42,7 +40,6 @@ app.get("/", (req, res) => {
 app.use(express.json())
 app.use("/user", userRouth);
 app.use("/login", loginRouth);
-app.use("/register", registerRouth);
 app.use("/booking", bookingRouth)
 
 app.use((err, req, res, next) => {

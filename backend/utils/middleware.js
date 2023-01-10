@@ -1,27 +1,43 @@
+import User from "../models/User.js";
+
 // ADD Auth middleware for admins and one for User
-export const adminAuthMiddleFunction = (req, res, next) => {
-  // Check if the user
-  // - exists
-  // - has valid access token
-  // - isAdmin
+export const adminAuthMiddleFunction = async (req, res, next) => {
+  const accessToken = req.header("Authorization");
+  try {
+    const user = await User.findOne({ accessToken });
+    if (user.isAdmin) {
+      next();
+    } else {
+      res.status(401).json({
+        success: false,
+        response: "You are not admin",
+      });
+    }
+  } catch (err) {
+    res.status(400).json({
+      success: false,
+      response: err,
+    });
+  }
+};
 
-
-  // if everything checks out go to next();
-
-  // else return 403 Forbidden error. 
-  next();
-}
 // ADD Auth middleware for admins and one for User
-export const userAuthMiddleFunction = (req, res, next) => {
-  // Check if the user
-  // - exists
-  // - has valid access token
-  // - isAdmin
-
-
-  // if everything checks out go to next();
-
-  // else return 403 Forbidden error. 
-  next();
-
-}
+export const userAuthMiddleFunction = async (req, res, next) => {
+  const accessToken = req.header("Authorization");
+  try {
+    const user = await User.findOne({ accessToken });
+    if (user) {
+      next();
+    } else {
+      res.status(401).json({
+        success: false,
+        response: "Please try to login again.",
+      });
+    }
+  } catch (err) {
+    res.status(400).json({
+      success: false,
+      response: err,
+    });
+  }
+};

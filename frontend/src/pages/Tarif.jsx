@@ -1,7 +1,6 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
-import img from "./../../img/redplant.png";
-
+import img from "./../img/redplant.png";
 
 const Tarif = () => {
   return (
@@ -13,17 +12,18 @@ const Tarif = () => {
       <HeroSubTitle>Tarifs des consultations</HeroSubTitle>
       <HeroSubText></HeroSubText>
       <Section>
-        <SectionItem>
-          <Title>Les consultations</Title>
-          </SectionItem>
+        <Title>Les consultations</Title>
+        <Price>
+          chaque consultation dure environ 1 heure et est facturée 70€.
+        </Price>
       </Section>
     </>
   );
-}
+};
 
-export default Tarif
+export default Tarif;
 
-const Hero = styled.div``
+const Hero = styled.div``;
 
 const HeroBackgroundImg = styled.div`
   height: 800px;
@@ -37,11 +37,10 @@ const HeroBackgroundImg = styled.div`
   background-position: center;
 `;
 
-const HeroTitle = styled.h3``
-const HeroSubTitle = styled.p``
+const HeroTitle = styled.h3``;
+const HeroSubTitle = styled.p``;
 
-const HeroSubText= styled.p``
-
+const HeroSubText = styled.p``;
 
 const Section = styled.div`
   width: 100wv;
@@ -50,9 +49,6 @@ const Section = styled.div`
   column-gap: 1.5rem;
   margin: 1rem;
 `;
-const SectionItem = styled.div``
+const Title = styled.h2``
 
-const Title= styled.h3`
-  
-`
-
+const Price = styled.h3``;

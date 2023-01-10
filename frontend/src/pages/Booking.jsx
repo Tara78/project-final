@@ -7,19 +7,18 @@ import styled from "styled-components";
 
 const Booking = () => {
   const [date, setDate] = useState(new Date());
-  <Calendar value={date} onChange={(d) => setDate()} />;
+  console.log("date", date);
+  <Calendar value={date} onChange={(d) => setDate(d)} />;
 
   const onChange = () => {
     setDate(date);
   };
- 
 
   return (
     <Wrapper>
       <Calendar onChange={onChange} value={date} />
 
       {/* <InlineWidget url="https://calendly.com/your_scheduling_page" /> */}
-      
     </Wrapper>
   );
 };

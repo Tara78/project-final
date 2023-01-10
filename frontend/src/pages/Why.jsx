@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import img from "./../../img/Gustald-tree.jpg";
+import img from "./../img/Gustald-tree.jpg";
 // /**/Second img */
 
 const WhyPage = () => {
@@ -98,8 +98,8 @@ const Section1BackgroundImg = styled.div`
   filter: blur(1px);
   background-image: url(${img});
   background-repeat: no-repeat;
-  background-size: contain;
-  /* background-size: cover; */
+  /* background-size: contain; */
+  background-size: cover;
   /* background-position: center; */
 `;
 

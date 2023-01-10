@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import img from "./../../img/Stons.png.jpg";
+import img from "./../img/Stons.png.jpg";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import About from "./About";
 import WhyPage from "./Why";

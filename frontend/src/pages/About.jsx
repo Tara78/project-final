@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import img from "./../../img/enfant-interieur.jpg";
+import img from "./../img/enfant-interieur.jpg";
 
 
 const About = () => {

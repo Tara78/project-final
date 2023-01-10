@@ -40,10 +40,10 @@ const Contact = () => {
           Pour les commandes de livres dédicacés et tout autre sujet,
           envoyez-moi un message via le formulaire ci-dessous.
         </HeroText>
-        {/* <LoginRegister>
+        <LoginRegister>
           <Login>Login</Login>
           <Register>Register</Register>
-        </LoginRegister> */}
+        </LoginRegister>
       </Hero>
 
       <WrapperSecondPart>
@@ -126,17 +126,17 @@ const WrapperSecondPart = styled.div`
   column-gap: 2.5rem;
   /* background-color: #435aa6; */
 `;
-// const LoginRegister= styled.div`
-//   display: flex;
-//   flex-direction: row;
-//   margin-left: 1rem;
+const LoginRegister= styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
 
-// `
-// const Login= styled.h4`
-// margin-right: 1rem;
+`
+const Login= styled.h4`
+margin-right: 1rem;
   
-// `
-// const Register= styled.h4``;
+`
+const Register= styled.h4``;
 
 const SectionForm = styled.div`
   height: 600px;
