@@ -36,7 +36,7 @@ app.use(bodyParser.json());
 /** Middleware */
 
 app.get("/", (req, res) => {
-  res.send("Helo Client!");
+  res.send("Hello Client!");
 });
 
 app.use(express.json())
@@ -47,7 +47,7 @@ app.use("/booking", bookingRouth)
 
 app.use((err, req, res, next) => {
   const errorStatus= err.status || 500;
-  const errorMessage= err.message || "Somthing went wrong"
+  const errorMessage= err.message || "Something went wrong"
   return res.status(errorStatus).json(
     {success:false,
       statuse:err.status,

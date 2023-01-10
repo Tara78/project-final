@@ -7,7 +7,7 @@ import Booking from "./components/pages/Booking";
 // import Navbar from "./NewNavBar/Navbar";
 import NewBar from "./NewNavBar/NewBar";
 import Contact from "./components/pages/Contact";
-import Tarif from "./components/pages/Tarifs";
+import Tarif from "./components/pages/Tarif";
 import Why from "./components/pages/Why";
 // import Calendar from "./components/pages/Calendar"
 

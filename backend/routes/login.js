@@ -1,9 +1,9 @@
-import express from "express";
+import express, { application } from "express";
 import User from "../models/User.js";
 
 const router = express.Router();
 
-router.post("/login", async (req, res) => {
+router.get("/login", async (req, res) => {
   const { name, password } = req.body;
   try {
     const user = await User.findOne({ name });
@@ -49,5 +49,7 @@ const authenticatUser = async (req, res, next) => {
     });
   }
 };
+
+router.post("/login", authenticatUser);
 
 export default router;

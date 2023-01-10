@@ -2,11 +2,12 @@ import mongoose from "mongoose";
 
 const BookingSchema = new mongoose.Schema({
   startTime: {
-    type: String, // new Date().toISOString(); '2022-12-20T16:41:18.307Z'
+    type: Date, // new Date().toISOString(); '2022-12-20T16:41:18.307Z'
+    default:() => new Date(),
     required: true,
   },
   endTime: {
-    type: String, // new Date().toISOString(); '2022-12-21T21:41:18.307Z'
+    type: Date, // new Date().toISOString(); '2022-12-21T21:41:18.307Z'
     required: true,
   }
 })
