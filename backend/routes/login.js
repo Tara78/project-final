@@ -1,9 +1,10 @@
-import express, { application } from "express";
+import express from "express";
 import User from "../models/User.js";
+import bcrypt from "bcrypt-nodejs";
 
 const router = express.Router();
 
-router.get("/login", async (req, res) => {
+router.get("/", async (req, res) => {
   const { name, password } = req.body;
   try {
     const user = await User.findOne({ name });
@@ -30,26 +31,5 @@ router.get("/login", async (req, res) => {
   }
 });
 
-const authenticatUser = async (req, res, next) => {
-  const accessToken = req.header("Authorization");
-  try {
-    const user = await User.findOne({ accessToken });
-    if (user) {
-      next();
-    } else {
-      res.status(401).json({
-        success: false,
-        response: "Please try to login again.",
-      });
-    }
-  } catch (err) {
-    res.status(400).json({
-      success: false,
-      response: err,
-    });
-  }
-};
-
-router.post("/login", authenticatUser);
 
 export default router;
