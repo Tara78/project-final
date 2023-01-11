@@ -20,7 +20,7 @@ const Login = () => {
 
   useEffect(() => {
     if (accessToken) {
-      navigate("/");
+      navigate("/booking");
     }
   }, [accessToken]);
 
@@ -32,7 +32,9 @@ const Login = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ name, password, email }),
+   
     };
+       console.log({ name, password, email });
     fetch(API_URL(mode), options)
       .then((response) => response.json())
       .then((data) => {
@@ -62,16 +64,16 @@ const Login = () => {
       <FormWrapper>
         <Section>
           <Label htmlFor="register">
-            <LabelText> Register</LabelText>
+            <LabelText> S'enregistrer</LabelText>
             <input
               type="radio"
               id="register"
-              checked={mode === "register"}
-              onChange={() => setMode("register")}
+              checked={mode === "user/register"}
+              onChange={() => setMode("user/register")}
             />
           </Label>
           <Label htmlFor="login">
-            <LabelText> Login</LabelText>
+            <LabelText> login</LabelText>
             <input
               type="radio"
               id="login"
@@ -83,26 +85,27 @@ const Login = () => {
         <Form onSubmit={onFormSubmit}>
           <Input
             type="text"
-            placeholder="Username"
+            placeholder="Identifiant"
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
           <Input
             type="password"
-            placeholder="Password"
+            placeholder="Mot de passe"
             id="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
           <Input
             type="email"
-            placeholder="emailadress"
+            placeholder="Adresse email"
             id="name"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <Button type="submit">Submit</Button>
+          <Button type="submit">Soumettre</Button>
+          <ForgotPasswordText>Mot de passe oublie</ForgotPasswordText>
           <TextError>
             <span>{errorMessage && errorMessage}</span>
           </TextError>
@@ -213,3 +216,5 @@ const TextError = styled.p`
   font-weight: bold;
   color: red;
 `;
+
+const ForgotPasswordText = styled.p``;

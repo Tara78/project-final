@@ -88,11 +88,13 @@ const WhyPage = () => {
 
 export default WhyPage;
 
-const SectionWhy = styled.div``;
+const SectionWhy = styled.div`
+
+`;
 const SectionHowWorks = styled.div``;
 
 const Section1BackgroundImg = styled.div`
-  height: 400px;
+  height: 800px;
   width: 100%;
   display: fixed;
   filter: blur(1px);
@@ -100,7 +102,7 @@ const Section1BackgroundImg = styled.div`
   background-repeat: no-repeat;
   /* background-size: contain; */
   background-size: cover;
-  /* background-position: center; */
+  background-position: center;
 `;
 
 const SectionTitle = styled.h1``;

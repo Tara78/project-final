@@ -1,31 +1,9 @@
-import React, { useRef } from "react";
+import React from "react";
 // import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Contact = () => {
-  const EmailContactForm = () => {
- const form = useRef();
- const sendEmail = (e) => {
-   e.preventDefault();
-  //  emailjs
-    //  .sendForm(
-    //    "YOUR_SERVICE_ID",
-    //    "YOUR_TEMPLATE_ID",
-    //    form.current,
-    //    "YOUR_PUBLIC_KEY"
-    //  )
-    //  .then(
-    //    (result) => {
-    //      // show the user a success message
-    //    },
-    //    (error) => {
-    //      // show the user an error
-    //    }
-    //  );
- };
-}
-
 
   return (
     <div>
