@@ -8,27 +8,31 @@ import {
 
 const router = express.Router();
 
-router.get("/free/:year/:month/:day", userAuthMiddleFunction, async (req, res) => {
-  try {
-    const calendar = await Booking.find({
-      year: req.params.year,
-      month: req.params.month,
-      day: req.params.day,
-    });
-    // todo filter for NotBooked times
+router.get(
+  "/free/:year/:month/:day",
+  userAuthMiddleFunction,
+  async (req, res) => {
+    try {
+      const calendar = await Booking.find({
+        year: req.params.year,
+        month: req.params.month,
+        day: req.params.day,
+      });
+      // todo filter for NotBooked times
 
-    res.status(200).json({
-      success: true,
-      result: calendar,
-    });
-  } catch (err) {
-    res.status(400).json({ success: false, response: err });
+      res.status(200).json({
+        success: true,
+        result: calendar,
+      });
+    } catch (err) {
+      res.status(400).json({ success: false, response: err });
+    }
   }
-});
+);
 
 router.delete("/calendar", async (req, res) => {
   try {
-    const calendar = await Calendar.find({});
+    const calendar = await Booking.find({});
     res.status(200).json({
       success: true,
       result: calendar,
@@ -65,8 +69,36 @@ router.post("/create/:year/:month", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
 // Occupy time (user)
-router.post("/:id", userAuthMiddleFunction,
-async (req, res) => {})
+router.post("/:id", userAuthMiddleFunction, async (req, res) => {
+  try {
+    const calendar = await Booking.find({
+      time: req.params.time,
+    });
+    res.status(200).json({
+      success: true,
+      result: calendar,
+    });
+  } catch (err) {
+    res.status(400).json({ success: false, response: err });
+  }
+});
+
+// Occupy time for admin
+
+router.post("/occupay/:id", adminAuthMiddleFunction, async (req, res) => {
+  try {
+    const calendar = await Booking.find({
+      time: req.params.time,
+    });
+    res.status(200).json({
+      success: true,
+      result: calendar,
+    });
+  } catch (err) {
+    res.status(400).json({ success: false, response: err });
+  }
+});
 
 export default router;
