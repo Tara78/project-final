@@ -8,25 +8,28 @@ const Tarif = () => {
       <Hero>
         <HeroBackgroundImg></HeroBackgroundImg>
         <HeroTitle>En pratique</HeroTitle>
+
+        {/* <HeroSubTitle>Tarifs des consultations</HeroSubTitle> */}
+        <HeroSubText></HeroSubText>
+        <Section>
+          <Title>Les consultations</Title>
+          <Price>
+            chaque consultation dure environ 1 heure et est facturée 70€.
+          </Price>
+        </Section>
       </Hero>
-      <HeroSubTitle>Tarifs des consultations</HeroSubTitle>
-      <HeroSubText></HeroSubText>
-      <Section>
-        <Title>Les consultations</Title>
-        <Price>
-          chaque consultation dure environ 1 heure et est facturée 70€.
-        </Price>
-      </Section>
     </>
   );
 };
 
 export default Tarif;
 
-const Hero = styled.div``;
+const Hero = styled.div`
+
+`;
 
 const HeroBackgroundImg = styled.div`
-  height: 800px;
+  height: 700px;
   width: 100%;
   display: fixed;
   filter: blur(3px);
@@ -37,8 +40,9 @@ const HeroBackgroundImg = styled.div`
   background-position: center;
 `;
 
-const HeroTitle = styled.h3``;
-const HeroSubTitle = styled.p``;
+const HeroTitle = styled.h1`
+`;
+// const HeroSubTitle = styled.p``;
 
 const HeroSubText = styled.p``;
 

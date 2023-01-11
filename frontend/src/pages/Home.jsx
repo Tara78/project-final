@@ -120,6 +120,7 @@ const Hero = styled.div`
   color: #621010;
   position: relative;
   margin-bottom: 1rem;
+ 
 `;
 
 const HeroBackgroundImg = styled.div`

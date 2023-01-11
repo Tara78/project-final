@@ -1,5 +1,5 @@
 import React from "react";
-import { slide as Menu } from "react-burger-menu";
+// import { slide as Menu } from "react-burger-menu";
 import styled from 'styled-components';
 // import "./navbar.css";
 
@@ -10,10 +10,10 @@ const NewBar = (props) => {
 
   return (
     <Nav {...props}>
-      <span className="logo">logo</span>
+      {/* <span className="logo">logo</span> */}
       <NavItem href="/">Accueil</NavItem>
       <NavItem href="/about">A propos de</NavItem>
-      <NavItem href="/booking">Prendre RV</NavItem>
+      <NavItem href="/login">Prendre RV</NavItem>
       <NavItem href="/contact">Contact</NavItem>
       <NavItem href="/tarif">Tarif</NavItem>
       <NavItem href="/why">Pourquoi la Gestalt-thérapie </NavItem>
@@ -57,3 +57,5 @@ const NavItem = styled.a`
     color: white;
   } */
 `;
+
+//  https://reactrouter.com/en/main/components/nav-link
