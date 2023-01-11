@@ -32,19 +32,54 @@ router.get("/all", async (req, res) => {
 
 /** Create New User*/
 //localhost:8000/user
-router.post("/", async (req, res) => {
-  const newUser = new User(req.body);
-  console.log(newUser)
-  try {
-    newUser.password= bcrypt.hashSync(newUser.password)
+// router.post("/", async (req, res) => {
+//   const newUser = new User(req.body);
+//   console.log(newUser)
+//   try {
+//     newUser.password= bcrypt.hashSync(newUser.password)
 
-    const savedUser = await newUser.save();
-    res.status(200).json({ success: true, data: savedUser });
-  } catch (err) {
-    console.warn(err);
-    res.status(500).json(err);
+//     const savedUser = await newUser.save();
+//     res.status(200).json({ success: true, data: savedUser });
+//   } catch (err) {
+//     console.warn(err);
+//     res.status(500).json(err);
+//   }
+// });
+
+// Register
+// localhost: 8000 / user / register;
+router.post("/register", async (req, res) => {
+  const { name, password, email } = req.body;
+  if (password.length < 5) {
+    res.status(400).json({
+      success: false,
+      response: "You need to have min 5 characters!",
+    });
+  } else {
+    try {
+      const newUser = await new User({
+        name: name,
+        email: email,
+        password: bcrypt.hashSync(password),
+      }).save();
+      res.status(201).json({
+        success: true,
+        response: {
+          name: newUser.name,
+          email: newUser.email,
+          accessToken: newUser.accessToken,
+          id: newUser._id,
+        },
+      });
+    } catch (err) {
+      res.status(400).json({
+        success: false,
+        response: err,
+      });
+    }
   }
 });
+
 
 /** update */
 //localhost:8000/user/:id

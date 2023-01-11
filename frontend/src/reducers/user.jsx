@@ -1,14 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
+// passing intisal states. By creating slice or reducer, Modofeing our store appear
 
 const user = createSlice({
   name: "user",
   initialState: {
     error: null,
     name: null,
-    email:null,
+    email: null,
     id: null,
     accessToken: null,
   },
+  // Steting Items & Error in reducers
   reducers: {
     setName: (store, action) => {
       store.name = action.payload;

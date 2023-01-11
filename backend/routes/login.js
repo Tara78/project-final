@@ -4,15 +4,19 @@ import bcrypt from "bcrypt-nodejs";
 
 const router = express.Router();
 
-router.get("/", async (req, res) => {
-  const { name, password } = req.body;
+router.post("/", async (req, res) => {
+  const { name, password, email } = req.body;
+  // console.log(req.body);
   try {
     const user = await User.findOne({ name });
-    if (user && bcrypt.compareSync(password, user.password)) {
+    if (
+      (user && bcrypt.compareSync(password, user.password) && email, user.email)
+    ) {
       res.status(200).json({
         success: true,
         response: {
           name: user.name,
+          email: user.email,
           id: user.id,
           accessToken: user.accessToken,
         },
@@ -20,7 +24,7 @@ router.get("/", async (req, res) => {
     } else {
       res.status(400).json({
         success: false,
-        response: "Wrong password, or usename! ",
+        response: "Wrong password, or username! ",
       });
     }
   } catch (err) {
@@ -30,6 +34,5 @@ router.get("/", async (req, res) => {
     });
   }
 });
-
 
 export default router;

@@ -1,5 +1,5 @@
-// const BASE_URL = "http://localhost:8000";
-const BASE_URL = ""
+const BASE_URL = "http://localhost:8000";
+// const BASE_URL = ""
 
 // Slug is a suffix of the request and it comes after base url request/
 // Slug is sort of the end point of the reuest

@@ -13,11 +13,9 @@ const BookingSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  user:{
-   type: String
-  
-  }
+  user: {
+    type: String,
+  },
 });
 
- 
 export default mongoose.model("Booking", BookingSchema);
