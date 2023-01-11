@@ -113,7 +113,7 @@ const Booking = () => {
           />
         </MainCalendlar>
       </Wrapper>
-      <Button
+      {/* <Button
         type="button"
         onClick={() => {
           dispatch(user.actions.setAccessToken(null));
@@ -121,7 +121,7 @@ const Booking = () => {
         }}
       >
         Log Out
-      </Button>
+      </Button> */}
     </>
   );
 };
@@ -138,16 +138,16 @@ const Wrapper = styled.div`
   justify-content: center;
 `;
 
-const Button = styled.button`
-  font-family: "Inconsolata";
-  padding: 6px 15px;
-  font-weight: bold;
-  font-size: 17px;
-  background: none;
-  border: 2px solid rgb(66, 65, 66);
-  width: 150px;
-  margin: 15px 30px 30px;
-  cursor: pointer;
-  color: rgb(26, 0, 26);
-  border-radius: 8px;
-`;
+// const Button = styled.button`
+//   font-family: "Inconsolata";
+//   padding: 6px 15px;
+//   font-weight: bold;
+//   font-size: 17px;
+//   background: none;
+//   border: 2px solid rgb(66, 65, 66);
+//   width: 150px;
+//   margin: 15px 30px 30px;
+//   cursor: pointer;
+//   color: rgb(26, 0, 26);
+//   border-radius: 8px;
+// `;
