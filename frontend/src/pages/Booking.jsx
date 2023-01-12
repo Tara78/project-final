@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import Home from "./Home";
 import { InlineWidget } from "react-calendly";
@@ -36,7 +36,7 @@ const Booking = () => {
   }
 
   const navigateToHome = () => {
-    navigate("/home");
+    navigate("/");
   };
 
   return (
@@ -55,16 +55,8 @@ const Booking = () => {
         </MainCalendlar>
       </Wrapper>
       <div>
-        {/* <Button
-          // onClick={() => {
-          //   dispatch(user.actions.setAccessToken(null));
-          //   //   navigate("/login");
-          // }}
-          onClick={navigateToHome}
-        >
-          Go to homepage
-        </Button> */}
-      
+        <p onClick={navigateToHome}>Pratiques et prise ici</p>
+  
       </div>
     </>
   );

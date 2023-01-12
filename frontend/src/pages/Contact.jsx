@@ -1,63 +1,88 @@
-import React from "react";
-// import emailjs from "@emailjs/browser";
+import React, { useState } from "react";
 import styled from "styled-components";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Page } from "../components/Base";
 
 const Contact = () => {
-  
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [telephone, setTelephone] = useState("");
+  const handleClick = () => {
+    setName("");
+    setEmail("");
+    setTelephone("");
+    setMessage("");
+  };
 
   return (
-    <>
-      <Hero>
-        <HeroBackgroundImg></HeroBackgroundImg>
-        <HeroTitle>Contact</HeroTitle>
-        <HeroSubText>
-          Les rdv se prennent de vive voix au 06 23 16 65 75 ou en ligne.
-        </HeroSubText>
+    <Page>
+      <h1>Contact</h1>
+      <h4>
+        Les rdv se prennent de vive voix au 06 23 16 65 75 ou en ligne.
+      </h4>
 
-        <HeroText>
-          Pour les commandes de livres dédicacés et tout autre sujet,
-          envoyez-moi un message via le formulaire ci-dessous.
-        </HeroText>
-      </Hero>
+      <p>
+        Pour les commandes de livres dédicacés et tout autre sujet, envoyez-moi
+        un message via le formulaire ci-dessous.
+      </p>
 
       <WrapperSecondPart>
         <SectionForm>
           <Form
-            action="mailto: nicolasgestalt92@gmail.com"
+            action="mailto: nicolasgestalt92@gmail.com?subject=contact"
+            method="post"
+            enctype="text/plain"
             // ref={form} onSubmit={sendEmail}
           >
             <Label>
               <Input
                 type="text"
-                name="user_name"
+                value={name}
+                name="name"
                 placeholder="Votre prénom et votre nom"
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
                 // size="10px"
               />
             </Label>
             <Label>
               <Input
                 type="email"
-                name="user_email"
+                value={email}
+                name="email"
                 placeholder="Votre adresse email"
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
                 // size="10px"
               />
             </Label>
             <Label>
               <Input
-                type="number"
-                name="number"
+                type="string"
+                name="telephone"
+                value={telephone}
                 placeholder="Votre Téléphone (sans espace ni point)"
+                onChange={(e) => {
+                  setTelephone(e.target.value);
+                }}
                 // size="10px"
               />
             </Label>
 
             <Textarea
               name="message"
+              value={message}
               type="text"
               placeholder="Votre Message ... "
+              onChange={(e) => {
+                setMessage(e.target.value);
+              }}
             />
-            <InputButton type="submit" value="Envoyer" />
+            <InputButton type="submit" onClick={handleClick}>
+              Envoyer
+            </InputButton>
           </Form>
         </SectionForm>
         <SectionContactInfo>
@@ -77,19 +102,9 @@ const Contact = () => {
           </Email>
         </SectionContactInfo>
       </WrapperSecondPart>
-    </>
+    </Page>
   );
 };
-
-export default Contact;
-
-const Hero = styled.div``;
-const HeroBackgroundImg = styled.div``;
-
-const HeroTitle = styled.h1``;
-const HeroSubText = styled.h5``;
-
-const HeroText = styled.p``;
 
 const WrapperSecondPart = styled.div`
   width: 95%;
@@ -98,7 +113,6 @@ const WrapperSecondPart = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
   column-gap: 2.5rem;
 `;
-
 
 const SectionForm = styled.div`
   height: 600px;
@@ -130,20 +144,22 @@ const Textarea = styled.textarea`
   border: 1px solid #2e1eab;
   border-radius: 5px;
   font-size: bold;
-  padding-top:1rem;
+  padding-top: 1rem;
   padding-left: 1rem;
 `;
 
 const Address = styled.h5`
   font-size: 22px;
   color: #413e3e;
-  padding-top:3rem;
+  padding-top: 3rem;
 `;
+
 const Tarifs = styled.p`
   font-size: 22px;
   font-weight: bold;
   color: #413e3e;
 `;
+
 const Mobile = styled.p`
   font-size: 22px;
   padding-top: 5rem;
@@ -152,19 +168,20 @@ const Mobile = styled.p`
 const AddressDetaile = styled.p`
   font-size: 22px;
   margin-top: -20px;
-
 `;
+
 const Email = styled.p`
   font-size: 22px;
 `;
 
-const Form= styled.div`
-height: auto;
-width:100%;
-display: flex;
-flex-direction: column;
-padding:1.5rem;
-  `
+const Form = styled.div`
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+`;
+
 const Label = styled.label`
   font-size: 16px;
   align-items: center;
@@ -173,7 +190,8 @@ const Label = styled.label`
   /* gap: 8px; */
   margin: 8px;
 `;
-const Input = styled.input.attrs( props => ({
+
+const Input = styled.input.attrs((props) => ({
   // I define static props
   type: "text",
 
@@ -182,22 +200,16 @@ const Input = styled.input.attrs( props => ({
 }))`
   color: #2e1eab;
   font-size: 1em;
-  border: 1px solid ;
+  border: 1px solid;
   border-radius: 5px;
   width: 60%;
 
   /* here I used the dynamically computed prop */
-  margin: ${ props => props.size};
-  padding: ${ props => props.size};
+  margin: ${(props) => props.size};
+  padding: ${(props) => props.size};
 `;
 
-// const Textarea= styled.span`
-// height: 200px;
-// width: 90%;
-// background-color: #0000;
-  
-// `
-const InputButton = styled.input`
+const InputButton = styled.button`
   height: 40px;
   width: 30%;
   align-items: center;
@@ -221,3 +233,4 @@ const InputButton = styled.input`
   }
 `;
 
+export default Contact;

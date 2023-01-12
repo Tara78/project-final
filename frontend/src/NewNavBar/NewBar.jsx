@@ -10,7 +10,7 @@ const NewBar = (props) => {
 
   return (
     <Nav {...props}>
-      {/* <span className="logo">logo</span> */}
+  
       <NavItem href="/">Accueil</NavItem>
       <NavItem href="/about">A propos de</NavItem>
       <NavItem href="/login">Prendre RV</NavItem>

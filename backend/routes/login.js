@@ -31,7 +31,7 @@ router.post("/", async (req, res) => {
   } catch (err) {
     res.status(500).json({
       success: false,
-      response: "Wrong password, or username!",
+      response: "Wrong password, or You need to register",
     });
   }
 });
