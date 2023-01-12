@@ -55,6 +55,7 @@ const Login = () => {
             dispatch(user.actions.setAccessToken(null));
             dispatch(user.actions.setError(data.response));
           });
+          console.log(data.response)
         }
       });
   };
@@ -100,15 +101,15 @@ const Login = () => {
           <Input
             type="email"
             placeholder="Adresse email"
-            id="name"
+            id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <Button type="submit">Soumettre</Button>
-          <ForgotPasswordText>Mot de passe oublie</ForgotPasswordText>
-          <TextError>
-            <span>{errorMessage && errorMessage}</span>
-          </TextError>
+          {/* <ForgotPasswordText>Mot de passe oublie</ForgotPasswordText> */}
+          {errorMessage && <TextError >
+            {errorMessage?.length <= 0 ? "You are not Clinet ! Register here!":errorMessage}
+          </TextError> }
         </Form>
       </FormWrapper>
     </MainWrapper>
@@ -217,4 +218,4 @@ const TextError = styled.p`
   color: red;
 `;
 
-const ForgotPasswordText = styled.p``;
+// const ForgotPasswordText = styled.p``;
