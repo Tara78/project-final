@@ -18,8 +18,13 @@ const SectionBackgroundImg = styled.div`
   background-position: center;
 `;
 
-const Page= styled.div`
+const Page = styled.div`
   padding: 1rem;
-`
+
+  @media (max-width: 768px) {
+    background-color: cyan;
+  }
+`;
 
 export { Hero, SectionBackgroundImg, Page }
+
