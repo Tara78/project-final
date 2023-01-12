@@ -54,20 +54,6 @@ app.use((err, req, res, next) => {
 })
 
 
-
-/**Connect to UI */
-// app.get("/calendar", async (req, res) => {
-//   try {
-//     const calendar = await Calendar.find({}).sort().exec();
-//     res.status(200).json({
-//       success: true,
-//       result: calendar,
-//     });
-//   } catch (err) {
-//     res.status(400).json({ success: false, response: err });
-//   }
-// });
-
 //  Start the server
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);

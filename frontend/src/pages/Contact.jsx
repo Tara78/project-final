@@ -1,12 +1,13 @@
 import React from "react";
 // import emailjs from "@emailjs/browser";
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Contact = () => {
+  
 
   return (
-    <div>
+    <>
       <Hero>
         <HeroBackgroundImg></HeroBackgroundImg>
         <HeroTitle>Contact</HeroTitle>
@@ -18,13 +19,13 @@ const Contact = () => {
           Pour les commandes de livres dédicacés et tout autre sujet,
           envoyez-moi un message via le formulaire ci-dessous.
         </HeroText>
-        
       </Hero>
 
       <WrapperSecondPart>
         <SectionForm>
           <Form
-          // ref={form} onSubmit={sendEmail}
+            action="mailto: nicolasgestalt92@gmail.com"
+            // ref={form} onSubmit={sendEmail}
           >
             <Label>
               <Input
@@ -40,7 +41,6 @@ const Contact = () => {
                 name="user_email"
                 placeholder="Votre adresse email"
                 // size="10px"
-
               />
             </Label>
             <Label>
@@ -51,7 +51,7 @@ const Contact = () => {
                 // size="10px"
               />
             </Label>
-           
+
             <Textarea
               name="message"
               type="text"
@@ -62,9 +62,9 @@ const Contact = () => {
         </SectionForm>
         <SectionContactInfo>
           <Address>
-            <span>
+            {/* <span>
               <FontAwesomeIcon icon="fa-regular fa-location-dot" />
-            </span>
+            </span> */}
             Adresse de CORRESPONDANCE UNIQUEMENT :
           </Address>
           <AddressDetaile>
@@ -77,13 +77,11 @@ const Contact = () => {
           </Email>
         </SectionContactInfo>
       </WrapperSecondPart>
-    </div>
+    </>
   );
 };
 
 export default Contact;
-
-
 
 const Hero = styled.div``;
 const HeroBackgroundImg = styled.div``;
@@ -99,7 +97,6 @@ const WrapperSecondPart = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
   column-gap: 2.5rem;
-  /* background-color: #435aa6; */
 `;
 
 
@@ -109,7 +106,6 @@ const SectionForm = styled.div`
   font-size: 25px;
   cursor: pointer;
   border-radius: 10px;
-  /* background-color: #d9dee1; */
   background-color: #edf1f3;
   display: flex;
   flex-direction: column;
@@ -137,10 +133,6 @@ const Textarea = styled.textarea`
   padding-top:1rem;
   padding-left: 1rem;
 `;
-
-// const FontAwesomeIcon = styled.i`
-
-// `
 
 const Address = styled.h5`
   font-size: 22px;
@@ -212,8 +204,20 @@ const InputButton = styled.input`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #2e1eab;
+  /* border: 1px solid #2e1eab; */
   border-radius: 5px;
   margin: 1.3rem;
+  outline: none;
+  border: none;
+  box-shadow: 0 9px #dcd4d4;
+  background-color: #7f97c5;
+  &:hover {
+    background-color: #2396d8;
+  }
+  &:active {
+    background-color: #3e658e;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 `;
 
