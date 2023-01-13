@@ -74,22 +74,27 @@ const About = () => {
     </>
   );
 } 
-export default About;
-
 
 const HeroSubText= styled.p`
-font-size:18px;
+font-size:20px;
+line-height: 24px;
+padding-bottom: 2rem;
 `
 const AboutSecondText = styled.p`
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 24px;
+  padding-bottom: 1.5rem;
 `;
 
 const AboutSecondTextSpan= styled.span`
   font-weight: bold;
 `
 const Point = styled.p`
-  padding-left: 1rem;
+  font-size: 20px;
+  line-height: 28px;
 `
 const HeroBackgroundImg = styled(SectionBackgroundImg)`
   background-image: url(${img});
 `;
+
+export default About;
