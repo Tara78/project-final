@@ -34,7 +34,7 @@ const WhyPage = () => {
             <BoldText>• des troubles émotionnels: </BoldText>stress, angoisse.
           </p>
           <p>
-            <BoldText>• des situations issues du monde professionnel:</BoldText>
+            <BoldText>• des situations issues du monde professionnel: </BoldText>
             harassement, chômage, sens du travail,…
           </p>
         </SectionSubTitle>
@@ -71,7 +71,7 @@ const WhyPage = () => {
           </p>
 
           <p>
-            <BoldText> • L’expérimentation : </BoldText>
+            <BoldText> • L’expérimentation: </BoldText>
             jeux de rôle ou créativité artistique pour noter la façon dont le
             patient interagit avec lui-même, les autres ou les objets.
           </p>

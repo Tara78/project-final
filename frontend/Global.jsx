@@ -36,6 +36,5 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   a {
-    /* color: ; */
     text-decoration: none;
   }`;
