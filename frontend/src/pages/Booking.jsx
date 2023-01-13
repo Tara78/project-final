@@ -53,10 +53,9 @@ const Booking = () => {
           />
         </MainCalendlar>
       </Wrapper>
-      <div>
-        <p onClick={navigateToHome}>Pratiques et prise ici</p>
-  
-      </div>
+      <BackHomeButton>
+        <Button onClick={navigateToHome}>Accueil</Button>
+      </BackHomeButton>
     </>
   );
 };
@@ -73,16 +72,33 @@ const Wrapper = styled.div`
   justify-content: center;
 `;
 
-// const Button = styled.button`
-//   font-family: "Inconsolata";
-//   padding: 6px 15px;
-//   font-weight: bold;
-//   font-size: 17px;
-//   background: none;
-//   border: 2px solid rgb(66, 65, 66);
-//   width: 150px;
-//   margin: 15px 30px 30px;
-//   cursor: pointer;
-//   color: rgb(26, 0, 26);
-//   border-radius: 8px;
-// `;
+const BackHomeButton = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  cursor: pointer;
+`;
+const Button = styled.button`
+  font-family: "Inconsolata";
+  padding: 6px 15px;
+  font-weight: bold;
+  font-size: 17px;
+  background: none;
+  outline: none;
+  border: none;
+  box-shadow: 0 9px #dcd4d4;
+  background-color: #e2e6ed;
+  width: 150px;
+  margin: 15px 30px 30px;
+  cursor: pointer;
+  color: rgb(21, 20, 21);
+  border-radius: 8px;
+  &:hover {
+    background-color: #b2c0c8;
+  }
+  &:active {
+    background-color: #97b0cc;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+`;

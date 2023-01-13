@@ -17,9 +17,7 @@ const Contact = () => {
   return (
     <Page>
       <h1>Contact</h1>
-      <h4>
-        Les rdv se prennent de vive voix au 06 23 16 65 75 ou en ligne.
-      </h4>
+      <HeroTitle2>Les rdv se prennent de vive voix au 06 23 16 65 75 ou en ligne.</HeroTitle2>
 
       <p>
         Pour les commandes de livres dédicacés et tout autre sujet, envoyez-moi
@@ -32,7 +30,6 @@ const Contact = () => {
             action="mailto: nicolasgestalt92@gmail.com?subject=contact"
             method="post"
             enctype="text/plain"
-            // ref={form} onSubmit={sendEmail}
           >
             <Label>
               <Input
@@ -43,7 +40,6 @@ const Contact = () => {
                 onChange={(e) => {
                   setName(e.target.value);
                 }}
-                // size="10px"
               />
             </Label>
             <Label>
@@ -55,7 +51,6 @@ const Contact = () => {
                 onChange={(e) => {
                   setEmail(e.target.value);
                 }}
-                // size="10px"
               />
             </Label>
             <Label>
@@ -67,7 +62,6 @@ const Contact = () => {
                 onChange={(e) => {
                   setTelephone(e.target.value);
                 }}
-                // size="10px"
               />
             </Label>
 
@@ -86,12 +80,7 @@ const Contact = () => {
           </Form>
         </SectionForm>
         <SectionContactInfo>
-          <Address>
-            {/* <span>
-              <FontAwesomeIcon icon="fa-regular fa-location-dot" />
-            </span> */}
-            Adresse de CORRESPONDANCE UNIQUEMENT :
-          </Address>
+          <Address>Adresse de CORRESPONDANCE UNIQUEMENT :</Address>
           <AddressDetaile>
             99 avenue Achille Peretti 92200 Neuilly-sur-Seine
           </AddressDetaile>
@@ -110,8 +99,13 @@ const WrapperSecondPart = styled.div`
   width: 95%;
   height: 400px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
   column-gap: 2.5rem;
+`;
+
+const HeroTitle2 = styled.h2`
+  font-size: 22px;
+  font-weight: bold; 
 `;
 
 const SectionForm = styled.div`
@@ -130,7 +124,6 @@ const SectionForm = styled.div`
 const SectionContactInfo = styled.div`
   height: 600px;
   font-size: 25px;
-  cursor: pointer;
   border-radius: 10px;
   background-color: #edf1f3;
   display: flex;
@@ -187,7 +180,6 @@ const Label = styled.label`
   align-items: center;
   display: flex;
   flex-direction: row;
-  /* gap: 8px; */
   margin: 8px;
 `;
 
@@ -216,18 +208,18 @@ const InputButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid #2e1eab; */
   border-radius: 5px;
   margin: 1.3rem;
+  cursor: pointer;
   outline: none;
   border: none;
-  box-shadow: 0 9px #dcd4d4;
-  background-color: #7f97c5;
+  box-shadow: 0 9px #92959a;
+  background-color: #bccff1;
   &:hover {
-    background-color: #2396d8;
+    background-color: #b2c0c8;
   }
   &:active {
-    background-color: #3e658e;
+    background-color: #97b0cc;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }

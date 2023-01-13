@@ -5,7 +5,7 @@ const Hero = styled.div`
   width: 100vw;
   color: #621010;
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem; 
 `;
 
 const SectionBackgroundImg = styled.div`
@@ -16,13 +16,14 @@ const SectionBackgroundImg = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
 `;
 
 const Page = styled.div`
   padding: 1rem;
 
   @media (max-width: 768px) {
-    background-color: cyan;
+    
   }
 `;
 

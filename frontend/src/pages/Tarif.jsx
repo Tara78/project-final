@@ -1,58 +1,52 @@
 import React from "react";
 import styled from "styled-components";
 import img from "./../img/redplant.png";
+import { Hero, SectionBackgroundImg, Page } from "../components/Base";
 
 const Tarif = () => {
   return (
     <>
       <Hero>
         <HeroBackgroundImg></HeroBackgroundImg>
-        <HeroTitle>En pratique</HeroTitle>
-
-        {/* <HeroSubTitle>Tarifs des consultations</HeroSubTitle> */}
-        <HeroSubText></HeroSubText>
+        <HeroTitle1>En pratique</HeroTitle1>
+      </Hero>
+      <Page>
+        <p></p>
         <Section>
           <Title>Les consultations</Title>
           <Price>
             chaque consultation dure environ 1 heure et est facturée 70€.
           </Price>
         </Section>
-      </Hero>
+      </Page>
     </>
   );
 };
 
 export default Tarif;
 
-const Hero = styled.div`
-
+const HeroTitle1 = styled.h1`
+  position: absolute;
+  top: 5;
+  left: 20px;
 `;
 
-const HeroBackgroundImg = styled.div`
-  height: 700px;
-  width: 100%;
-  display: fixed;
+const HeroBackgroundImg = styled(SectionBackgroundImg)`
   filter: blur(3px);
   background-image: url(${img});
-  background-repeat: no-repeat;
-  background-size: contain;
-  /* background-size: cover; */
-  background-position: center;
 `;
-
-const HeroTitle = styled.h1`
-`;
-// const HeroSubTitle = styled.p``;
-
-const HeroSubText = styled.p``;
 
 const Section = styled.div`
   width: 100wv;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
-  column-gap: 1.5rem;
-  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  color:#2e2e2e;
 `;
-const Title = styled.h2``
+const Title = styled.h2`
+padding-top:1rem;
+`;
 
-const Price = styled.h3``;
+const Price = styled.p`
+font-size:22px;
+`

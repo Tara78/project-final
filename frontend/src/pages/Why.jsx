@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import imgGustald from "../img/Gustald-tree.jpg";
+import imgWhy from "../img/consultimg.png"
 import { Hero, SectionBackgroundImg, Page } from "../components/Base";
 
 const WhyPage = () => {
@@ -47,7 +48,7 @@ const WhyPage = () => {
         </WhyGustaldText>
 
         <Hero>
-          <Section2Img></Section2Img>
+          <Section2BackgroundImg></Section2BackgroundImg>
         </Hero>
         <SectionSubTitle>
           <h1>Comment se déroule une séance de Gestalt-thérapie?</h1>
@@ -92,17 +93,20 @@ const Section1BackgroundImg = styled(SectionBackgroundImg)`
 
 const SectionSubTitle = styled.div`
   font-size: 22px;
+  line-height: 39px;
 `;
 const WhyGustaldText = styled.p`
   font-size: 22px;
+  margin-bottom: 4rem;
+  line-height: 39px;
 `;
 
 const BoldText = styled.span`
   font-weight: bold;
 `;
 
-const Section2Img = styled(SectionBackgroundImg)`
-  background-image: url(${imgGustald});
+const Section2BackgroundImg = styled(SectionBackgroundImg)`
+  background-image: url(${imgWhy});
 `;
 
 export default WhyPage;

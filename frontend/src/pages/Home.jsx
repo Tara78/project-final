@@ -40,7 +40,6 @@ const Home = () => {
           cette souffrance et on place la personne qui vient consulter au cœur
           de sa propre reconstruction.
         </HeroSubText>
-        <HeroSubSubText>{/* Additional text */}</HeroSubSubText>
 
         <div>
           <Section>
@@ -53,11 +52,12 @@ const Home = () => {
                 aussi avec le monde.
               </SubTilte>
               <div>
-                <ReadMore onClick={navigateToAbout}>En savoir plus ... </ReadMore>
+                <ReadMore onClick={navigateToAbout}>
+                  En savoir plus ...
+                </ReadMore>
 
                 <Routes>
                   <Route path="/about" element={<About />} />
-                  {/* <Route path="/" element={<Home/>}/> */}
                 </Routes>
               </div>
             </SectionItem>
@@ -77,7 +77,6 @@ const Home = () => {
                 </Routes>
               </div>
             </SectionItem>
-
             <SectionItem>
               <Title>Infos pratiques et prise de rdv</Title>
               <SubTilte>
@@ -89,7 +88,6 @@ const Home = () => {
                 <ReadMore onClick={navigateToTarif}>
                   Pratiques et prise ici
                 </ReadMore>
-
                 <Routes>
                   <Route path="/tarif" element={<Tarif />} />
                 </Routes>
@@ -123,7 +121,6 @@ const HeroText = styled.p`
   font-size: 22px;
   font-style: italic;
   font-weight: bold;
-  /* z-index: 28; */
   position: absolute;
   top: 50px;
   left: 0;
@@ -133,14 +130,12 @@ const HeroTitle1 = styled.h1`
   position: absolute;
   top: 0;
   left: 20px;
-  /* margin-bottom: 3rem; */
 `;
 const HeroTitle2 = styled.h2`
   font-size: 22px;
   font-style: italic;
   font-weight: bold;
-  /* z-index: 28; */
-  position: absolute;
+   position: absolute;
   top: 90px;
   left: 0;
 `;
@@ -149,13 +144,10 @@ const HeroSubText = styled.h4`
   color: #052a64;
   display: flex;
   justify-content: center;
+  font-size: 18px;
+  line-height: 29px;
 `;
-const HeroSubSubText = styled.h4`
-  width: 80%;
-  color: #110738;
-  display: flex;
-  text-align: center;
-`;
+
 
 const Section = styled.div`
   width: 100wv;
@@ -163,12 +155,12 @@ const Section = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   column-gap: 1.5rem;
   margin: 1rem;
+  line-height: 29px;
 `;
 const SectionItem = styled.div`
   height: auto;
   margin-bottom: 1rem;
   font-size: 25px;
-  cursor: pointer;
   border-radius: 10px;
   background-color: #d9dee1;
   display: flex;
@@ -188,4 +180,5 @@ const SubTilte = styled.p`
 `;
 const ReadMore = styled.p`
   color: #621010;
+  cursor: pointer;
 `;

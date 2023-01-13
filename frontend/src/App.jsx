@@ -4,7 +4,7 @@ import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import Home from "./pages/Home";
 import About  from "./pages/About";
 import Booking from "./pages/Booking";
-import NewBar from "./NewNavBar/NewBar";
+import NewBar from "./components/NewBar";
 import Contact from "./pages/Contact";
 import Tarif from "./pages/Tarif";
 import Why from "./pages/Why";
@@ -12,7 +12,6 @@ import Login from "./pages/Login";
 import { Provider } from "react-redux"; 
 import user from "./reducers/user";
 import booking from "./reducers/booking";
-
 
 const reducer = combineReducers({
   user: user.reducer,
