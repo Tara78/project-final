@@ -100,18 +100,6 @@ const Home = () => {
   );
 };
 
-export default Home;
-
-// const Button = styled.div`
-//   border-radius: 5px;
-//   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-//   padding: 14px;
-//   color: #621010;
-//   &:hover {
-//     color: #951111;
-//   }
-// `;
-
 const HeroBackgroundImg = styled(SectionBackgroundImg)`
   background-image: url(${img});
   filter: blur(3px);
@@ -182,3 +170,5 @@ const ReadMore = styled.p`
   color: #621010;
   cursor: pointer;
 `;
+
+export default Home;

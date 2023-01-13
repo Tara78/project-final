@@ -7,7 +7,6 @@ import userRouth from "./routes/user.js";
 import loginRouth from "./routes/login.js";
 import bookingRouth from "./routes/booking.js";
 
-
 const mongoUrl = process.env.MONGO_URL || "mongodb://127.0.0.1/final-project-user";
 mongoose.set("strictQuery", false);
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -26,13 +25,11 @@ const port = process.env.PORT || 8000;
 const app = express();
 dotenv.config();
 
-// Add middlewares to enable cors and json body parsing
 app.use(cors());
 app.use(bodyParser.json());
 
 
 /** Middleware */
-
 app.get("/", (req, res) => {
   res.send("Hello Client!");
 });
@@ -53,8 +50,6 @@ app.use((err, req, res, next) => {
     })
 })
 
-
-//  Start the server
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });

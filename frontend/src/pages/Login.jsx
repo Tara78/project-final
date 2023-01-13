@@ -10,8 +10,6 @@ const Login = () => {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
-
-  // Mode varable would be login or register - depend on endpoint (loging or register)- Put default to login
   const [mode, setMode] = useState("login");
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -32,15 +30,13 @@ const Login = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ name, password, email }),
-   
     };
-       console.log({ name, password, email });
+    console.log({ name, password, email });
     fetch(API_URL(mode), options)
       .then((response) => response.json())
       .then((data) => {
         if (data.success) {
           batch(() => {
-            // Dispatch excuting the Action
             dispatch(user.actions.setName(data.response.name));
             dispatch(user.actions.setEmail(data.response.email));
             dispatch(user.actions.setId(data.response.id));
@@ -55,7 +51,6 @@ const Login = () => {
             dispatch(user.actions.setAccessToken(null));
             dispatch(user.actions.setError(data.response));
           });
-          console.log(data.response)
         }
       });
   };
@@ -106,17 +101,18 @@ const Login = () => {
             onChange={(e) => setEmail(e.target.value)}
           />
           <Button type="submit">Soumettre</Button>
-          {/* <ForgotPasswordText>Mot de passe oublie</ForgotPasswordText> */}
-          {errorMessage && <TextError >
-            {errorMessage?.length <= 0 ? "You are not Clinet ! Register here!":errorMessage}
-          </TextError> }
+          {errorMessage && (
+            <TextError>
+              {errorMessage?.length <= 0
+                ? "You are not Clinet ! Register here!"
+                : errorMessage}
+            </TextError>
+          )}
         </Form>
       </FormWrapper>
     </MainWrapper>
   );
 };
-
-export default Login;
 
 /**Styling  */
 const MainWrapper = styled.div`
@@ -130,10 +126,8 @@ const HeroBackgroundImg = styled.div`
   height: 100vh;
   width: 100vw;
   display: fixed;
-  /* filter: blur(1px); */
   background-image: url(${img});
   background-repeat: no-repeat;
-  /* background-size: contain; */
   background-size: cover;
   background-position: center;
 `;
@@ -218,4 +212,4 @@ const TextError = styled.p`
   color: red;
 `;
 
-// const ForgotPasswordText = styled.p``;
+export default Login;

@@ -60,7 +60,6 @@ const Booking = () => {
   );
 };
 
-export default Booking;
 const MainCalendlar = styled.div`
   width: 100vw;
 `;
@@ -102,3 +101,5 @@ const Button = styled.button`
     transform: translateY(4px);
   }
 `;
+
+export default Booking;

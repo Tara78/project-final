@@ -184,10 +184,7 @@ const Label = styled.label`
 `;
 
 const Input = styled.input.attrs((props) => ({
-  // I define static props
-  type: "text",
-
-  // I define dynamic ones
+   type: "text",
   size: props.size || "10px",
 }))`
   color: #2e1eab;
@@ -195,8 +192,6 @@ const Input = styled.input.attrs((props) => ({
   border: 1px solid;
   border-radius: 5px;
   width: 60%;
-
-  /* here I used the dynamically computed prop */
   margin: ${(props) => props.size};
   padding: ${(props) => props.size};
 `;

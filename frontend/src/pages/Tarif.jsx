@@ -23,8 +23,6 @@ const Tarif = () => {
   );
 };
 
-export default Tarif;
-
 const HeroTitle1 = styled.h1`
   position: absolute;
   top: 5;
@@ -50,3 +48,5 @@ padding-top:1rem;
 const Price = styled.p`
 font-size:22px;
 `
+
+export default Tarif;
