@@ -5,6 +5,7 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import About from "./About";
 import WhyPage from "./Why";
 import Tarif from "./Tarif";
+import Login from "./Login";
 import { Hero, SectionBackgroundImg, Page } from "../components/Base";
 
 const Home = () => {
@@ -22,12 +23,16 @@ const Home = () => {
     navigate("/tarif");
   };
 
+   const navigateToLogin = () => {
+     navigate("/login");
+   };
+
   return (
     <>
       <Hero>
         <HeroBackgroundImg></HeroBackgroundImg>
         <HeroTitle1>DEVIENS QUI TU ES</HeroTitle1>
-        <HeroTitle2>AVEC L’APPUI DE LA GESTALT-THERAPIE</HeroTitle2>
+        <HeroTitle2>AVEC LE SOUTIEN DE LA GESTALT-THERAPIE</HeroTitle2>
         <HeroText></HeroText>
       </Hero>
       <Page>
@@ -63,12 +68,10 @@ const Home = () => {
             </SectionItem>
 
             <SectionItem>
-              <Title>Pour qui ? Pour quel trouble ?</Title>
+              <Title>Pourquoi choisir la Gestalt-thérapie ?</Title>
               <SubTilte>
-                La maïeusthésie est adaptée à tous les âges de la vie et à tous
-                les types de troubles. Ceux-ci peuvent être précis ayant fait
-                l'objet d'un diagnostic. Ce peut aussi être difficile à nommer,
-                dans le domaine du.
+                Problématiques adultes, adolescents, enfants, couple, famille,
+                professionnelles.
               </SubTilte>
               <div>
                 <ReadMore onClick={navigateToWhy}>En savoir plus ... </ReadMore>
@@ -80,16 +83,24 @@ const Home = () => {
             <SectionItem>
               <Title>Infos pratiques et prise de rdv</Title>
               <SubTilte>
-                Si vous avez des questions préalables, je vous offre 30 minutes
-                d'échange par téléphone afin de clarifier vos besoins et vous
-                décider.
+                Si vous avez des questions préalables, n'hésitez pas à me
+                contacter par téléphone pour clarifier vos besoins et vous
+                décider vers cette solution thérapeutique.
               </SubTilte>
               <div>
                 <ReadMore onClick={navigateToTarif}>
-                  Pratiques et prise ici
+                  Infos pratiques - cliquer ici
                 </ReadMore>
                 <Routes>
                   <Route path="/tarif" element={<Tarif />} />
+                </Routes>
+              </div>
+              <div>
+                <ReadMore onClick={navigateToLogin}>
+                  Prise de RdV - cliquer ici
+                </ReadMore>
+                <Routes>
+                  <Route path="/login" element={<Tarif />} />
                 </Routes>
               </div>
             </SectionItem>
@@ -128,11 +139,11 @@ const HeroTitle2 = styled.h2`
   left: 0;
 `;
 const HeroSubText = styled.h4`
-  width: 80%;
+  /* width: 80%; */
   color: #052a64;
   display: flex;
   justify-content: center;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 29px;
 `;
 
@@ -169,6 +180,8 @@ const SubTilte = styled.p`
 const ReadMore = styled.p`
   color: #621010;
   cursor: pointer;
+  display: flex;
+
 `;
 
 export default Home;

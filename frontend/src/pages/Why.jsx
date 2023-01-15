@@ -44,7 +44,7 @@ const WhyPage = () => {
           face à celle-ci mais également de lui permettre de reprendre sa vie en
           main, s'affirmer, s'épanouir, trouver son potentiel dans ce que l’on
           appelle le
-          <BoldText>développement personnel.</BoldText>
+          <BoldText> développement personnel.</BoldText>
         </WhyGustaldText>
 
         <Hero>
@@ -94,6 +94,7 @@ const Section1BackgroundImg = styled(SectionBackgroundImg)`
 const SectionSubTitle = styled.div`
   font-size: 22px;
   line-height: 39px;
+  color: #272525;
 `;
 const WhyGustaldText = styled.p`
   font-size: 22px;
