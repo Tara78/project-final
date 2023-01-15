@@ -100,7 +100,7 @@ const Home = () => {
                   Prise de RdV - cliquer <Ici> ici</Ici>
                 </ReadMore>
                 <Routes>
-                  <Route path="/login" element={<Tarif />} />
+                  <Route path="/login" element={<Login />} />
                 </Routes>
               </div>
             </SectionItem>
@@ -137,6 +137,7 @@ const HeroTitle2 = styled.h2`
   position: absolute;
   top: 90px;
   left: 0;
+  margin-left: 20px;
 `;
 const HeroSubText = styled.h4`
   /* width: 80%; */
@@ -178,7 +179,7 @@ const SubTilte = styled.p`
 `;
 const ReadMore = styled.p`
   color: #621010;
-  /* cursor: pointer; */
+ 
   display: flex;
 `;
 

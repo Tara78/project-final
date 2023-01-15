@@ -156,7 +156,8 @@ const Label = styled.label`
     width: 20px;
     border: 1px solid #000;
     line-height: 20px;
-    padding: 5px;
+    padding: 15px;
+
   }
 `;
 

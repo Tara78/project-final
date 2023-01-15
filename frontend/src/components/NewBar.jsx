@@ -15,7 +15,8 @@ const NewBar = (props) => {
 };
 
 const Nav = styled.div`
-  height: 100px;
+  height: 60px;
+  /* padding-top: 20px; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -28,7 +29,7 @@ const NavItem = styled.a`
   color: #110738;
   font-weight: bold;
   text-align: center;
-  padding: 14px;
+  padding: 10px;
   text-decoration: none;
   font-size: 22px;
   border-radius: 5px;
