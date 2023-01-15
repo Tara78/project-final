@@ -30,7 +30,7 @@ const NavItem = styled.a`
   text-align: center;
   padding: 14px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 22px;
   border-radius: 5px;
   margin: 1rem;
   margin-left: 20px;
