@@ -23,9 +23,9 @@ const Home = () => {
     navigate("/tarif");
   };
 
-   const navigateToLogin = () => {
-     navigate("/login");
-   };
+  const navigateToLogin = () => {
+    navigate("/login");
+  };
 
   return (
     <>
@@ -58,7 +58,7 @@ const Home = () => {
               </SubTilte>
               <div>
                 <ReadMore onClick={navigateToAbout}>
-                  En savoir plus ...
+                  <InfoText>En savoir plus ...</InfoText>
                 </ReadMore>
 
                 <Routes>
@@ -74,7 +74,9 @@ const Home = () => {
                 professionnelles.
               </SubTilte>
               <div>
-                <ReadMore onClick={navigateToWhy}>En savoir plus ... </ReadMore>
+                <ReadMore onClick={navigateToWhy}>
+                  <InfoText>En savoir plus ...</InfoText>
+                </ReadMore>
                 <Routes>
                   <Route path="/why" element={<WhyPage />} />
                 </Routes>
@@ -89,15 +91,13 @@ const Home = () => {
               </SubTilte>
               <div>
                 <ReadMore onClick={navigateToTarif}>
-                  Infos pratiques - cliquer ici
+                  Infos pratiques - cliquer <Ici> ici</Ici>
                 </ReadMore>
                 <Routes>
                   <Route path="/tarif" element={<Tarif />} />
                 </Routes>
-              </div>
-              <div>
                 <ReadMore onClick={navigateToLogin}>
-                  Prise de RdV - cliquer ici
+                  Prise de RdV - cliquer <Ici> ici</Ici>
                 </ReadMore>
                 <Routes>
                   <Route path="/login" element={<Tarif />} />
@@ -134,7 +134,7 @@ const HeroTitle2 = styled.h2`
   font-size: 22px;
   font-style: italic;
   font-weight: bold;
-   position: absolute;
+  position: absolute;
   top: 90px;
   left: 0;
 `;
@@ -146,7 +146,6 @@ const HeroSubText = styled.h4`
   font-size: 22px;
   line-height: 29px;
 `;
-
 
 const Section = styled.div`
   width: 100wv;
@@ -179,9 +178,19 @@ const SubTilte = styled.p`
 `;
 const ReadMore = styled.p`
   color: #621010;
-  cursor: pointer;
+  /* cursor: pointer; */
   display: flex;
+`;
 
+const Ici = styled.span`
+  text-decoration: underline;
+  cursor: pointer;
+  padding-left: 7px;
+`;
+
+const InfoText = styled.p`
+  cursor: pointer;
+  
 `;
 
 export default Home;
