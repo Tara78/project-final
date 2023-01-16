@@ -16,11 +16,17 @@ const NewBar = (props) => {
 
 const Nav = styled.div`
   height: 60px;
-  /* padding-top: 20px; */
+  width: 90vw;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
- 
+
+  @media (width: 375px) {
+    font-size: 60%;
+    align-items: center;
+    justify-content: space-around;
+  }
 `;
 const NavItem = styled.a`
   display: flex;
@@ -31,19 +37,24 @@ const NavItem = styled.a`
   text-align: center;
   padding: 10px;
   text-decoration: none;
-  font-size: 22px;
+  font-family: "Nunito", sans-serif;
   border-radius: 5px;
   margin: 1rem;
   margin-left: 20px;
   &:hover {
     background-color: #d9dee1;
   }
-  @media (max-width: 768px) {
-    font-size: 18px;
-    margin-left: -10px;
+  @media (width: 375px) {
+      display: flex;
+    justify-content: space-around;
   }
-  @media (max-width: 375px) {
-    font-size: 14px;
+
+  @media (width: 768px) {
+    width: 100%;
+    /* font-size: 80%; */
+    display: flex;
+    justify-content: space-between;
+    /* margin: 0; */
   }
 `;
 

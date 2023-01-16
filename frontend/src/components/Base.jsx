@@ -6,7 +6,14 @@ const Hero = styled.div`
   color: #621010;
   position: relative;
   margin-bottom: 1.5rem;
-   margin: auto 0px; 
+  margin: auto 0px;
+  font-family: "Nunito", sans-serif;
+  
+  @media (max-width: 375px) {
+    width: 100%;
+    font-size: 80%;
+  }
+
 `;
 
 const SectionBackgroundImg = styled.div`
@@ -22,10 +29,19 @@ const SectionBackgroundImg = styled.div`
 
 const Page = styled.div`
   padding: 1rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
 
-  @media (max-width: 768px) {
-    
+  @media (width: 375px) {
+    width: 90%;
+    font-size: 80%;
+
+
   }
+/* 
+  @media screen and (max-width: 820px) {
+ width: 50%;
+  } */
 `;
 
 export { Hero, SectionBackgroundImg, Page }
