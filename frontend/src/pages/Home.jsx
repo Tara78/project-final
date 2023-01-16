@@ -147,6 +147,7 @@ const HeroTitle2 = styled.h2`
     font-weight: bold;
   }
 `;
+
 const HeroSubText = styled.h4`
   color: #052a64;
   display: flex;
@@ -168,36 +169,35 @@ const Section = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   column-gap: 1.5rem;
   line-height: 29px;
-
+  margin-top: 3rem;
 `;
 
 const SectionItem = styled.div`
-  height: auto;
   margin-bottom: 1rem;
-  font-size: 25px;
+  font-size: 22px;
   border-radius: 10px;
   background-color: #d9dee1;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+  line-height: 32px;
+  text-align: start;
 
-  @media (width: 375px)  {
+  @media (width: 375px) {
     width: 60%;
     padding: 1rem;
     font-size: 16px;
     padding: 1rem;
   }
-
 `;
+
 const Title = styled.h3`
-  /* font-size: 24px; */
   color: #621010;
   padding-bottom: 1rem;
-
 `;
+
 const SubTilte = styled.p`
-  /* font-size: 20px; */
   color: #242426;
   padding-bottom: 1rem;
 `;
@@ -213,7 +213,7 @@ const ReadMoreDiv = styled.div`
 `;
 
 const ReadMoreDiv2 = styled.div`
-  height: 100px;
+  height: 140px;
   width: 400px;
   display: flex;
   justify-content: center;
