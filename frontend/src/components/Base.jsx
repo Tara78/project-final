@@ -24,7 +24,11 @@ const SectionBackgroundImg = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
- 
+  
+ @media (width: 375px) {
+  height: 100%;
+  width: 100%;
+ }
 `;
 
 const Page = styled.div`
@@ -35,8 +39,6 @@ const Page = styled.div`
   @media (width: 375px) {
     width: 90%;
     font-size: 80%;
-
-
   }
 /* 
   @media screen and (max-width: 820px) {
