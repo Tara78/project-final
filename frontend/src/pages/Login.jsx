@@ -104,7 +104,7 @@ const Login = () => {
           {errorMessage && (
             <TextError>
               {errorMessage?.length <= 0
-                ? "You are not Clinet ! Register here!"
+                ? "You are not my clinet. Register here!"
                 : errorMessage}
             </TextError>
           )}
@@ -133,7 +133,7 @@ const HeroBackgroundImg = styled.div`
 `;
 
 const FormWrapper = styled.div`
-  width: 45%;
+  width: 35%;
   height: auto;
   margin-top: 5%;
   display: flex;
@@ -153,12 +153,16 @@ const Label = styled.label`
 
   input {
     font-family: "Inconsolata";
+    font-size: 18px;
     width: 20px;
-    border: 1px solid #000;
+    border: 1px solid #252424;
     line-height: 20px;
     padding: 15px;
-
   }
+  input::placeholder {
+    padding-left: 4px;
+  }
+  
 `;
 
 const Form = styled.form`
@@ -167,6 +171,7 @@ const Form = styled.form`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
+  /* font-size: 18px; */
 `;
 
 const LabelText = styled.p`
@@ -175,6 +180,7 @@ const LabelText = styled.p`
   width: 80px;
   text-align: right;
   color: hsl(0deg 0% 13% / 80%);
+  /* font-size: 18px; */
 `;
 
 const Button = styled.button`

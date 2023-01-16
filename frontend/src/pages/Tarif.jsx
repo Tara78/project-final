@@ -11,8 +11,7 @@ const Tarif = () => {
         <HeroTitle1>En pratique</HeroTitle1>
       </Hero>
       <Page>
-        <p></p>
-        <Section>
+            <Section>
           <Title>Les consultations</Title>
           <Price>
             chaque consultation dure environ 1 heure et est facturée 70€.

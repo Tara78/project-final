@@ -92,12 +92,12 @@ const Section1BackgroundImg = styled(SectionBackgroundImg)`
 `;
 
 const SectionSubTitle = styled.div`
-  font-size: 22px;
   line-height: 39px;
   color: #272525;
 `;
+
 const WhyGustaldText = styled.p`
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 4rem;
   line-height: 39px;
 `;

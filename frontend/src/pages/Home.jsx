@@ -56,7 +56,7 @@ const Home = () => {
                 nous entrons en contact avec nous-même, avec les autres, mais
                 aussi avec le monde.
               </SubTilte>
-              <div>
+              <ReadMoreDiv>
                 <ReadMore onClick={navigateToAbout}>
                   <InfoText>En savoir plus ...</InfoText>
                 </ReadMore>
@@ -64,7 +64,7 @@ const Home = () => {
                 <Routes>
                   <Route path="/about" element={<About />} />
                 </Routes>
-              </div>
+              </ReadMoreDiv>
             </SectionItem>
 
             <SectionItem>
@@ -73,14 +73,14 @@ const Home = () => {
                 Problématiques adultes, adolescents, enfants, couple, famille,
                 professionnelles.
               </SubTilte>
-              <div>
+              <ReadMoreDiv2>
                 <ReadMore onClick={navigateToWhy}>
                   <InfoText>En savoir plus ...</InfoText>
                 </ReadMore>
                 <Routes>
                   <Route path="/why" element={<WhyPage />} />
                 </Routes>
-              </div>
+              </ReadMoreDiv2>
             </SectionItem>
             <SectionItem>
               <Title>Infos pratiques et prise de rdv</Title>
@@ -89,7 +89,7 @@ const Home = () => {
                 contacter par téléphone pour clarifier vos besoins et vous
                 décider vers cette solution thérapeutique.
               </SubTilte>
-              <div>
+              <ReadMoreDiv>
                 <ReadMore onClick={navigateToTarif}>
                   Infos pratiques - cliquer <Ici> ici</Ici>
                 </ReadMore>
@@ -102,7 +102,7 @@ const Home = () => {
                 <Routes>
                   <Route path="/login" element={<Login />} />
                 </Routes>
-              </div>
+              </ReadMoreDiv>
             </SectionItem>
           </Section>
         </div>
@@ -138,24 +138,39 @@ const HeroTitle2 = styled.h2`
   top: 90px;
   left: 0;
   margin-left: 20px;
+
+  @media (max-width: 375px) {
+    width: 80%;
+    font-size: 17px;
+    line-height: 28px;
+    color: #250303;
+    font-weight: bold;
+  }
 `;
 const HeroSubText = styled.h4`
-  /* width: 80%; */
   color: #052a64;
   display: flex;
   justify-content: center;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 29px;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 1.5rem;
+
+  @media (width: 375px) {
+    width: 90%;
+    font-size: 80%;
+  }
 `;
 
 const Section = styled.div`
-  width: 100wv;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   column-gap: 1.5rem;
-  margin: 1rem;
   line-height: 29px;
+
 `;
+
 const SectionItem = styled.div`
   height: auto;
   margin-bottom: 1rem;
@@ -166,20 +181,47 @@ const SectionItem = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+
+  @media (width: 375px)  {
+    width: 60%;
+    padding: 1rem;
+    font-size: 16px;
+    padding: 1rem;
+  }
+
 `;
 const Title = styled.h3`
-  font-size: 24px;
+  /* font-size: 24px; */
   color: #621010;
   padding-bottom: 1rem;
+
 `;
 const SubTilte = styled.p`
-  font-size: 20px;
+  /* font-size: 20px; */
   color: #242426;
   padding-bottom: 1rem;
 `;
+
+const ReadMoreDiv = styled.div`
+  height: 140px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+`;
+
+const ReadMoreDiv2 = styled.div`
+  height: 100px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+`;
 const ReadMore = styled.p`
   color: #621010;
- 
   display: flex;
 `;
 
@@ -191,7 +233,6 @@ const Ici = styled.span`
 
 const InfoText = styled.p`
   cursor: pointer;
-  
 `;
 
 export default Home;

@@ -79,26 +79,39 @@ const About = () => {
   );
 } 
 
-const HeroSubText= styled.p`
+const HeroSubText = styled.p`
 font-size:22px;
-line-height: 28px;
+line-height: 32px;
 padding-bottom: 2rem;
-`
+@media (width: 375px) {
+    font-size: 16px;
+  }
+
+`;
 const AboutSecondText = styled.p`
   font-size: 22px;
   line-height: 30px;
   padding-bottom: 2rem;
-  
+  @media (width: 375px) {
+    font-size: 16px;
+  }
 `;
 
-const AboutSecondTextSpan= styled.span`
+const AboutSecondTextSpan = styled.span`
   font-weight: bold;
-  
-`
+  @media (width: 375px) {
+    font-size: 16px;
+    font-weight: bolder;
+  }
+`;
+
 const Point = styled.p`
   font-size: 22px;
-  line-height: 28px;
-`
+  line-height: 32px;
+  @media (width: 375px) {
+    font-size: 16px;
+  }
+`;
 const HeroBackgroundImg = styled(SectionBackgroundImg)`
   background-image: url(${img});
 `;

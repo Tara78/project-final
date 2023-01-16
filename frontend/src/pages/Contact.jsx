@@ -199,6 +199,9 @@ const Input = styled.input.attrs((props) => ({
 const InputButton = styled.button`
   height: 40px;
   width: 30%;
+  font-size: 22px;
+  color: #413e3e;
+  font-weight: 600;
   align-items: center;
   display: flex;
   justify-content: center;
