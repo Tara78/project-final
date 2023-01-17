@@ -4,7 +4,6 @@ import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import Home from "./pages/Home";
 import About  from "./pages/About";
 import Booking from "./pages/Booking";
-import NewBar from "./components/NewBar";
 import Contact from "./pages/Contact";
 import Tarif from "./pages/Tarif";
 import Why from "./pages/Why";
@@ -12,6 +11,9 @@ import Login from "./pages/Login";
 import { Provider } from "react-redux"; 
 import user from "./reducers/user";
 import booking from "./reducers/booking";
+// import NewBar from "./components/NewBar";
+import NavbarR from "./components/Nav/NavbarR";
+
 
 const reducer = combineReducers({
   user: user.reducer,
@@ -24,7 +26,8 @@ function App() {
  return (
    <Provider store={store}>
      <Router>
-       <NewBar />
+      <NavbarR />
+       {/* <NewBar /> */}
        <Routes>
          <Route path="/" element={<Home />} />
          <Route path="/about" element={<About />} />

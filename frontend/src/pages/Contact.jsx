@@ -25,7 +25,7 @@ const Contact = () => {
       </p>
 
       <WrapperSecondPart>
-        <SectionForm>
+        <SectionItem>
           <Form
             action="mailto: nicolasgestalt92@gmail.com?subject=contact"
             method="post"
@@ -78,8 +78,8 @@ const Contact = () => {
               Envoyer
             </InputButton>
           </Form>
-        </SectionForm>
-        <SectionContactInfo>
+        </SectionItem>
+        <SectionItem>
           <Address>Adresse de CORRESPONDANCE UNIQUEMENT :</Address>
           <AddressDetaile>
             99 avenue Achille Peretti 92200 Neuilly-sur-Seine
@@ -89,18 +89,19 @@ const Contact = () => {
           <Email as="a" href="nicolasgestalt92@gmail.com">
             nicolasgestalt92@gmail.com
           </Email>
-        </SectionContactInfo>
+        </SectionItem>
       </WrapperSecondPart>
     </Page>
   );
 };
 
 const WrapperSecondPart = styled.div`
-  width: 95%;
+  width: 100%;
   height: 400px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
   column-gap: 2.5rem;
+  margin-top: 2rem;
 `;
 
 const HeroTitle2 = styled.h2`
@@ -108,29 +109,25 @@ const HeroTitle2 = styled.h2`
   font-weight: bold; 
 `;
 
-const SectionForm = styled.div`
+const SectionItem = styled.div`
   height: 600px;
   margin-bottom: 1rem;
-  font-size: 25px;
-  cursor: pointer;
+  font-size: 22px;
   border-radius: 10px;
   background-color: #edf1f3;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem;
+  padding: 1rem;
+  line-height: 32px;
+  text-align: start;
+
+  @media (max-width: 375px) {
+    width: 45%;
+    padding: 1rem;
+  }
 `;
 
-const SectionContactInfo = styled.div`
-  height: 600px;
-  font-size: 25px;
-  border-radius: 10px;
-  background-color: #edf1f3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1rem;
-`;
 const Textarea = styled.textarea`
   height: 200px;
   margin: 1rem;
@@ -197,7 +194,7 @@ const Input = styled.input.attrs((props) => ({
 `;
 
 const InputButton = styled.button`
-  height: 40px;
+  height: 50px;
   width: 30%;
   font-size: 22px;
   color: #413e3e;
@@ -213,13 +210,21 @@ const InputButton = styled.button`
   border: none;
   box-shadow: 0 9px #92959a;
   background-color: #bccff1;
+
   &:hover {
     background-color: #b2c0c8;
   }
+
   &:active {
     background-color: #97b0cc;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+  }
+
+  @media (max-width: 375px) {
+    height: 30px;
+    width: 30%;
+    font-size: 15px;
   }
 `;
 

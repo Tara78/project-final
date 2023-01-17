@@ -9,7 +9,7 @@ const NewBar = (props) => {
       <NavItem href="/login">Prendre RV</NavItem>
       <NavItem href="/contact">Contact</NavItem>
       <NavItem href="/tarif">Tarif</NavItem>
-      <NavItem href="/why">Pourquoi la Gestalt-thérapie </NavItem>
+      <NavItem href="/why">La Gestalt-thérapie </NavItem>
     </Nav>
   );
 };
@@ -21,6 +21,7 @@ const Nav = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  
 
   @media (width: 375px) {
     font-size: 60%;

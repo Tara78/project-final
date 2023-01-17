@@ -9,7 +9,7 @@ const Hero = styled.div`
   margin: auto 0px;
   font-family: "Nunito", sans-serif;
   
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     width: 100%;
     font-size: 80%;
   }
@@ -17,18 +17,19 @@ const Hero = styled.div`
 `;
 
 const SectionBackgroundImg = styled.div`
-  height:100%;
+  height: 100%;
   width: 100%;
   display: fixed;
   filter: blur(1px);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
- @media (width: 375px) {
-  height: 100%;
-  width: 100%;
- }
+
+  @media (max-width: 768px) {
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }
 `;
 
 const Page = styled.div`
@@ -36,14 +37,17 @@ const Page = styled.div`
   font-family: "Nunito", sans-serif;
   font-size: 18px;
 
-  @media (width: 375px) {
+  @media (max-width: 375px) {
     width: 90%;
-    font-size: 80%;
+    font-size: 15px;
+    h1 {
+      font-size: 18px;
+    }
+    h2 {
+      font-size: 18px;
+    }
   }
-/* 
-  @media screen and (max-width: 820px) {
- width: 50%;
-  } */
+ 
 `;
 
 export { Hero, SectionBackgroundImg, Page }

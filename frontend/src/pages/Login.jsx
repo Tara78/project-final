@@ -79,13 +79,17 @@ const Login = () => {
           </Label>
         </Section>
         <Form onSubmit={onFormSubmit}>
-          <Input
-            type="text"
-            placeholder="Identifiant"
-            id="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
+          <label>
+            Name:
+            <Input
+              type="text"
+              placeholder="Identifiant"
+              id="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </label>
+
           <Input
             type="password"
             placeholder="Mot de passe"
@@ -146,6 +150,13 @@ const FormWrapper = styled.div`
   z-index: 28;
   position: absolute;
   top: 0;
+
+  @media (width: 375px) {
+    width: 70%;
+    padding: 1rem;
+    font-size: 18px;
+    padding: 1rem;
+  }
 `;
 
 const Label = styled.label`

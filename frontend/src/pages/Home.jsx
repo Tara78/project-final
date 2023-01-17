@@ -139,7 +139,7 @@ const HeroTitle2 = styled.h2`
   left: 0;
   margin-left: 20px;
 
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     width: 80%;
     font-size: 17px;
     line-height: 28px;
@@ -158,13 +158,15 @@ const HeroSubText = styled.h4`
   margin-bottom: 1.5rem;
 
   @media (width: 375px) {
-    width: 90%;
-    font-size: 80%;
+    width: 100%;
+    font-size: 16px;
+
   }
 `;
 
 const Section = styled.div`
   width: 100%;
+  height: 400px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   column-gap: 1.5rem;
@@ -185,9 +187,8 @@ const SectionItem = styled.div`
   text-align: start;
 
   @media (width: 375px) {
-    width: 60%;
-    padding: 1rem;
-    font-size: 16px;
+    width: 70%;
+    font-size: 18px;
     padding: 1rem;
   }
 `;
@@ -195,6 +196,7 @@ const SectionItem = styled.div`
 const Title = styled.h3`
   color: #621010;
   padding-bottom: 1rem;
+  font-size: 18px;
 `;
 
 const SubTilte = styled.p`
@@ -220,7 +222,7 @@ const ReadMoreDiv2 = styled.div`
   align-items: center;
   margin-top: 7rem;
 `;
-const ReadMore = styled.p`
+const ReadMore = styled.div`
   color: #621010;
   display: flex;
 `;

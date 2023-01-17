@@ -86,9 +86,9 @@ padding-bottom: 2rem;
 @media (width: 375px) {
     font-size: 16px;
   }
-
 `;
-const AboutSecondText = styled.p`
+
+const AboutSecondText = styled.div`
   font-size: 22px;
   line-height: 30px;
   padding-bottom: 2rem;
@@ -99,6 +99,7 @@ const AboutSecondText = styled.p`
 
 const AboutSecondTextSpan = styled.span`
   font-weight: bold;
+
   @media (width: 375px) {
     font-size: 16px;
     font-weight: bolder;
