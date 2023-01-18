@@ -8,13 +8,11 @@ const Hero = styled.div`
   margin-bottom: 1.5rem;
   margin: auto 0px;
   font-family: "Nunito", sans-serif;
- 
-  
+
   @media (max-width: 768px) {
     width: 100%;
     font-size: 80%;
   }
-
 `;
 
 const SectionBackgroundImg = styled.div`
@@ -37,7 +35,8 @@ const Page = styled.div`
   padding: 1rem;
   font-family: "Nunito", sans-serif;
   font-size: 18px;
-  h1, h2 {
+  h1,
+  h2 {
     color: #343131;
     font-size: 26px;
   }
@@ -45,12 +44,11 @@ const Page = styled.div`
   @media (max-width: 375px) {
     width: 90%;
     font-size: 15px;
-    h1, h2 {
+    h1,
+    h2 {
       font-size: 16px;
     }
-    
   }
 `;
 
-export { Hero, SectionBackgroundImg, Page }
-
+export { Hero, SectionBackgroundImg, Page };

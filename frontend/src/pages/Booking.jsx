@@ -87,8 +87,8 @@ const Button = styled.button`
   border: none;
   box-shadow: 0 9px #dcd4d4;
   background-color: #e2e6ed;
-  width: 150px;
-  margin: 15px 30px 30px;
+  width: 180px;
+  height: 50px;
   cursor: pointer;
   color: rgb(21, 20, 21);
   border-radius: 8px;
