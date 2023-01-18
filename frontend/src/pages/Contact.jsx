@@ -101,7 +101,7 @@ const WrapperSecondPart = styled.div`
   width: 100%;
   height: 400px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(38rem, 1fr));
   column-gap: 2.5rem;
   margin-top: 2rem;
 `;
@@ -125,7 +125,7 @@ const SectionItem = styled.div`
   text-align: start;
 
   @media (max-width: 375px) {
-    width: 45%;
+    width: 48%;
     padding: 1rem;
   }
 `;

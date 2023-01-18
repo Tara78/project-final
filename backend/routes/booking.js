@@ -18,8 +18,6 @@ router.get(
         month: req.params.month,
         day: req.params.day,
       });
-      // todo filter for NotBooked times
-
       res.status(200).json({
         success: true,
         result: calendar,

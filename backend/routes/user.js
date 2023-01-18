@@ -1,7 +1,7 @@
 import express from "express";
 import User from "../models/User.js";
 import bcrypt from "bcrypt-nodejs";
-import error from "../utils/error.js";
+// import error from "../utils/error.js";
 
 const router = express.Router();
 
@@ -29,22 +29,6 @@ router.get("/all", async (req, res) => {
   next(err)
   }
 });
-
-/** Create New User*/
-//localhost:8000/user
-// router.post("/", async (req, res) => {
-//   const newUser = new User(req.body);
-//   console.log(newUser)
-//   try {
-//     newUser.password= bcrypt.hashSync(newUser.password)
-
-//     const savedUser = await newUser.save();
-//     res.status(200).json({ success: true, data: savedUser });
-//   } catch (err) {
-//     console.warn(err);
-//     res.status(500).json(err);
-//   }
-// });
 
 // Register
 // localhost: 8000 / user / register;

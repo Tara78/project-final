@@ -134,7 +134,7 @@ const HeroBackgroundImg = styled.div`
 `;
 
 const FormWrapper = styled.div`
-  width: 35%;
+  width: 45%;
   height: auto;
   margin-top: 5%;
   display: flex;
@@ -146,12 +146,14 @@ const FormWrapper = styled.div`
   border-radius: 8px;
   z-index: 28;
   position: absolute;
+  
 
   @media (width: 375px) {
-    width: 70%;
-    padding: 1rem;
+    width: 75%;
     font-size: 18px;
     padding: 1rem;
+    margin-right: 1.2rem;
+ 
   }
 `;
 
