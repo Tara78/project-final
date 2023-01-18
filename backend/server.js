@@ -9,7 +9,6 @@ import bookingRouth from "./routes/booking.js";
 
 const mongoUrl =
   process.env.MONGO_URL || "mongodb://127.0.0.1/final-project-user";
-
 console.log(`Attempting to connect to ${mongoUrl}`);
 
 mongoose.set("strictQuery", false);
@@ -27,7 +26,7 @@ mongoose.connection.on("connected", () => {
 
 const port = process.env.PORT || 8080;
 const app = express();
-dotenv.config();
+// dotenv.config();
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -45,14 +44,12 @@ app.use("/booking", bookingRouth);
 app.use((err, req, res, next) => {
   const errorStatus = err.status || 500;
   const errorMessage = err.message || "Something went wrong";
-  return res
-    .status(errorStatus)
-    .json({
-      success: false,
-      statuse: err.status,
-      message: errorMessage,
-      stack: err.stack,
-    });
+  return res.status(errorStatus).json({
+    success: false,
+    statuse: err.status,
+    message: errorMessage,
+    stack: err.stack,
+  });
 });
 
 app.listen(port, () => {
