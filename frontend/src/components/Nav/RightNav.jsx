@@ -34,8 +34,10 @@ const UL = styled.ul`
     padding-top: 3.5rem;
     border-radius: 10px;
     position: absolute;
-    transform: translate(-10%);
+    transform: translate(-100%);
     transition: transform 0.5s ease-in-out;
+    /* transition: 1s;
+    transform: translateX(-50px); */
     display: flex;
     z-index: 100;
   }

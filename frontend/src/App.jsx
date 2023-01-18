@@ -12,7 +12,9 @@ import { Provider } from "react-redux";
 import user from "./reducers/user";
 import booking from "./reducers/booking";
 // import NewBar from "./components/NewBar";
-import NavbarR from "./components/Nav/NavbarR";
+// import NavbarR from "./components/Nav/NavbarR";
+// import NavBar from "./NavBarResponsive"
+import Navbar from "./components/ResponsiveNav/Navbar";
 
 
 const reducer = combineReducers({
@@ -26,8 +28,10 @@ function App() {
  return (
    <Provider store={store}>
      <Router>
-      <NavbarR />
+      {/* <NavBar /> */}
+      {/* <NavbarR /> */}
        {/* <NewBar /> */}
+       <Navbar />
        <Routes>
          <Route path="/" element={<Home />} />
          <Route path="/about" element={<About />} />

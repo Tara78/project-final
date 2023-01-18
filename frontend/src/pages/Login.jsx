@@ -79,16 +79,13 @@ const Login = () => {
           </Label>
         </Section>
         <Form onSubmit={onFormSubmit}>
-          <label>
-            Name:
-            <Input
-              type="text"
-              placeholder="Identifiant"
-              id="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-          </label>
+          <Input
+            type="text"
+            placeholder="Identifiant"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
 
           <Input
             type="password"
@@ -149,7 +146,6 @@ const FormWrapper = styled.div`
   border-radius: 8px;
   z-index: 28;
   position: absolute;
-  top: 0;
 
   @media (width: 375px) {
     width: 70%;
@@ -166,14 +162,7 @@ const Label = styled.label`
     font-family: "Inconsolata";
     font-size: 18px;
     width: 20px;
-    border: 1px solid #252424;
-    line-height: 20px;
-    padding: 15px;
   }
-  input::placeholder {
-    padding-left: 4px;
-  }
-  
 `;
 
 const Form = styled.form`
@@ -182,31 +171,43 @@ const Form = styled.form`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
-  /* font-size: 18px; */
+
+  input::placeholder {
+    padding-left: 10px;
+  }
 `;
 
 const LabelText = styled.p`
-  display: inline;
-  margin-right: 10px;
+  margin: 10px;
   width: 80px;
   text-align: right;
   color: hsl(0deg 0% 13% / 80%);
-  /* font-size: 18px; */
 `;
 
 const Button = styled.button`
   font-family: "Inconsolata";
   font-size: 18px;
   padding: 6px 15px;
-  background: none;
-  border: 2px solid rgb(66, 65, 66);
+  box-shadow: 0 9px #92959a;
+  background-color: #d1d6de;
+  border: none;
   width: 150px;
   margin: 15px 30px 30px;
   cursor: pointer;
-  color: rgb(26, 0, 26);
+  color: #413e3e;
   margin-top: 2rem;
   border-radius: 8px;
   font-weight: bold;
+
+  &:hover {
+    background-color: #d1d8dc;
+  }
+
+  &:active {
+    background-color: #97b0cc;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 `;
 
 const Section = styled.div`

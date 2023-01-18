@@ -8,6 +8,7 @@ const Hero = styled.div`
   margin-bottom: 1.5rem;
   margin: auto 0px;
   font-family: "Nunito", sans-serif;
+ 
   
   @media (max-width: 768px) {
     width: 100%;
@@ -36,18 +37,19 @@ const Page = styled.div`
   padding: 1rem;
   font-family: "Nunito", sans-serif;
   font-size: 18px;
+  h1, h2 {
+    color: #343131;
+    font-size: 26px;
+  }
 
   @media (max-width: 375px) {
     width: 90%;
     font-size: 15px;
-    h1 {
-      font-size: 18px;
+    h1, h2 {
+      font-size: 16px;
     }
-    h2 {
-      font-size: 18px;
-    }
+    
   }
- 
 `;
 
 export { Hero, SectionBackgroundImg, Page }

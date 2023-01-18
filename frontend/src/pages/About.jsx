@@ -92,6 +92,7 @@ const AboutSecondText = styled.div`
   font-size: 22px;
   line-height: 30px;
   padding-bottom: 2rem;
+  
   @media (width: 375px) {
     font-size: 16px;
   }

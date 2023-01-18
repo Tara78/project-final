@@ -29,12 +29,15 @@ const BurgerStyled = styled.div`
   flex-flow: column nowrap;
   background: transparent;
   cursor: pointer;
-  /* display: none; */
+  /* visibility: none; */
+  /* opacity: 0; */
+ 
 
   @media (max-width: 768) {
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
+    font-size: 16px;
   }
 
   div {

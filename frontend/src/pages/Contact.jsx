@@ -17,7 +17,9 @@ const Contact = () => {
   return (
     <Page>
       <h1>Contact</h1>
-      <HeroTitle2>Les rdv se prennent de vive voix au 06 23 16 65 75 ou en ligne.</HeroTitle2>
+      <HeroTitle2>
+        Les rdv se prennent de vive voix au 06 23 16 65 75 ou en ligne.
+      </HeroTitle2>
 
       <p>
         Pour les commandes de livres dédicacés et tout autre sujet, envoyez-moi
@@ -106,7 +108,7 @@ const WrapperSecondPart = styled.div`
 
 const HeroTitle2 = styled.h2`
   font-size: 22px;
-  font-weight: bold; 
+  font-weight: bold;
 `;
 
 const SectionItem = styled.div`
@@ -181,7 +183,7 @@ const Label = styled.label`
 `;
 
 const Input = styled.input.attrs((props) => ({
-   type: "text",
+  type: "text",
   size: props.size || "10px",
 }))`
   color: #2e1eab;
@@ -209,14 +211,14 @@ const InputButton = styled.button`
   outline: none;
   border: none;
   box-shadow: 0 9px #92959a;
-  background-color: #bccff1;
+  background-color: #d1d6de;
 
   &:hover {
     background-color: #b2c0c8;
   }
 
   &:active {
-    background-color: #97b0cc;
+    background-color: #b0becd;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }

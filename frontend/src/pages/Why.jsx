@@ -93,7 +93,7 @@ const Section1BackgroundImg = styled(SectionBackgroundImg)`
 
 const SectionSubTitle = styled.div`
   line-height: 39px;
-  color: #272525;
+  color: #343131;
 `;
 
 const WhyGustaldText = styled.p`
@@ -104,6 +104,7 @@ const WhyGustaldText = styled.p`
 
 const BoldText = styled.span`
   font-weight: bold;
+ 
 `;
 
 const Section2BackgroundImg = styled(SectionBackgroundImg)`
