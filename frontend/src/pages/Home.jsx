@@ -139,7 +139,7 @@ const HeroTitle2 = styled.h2`
   left: 0;
   margin-left: 20px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 375px) {
     width: 80%;
     font-size: 17px;
     line-height: 28px;
@@ -160,7 +160,6 @@ const HeroSubText = styled.h4`
   @media (width: 375px) {
     width: 100%;
     font-size: 16px;
-
   }
 `;
 

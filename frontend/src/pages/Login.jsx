@@ -12,10 +12,13 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [mode, setMode] = useState("login");
 
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
   const accessToken = useSelector((store) => store.user.accessToken);
   const errorMessage = useSelector((store) => store.user.error);
+
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  // update store
 
   useEffect(() => {
     if (accessToken) {
@@ -82,7 +85,7 @@ const Login = () => {
         <Form onSubmit={onFormSubmit}>
           <Input
             type="text"
-            placeholder="Identifiant"
+            placeholder=" Identifiant"
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -90,14 +93,14 @@ const Login = () => {
 
           <Input
             type="password"
-            placeholder="Mot de passe"
+            placeholder=" Mot de passe"
             id="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
           <Input
             type="email"
-            placeholder="Adresse email"
+            placeholder=" Adresse email"
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -135,7 +138,7 @@ const HeroBackgroundImg = styled.div`
 `;
 
 const FormWrapper = styled.div`
-  width: 45%;
+  width: 35%;
   height: auto;
   margin-top: 5%;
   display: flex;
@@ -147,14 +150,13 @@ const FormWrapper = styled.div`
   border-radius: 8px;
   z-index: 28;
   position: absolute;
-  
 
   @media (width: 375px) {
     width: 75%;
     font-size: 18px;
     padding: 1rem;
     margin-right: 1.2rem;
- 
+    margin-top: 2rem;
   }
 `;
 
@@ -176,7 +178,7 @@ const Form = styled.form`
   margin-bottom: 15px;
 
   input::placeholder {
-    padding-left: 10px;
+    padding-left: 3px;
   }
 `;
 
