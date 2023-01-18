@@ -11,6 +11,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [mode, setMode] = useState("login");
+
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const accessToken = useSelector((store) => store.user.accessToken);
@@ -20,7 +21,7 @@ const Login = () => {
     if (accessToken) {
       navigate("/booking");
     }
-  }, [accessToken]);
+  });
 
   const onFormSubmit = (e) => {
     e.preventDefault();
