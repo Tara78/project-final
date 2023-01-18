@@ -11,7 +11,7 @@ import Login from "./pages/Login";
 import { Provider } from "react-redux";
 import user from "./reducers/user";
 import booking from "./reducers/booking";
-import Navbar from "./components/ResponsiveNav/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 
 const reducer = combineReducers({
   user: user.reducer,
