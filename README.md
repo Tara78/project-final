@@ -23,7 +23,7 @@ https://app.netlify.com/sites/final-project-49725f/overview.
 ## Installation
 For the backend I used 
 -Node.js,
--Mongoose, 
+-Mongoose DB, 
 -Express. 
 
 For Frontend: 
