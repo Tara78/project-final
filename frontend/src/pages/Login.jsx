@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector, batch } from "react-redux";
+import { useSelector, useDispatch, batch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { API_URL } from "./../utils/utils";
 import user from "./../reducers/user";
@@ -12,19 +12,24 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [mode, setMode] = useState("login");
 
+  /*
+a.Selector fetch data from store, 
+b.Action,update store and changing data,
+c.Reducer, dispatch and update store
+*/
+
   const accessToken = useSelector((store) => store.user.accessToken);
   const errorMessage = useSelector((store) => store.user.error);
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  // update store
-
+  // update store 
   useEffect(() => {
     if (accessToken) {
       navigate("/booking");
     }
-  });
+  }, [accessToken]);
 
   const onFormSubmit = (e) => {
     e.preventDefault();
@@ -200,7 +205,7 @@ const Button = styled.button`
   margin: 15px 30px 30px;
   cursor: pointer;
   color: #413e3e;
-  margin-top: 2rem;
+  margin-top: 4rem;
   border-radius: 8px;
   font-weight: bold;
 

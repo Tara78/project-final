@@ -110,6 +110,7 @@ const AboutSecondTextSpan = styled.span`
 const Point = styled.p`
   font-size: 22px;
   line-height: 32px;
+  
   @media (width: 375px) {
     font-size: 16px;
   }

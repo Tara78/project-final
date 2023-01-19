@@ -2,7 +2,6 @@ import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
-import dotenv from "dotenv";
 import userRouth from "./routes/user.js";
 import loginRouth from "./routes/login.js";
 import bookingRouth from "./routes/booking.js";

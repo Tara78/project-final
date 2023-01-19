@@ -31,7 +31,7 @@ export const userAuthMiddleFunction = async (req, res, next) => {
     } else {
       res.status(401).json({
         success: false,
-        response: "Please try to login again.",
+        response: "You do not have authorization.",
       });
     }
   } catch (err) {
