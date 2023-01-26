@@ -22,23 +22,24 @@ https://app.netlify.com/sites/final-project-49725f/overview.
 
 ## Installation
 For the backend I install,
--Node.js,
--Mongoose.DB, 
--Express. 
+-Node.js
+-Mongoose.DB 
+-Express.js
 
 For Frontend: 
-- React,
-- React-router-dom,
-- React-Redux, 
--Calendly-react.
+- React
+- React-Redux
+- React-router-dom
+- Styled Componnents
+- Calendly-react
 
 
 ## How to run the project
 - For backend
-1. Change to backend
+1. Cd backend
 2. npm run dev
 
 - For Frontend
-1. Change to Frontend
+1. Cd Frontend
 2. npm start
 
