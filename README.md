@@ -36,10 +36,10 @@ For Frontend:
 
 ## How to run the project
 - For backend
-1. Cd backend
+1. cd backend
 2. npm run dev
 
 - For Frontend
-1. Cd Frontend
+1. cd Frontend
 2. npm start
 
