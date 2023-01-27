@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
-import img from "../img/enfant-interieur.jpg";
-import { Hero, SectionBackgroundImg, Page } from "../components/Base";
+import img from "./../../img/enfant.jpg";
+import { Hero, SectionBackgroundImg, Page } from "../Base";
 
 const About = () => {
   return (
@@ -77,13 +77,13 @@ const About = () => {
       </Page>
     </>
   );
-} 
+};
 
 const HeroSubText = styled.p`
-font-size:22px;
-line-height: 32px;
-padding-bottom: 2rem;
-@media (width: 375px) {
+  font-size: 22px;
+  line-height: 32px;
+  padding-bottom: 2rem;
+  @media (width: 375px) {
     font-size: 16px;
   }
 `;
@@ -92,7 +92,7 @@ const AboutSecondText = styled.div`
   font-size: 22px;
   line-height: 30px;
   padding-bottom: 2rem;
-  
+
   @media (width: 375px) {
     font-size: 16px;
   }
@@ -110,7 +110,7 @@ const AboutSecondTextSpan = styled.span`
 const Point = styled.p`
   font-size: 22px;
   line-height: 32px;
-  
+
   @media (width: 375px) {
     font-size: 16px;
   }

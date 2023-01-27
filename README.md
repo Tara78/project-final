@@ -28,9 +28,10 @@ For the backend I used
 
 For Frontend: 
 - React
-- React-router-dom,
-- React-Redux, 
--Calendly-react
+- React-router-dom
+- React-Redux
+- Calendly-react
+- Styled Component
 
 
 ## How to run the project

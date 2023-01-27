@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import img from "./../img/redplant.png";
-import { Hero, SectionBackgroundImg, Page } from "../components/Base";
+import img from "./../../img/redplant.png";
+import { Hero, SectionBackgroundImg, Page } from "../Base";
 
 const Tarif = () => {
   return (
@@ -11,7 +11,7 @@ const Tarif = () => {
         <HeroTitle1>En pratique</HeroTitle1>
       </Hero>
       <Page>
-            <Section>
+        <Section>
           <Title>Les consultations</Title>
           <Price>
             chaque consultation dure environ 1 heure et est facturée 70€.
@@ -38,14 +38,14 @@ const Section = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
-  color:#2e2e2e;
+  color: #2e2e2e;
 `;
 const Title = styled.h2`
-padding-top:1rem;
+  padding-top: 1rem;
 `;
 
 const Price = styled.p`
-font-size:22px;
-`
+  font-size: 22px;
+`;
 
 export default Tarif;

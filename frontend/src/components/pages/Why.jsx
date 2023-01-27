@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import imgGustald from "../img/Gustald-tree.jpg";
-import imgWhy from "../img/consultimg.png"
-import { Hero, SectionBackgroundImg, Page } from "../components/Base";
+import imgGustald from "./../../img/Gustald-tree.jpg";
+import imgWhy from "./../../img/consultimg.png";
+import { Hero, SectionBackgroundImg, Page } from "../Base";
 
 const WhyPage = () => {
   return (
@@ -34,7 +34,9 @@ const WhyPage = () => {
             <BoldText>• des troubles émotionnels: </BoldText>stress, angoisse.
           </p>
           <p>
-            <BoldText>• des situations issues du monde professionnel: </BoldText>
+            <BoldText>
+              • des situations issues du monde professionnel:{" "}
+            </BoldText>
             harassement, chômage, sens du travail,…
           </p>
         </SectionSubTitle>
@@ -104,7 +106,6 @@ const WhyGustaldText = styled.p`
 
 const BoldText = styled.span`
   font-weight: bold;
- 
 `;
 
 const Section2BackgroundImg = styled(SectionBackgroundImg)`

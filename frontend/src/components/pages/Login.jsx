@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch, batch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { API_URL } from "./../utils/utils";
-import user from "./../reducers/user";
+import { API_URL } from "../../utils/utils";
+import user from "../../reducers/user";
 import styled from "styled-components";
-import img from "./../img/therapist.jpg";
+import img from "./../../img/therapist.jpg";
 
 const Login = () => {
   const [name, setName] = useState("");
@@ -24,7 +24,7 @@ c.Reducer, dispatch and update store
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  // update store 
+  // update store
   useEffect(() => {
     if (accessToken) {
       navigate("/booking");
