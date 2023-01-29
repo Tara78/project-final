@@ -30,7 +30,7 @@ c.Reducer, dispatch and update store
     if (accessToken) {
       navigate("/booking");
     }
-  }, [accessToken]);
+  }, [accessToken, navigate]);
 
   const onFormSubmit = (e) => {
     e.preventDefault();
