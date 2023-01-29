@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import img from "./../../img/enfant.jpg";
 import { Hero, SectionBackgroundImg, Page } from "../Base";
+import {HeroSubText, AboutSecondText, AboutSecondTextSpan, Point  } from "./About.styles"
 
 const About = () => {
   return (
@@ -79,42 +80,7 @@ const About = () => {
   );
 };
 
-const HeroSubText = styled.p`
-  font-size: 22px;
-  line-height: 32px;
-  padding-bottom: 2rem;
-  @media (width: 375px) {
-    font-size: 16px;
-  }
-`;
 
-const AboutSecondText = styled.div`
-  font-size: 22px;
-  line-height: 30px;
-  padding-bottom: 2rem;
-
-  @media (width: 375px) {
-    font-size: 16px;
-  }
-`;
-
-const AboutSecondTextSpan = styled.span`
-  font-weight: bold;
-
-  @media (width: 375px) {
-    font-size: 16px;
-    font-weight: bolder;
-  }
-`;
-
-const Point = styled.p`
-  font-size: 22px;
-  line-height: 32px;
-
-  @media (width: 375px) {
-    font-size: 16px;
-  }
-`;
 const HeroBackgroundImg = styled(SectionBackgroundImg)`
   background-image: url(${img});
 `;

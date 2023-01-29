@@ -3,6 +3,7 @@ import styled from "styled-components";
 import imgGustald from "./../../img/Gustald-tree.jpg";
 import imgWhy from "./../../img/consultimg.png";
 import { Hero, SectionBackgroundImg, Page } from "../Base";
+import {SectionSubTitle, WhyGustaldText, BoldText} from "./Why.styles"
 
 const WhyPage = () => {
   return (
@@ -93,20 +94,6 @@ const Section1BackgroundImg = styled(SectionBackgroundImg)`
   background-image: url(${imgGustald});
 `;
 
-const SectionSubTitle = styled.div`
-  line-height: 39px;
-  color: #343131;
-`;
-
-const WhyGustaldText = styled.p`
-  font-size: 20px;
-  margin-bottom: 4rem;
-  line-height: 39px;
-`;
-
-const BoldText = styled.span`
-  font-weight: bold;
-`;
 
 const Section2BackgroundImg = styled(SectionBackgroundImg)`
   background-image: url(${imgWhy});

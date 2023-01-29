@@ -19,7 +19,7 @@ const SectionBackgroundImg = styled.div`
   height: 100%;
   width: 100%;
   display: fixed;
-  filter: blur(1px);
+  /* filter: blur(1px); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
