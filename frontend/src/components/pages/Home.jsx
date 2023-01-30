@@ -79,7 +79,7 @@ const Home = () => {
             </SectionItem>
 
             <SectionItem>
-              <Title>Pourquoi choisir la Gestalt-thérapie ?</Title>
+              <Title>Pourquoi choisir la Gestalt-thérapie?</Title>
               <div>
                 <SubTilte>
                   Problématiques adultes, adolescents, enfants, couple, famille,
@@ -107,7 +107,7 @@ const Home = () => {
                 <Route path="/tarif" element={<Tarif />} />
               </Routes>
               <ReadMore onClick={navigateToLogin}>
-                Prise de RdV - cliquer <Ici> ici</Ici>
+                Prise de RDV -  cliquer <Ici> ici</Ici>
               </ReadMore>
               <Routes>
                 <Route path="/login" element={<Login />} />

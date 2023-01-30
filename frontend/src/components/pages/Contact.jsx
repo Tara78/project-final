@@ -1,6 +1,22 @@
 import React, { useState } from "react";
 import { Page } from "../Base";
-import {WrapperSecondPart, HeroTitle2, SectionItem,Textarea, Tarifs, Address, Mobile, AddressDetaile, Email, Form, Label, Input, InputButton,} from "./Contact.styles"
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {location-dot } from "@fortawesome/free-solid-svg-icons";
+import {
+  WrapperSecondPart,
+  HeroTitle2,
+  SectionItem,
+  Textarea,
+  Tarifs,
+  Address,
+  Mobile,
+  AddressDetaile,
+  Email,
+  Form,
+  Label,
+  Input,
+  InputButton,
+} from "./Contact.styles";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -14,18 +30,17 @@ const Contact = () => {
     setMessage("");
   };
 
+  // const Map = <FontAwesomeIcon icon= {location-dot} />
+
   return (
     <Page>
-      <h1>Contact</h1>
       <HeroTitle2>
         Les rdv se prennent de vive voix au 06 23 16 65 75 ou en ligne.
       </HeroTitle2>
-
       <p>
         Pour les commandes de livres dédicacés et tout autre sujet, envoyez-moi
         un message via le formulaire ci-dessous.
       </p>
-
       <WrapperSecondPart>
         <SectionItem>
           <Form
@@ -96,7 +111,5 @@ const Contact = () => {
     </Page>
   );
 };
-
-
 
 export default Contact;

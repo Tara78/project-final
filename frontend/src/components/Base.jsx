@@ -4,6 +4,7 @@ const Hero = styled.div`
   height: 400px;
   width: 100%;
   color: #621010;
+  text-shadow: 2px 0 #621010;
   position: relative;
   margin-bottom: 1.5rem;
   margin: auto 0px;
@@ -19,7 +20,7 @@ const SectionBackgroundImg = styled.div`
   height: 100%;
   width: 100%;
   display: fixed;
-  /* filter: blur(1px); */
+  filter: blur(1px);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -33,20 +34,26 @@ const SectionBackgroundImg = styled.div`
 
 const Page = styled.div`
   padding: 1rem;
-  font-family: "Nunito", sans-serif;
-  font-size: 18px;
   h1,
-  h2 {
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Poppins", sans-serif;
     color: #343131;
-    font-size: 26px;
+    line-height: 29px;
+    font-size: 18px;
   }
 
   @media (max-width: 375px) {
     width: 90%;
     font-size: 15px;
     h1,
-    h2 {
-      font-size: 16px;
+    h2,
+    h4,
+    h5
+   {
+      font-size: 15px;
     }
   }
 `;

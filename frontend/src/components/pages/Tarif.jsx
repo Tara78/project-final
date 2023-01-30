@@ -29,7 +29,7 @@ const HeroTitle1 = styled.h1`
 `;
 
 const HeroBackgroundImg = styled(SectionBackgroundImg)`
-  filter: blur(3px);
+  filter: blur(2px);
   background-image: url(${img});
 `;
 
@@ -39,6 +39,9 @@ const Section = styled.div`
   flex-direction: column;
   margin-top: 2rem;
   color: #2e2e2e;
+   @media (min-width: 375px) {
+    margin-top: 1rem;
+   }
 `;
 const Title = styled.h2`
   padding-top: 1rem;
@@ -46,6 +49,9 @@ const Title = styled.h2`
 
 const Price = styled.p`
   font-size: 22px;
+  @media (min-width: 375px) {
+    font-size: 1.2rem;
+  }
 `;
 
 export default Tarif;

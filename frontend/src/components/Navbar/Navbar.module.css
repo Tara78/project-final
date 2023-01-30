@@ -4,6 +4,7 @@
   --secondaryColor: #881b1b;
   --textColor: rgb(114, 109, 109);
   --mainTextColor: rgb(90, 87, 87);
+  --textshadow: 1px 0 #291a1a;
 }
 
 .header {
@@ -23,6 +24,7 @@
 .nav a {
   margin: 0 1rem;
   color: var(--mainTextColor);
+  /* text-shadow: var(--textshadow); */
   text-decoration: none;
   font-weight: bold;
   font-size: 1.3rem;
@@ -74,8 +76,8 @@
 
   .navCloseBtn {
     position: absolute;
-    top: 2rem;
-    right: 2rem;
+    top: 3rem;
+    right: 2.5rem;
   }
 
   .nav a {
