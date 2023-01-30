@@ -16,6 +16,7 @@ export const FormWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: #bfd6e1;
+  box-shadow: 4px 8px 8px #88989f;
   font-family: "Inconsolata";
   font-size: 18px;
   border-radius: 8px;
@@ -58,6 +59,7 @@ export const LabelText = styled.p`
   width: 80px;
   text-align: right;
   color: hsl(0deg 0% 13% / 80%);
+  text-shadow: .5px 0 #621010;
 `;
 
 export const Button = styled.button`
@@ -71,6 +73,7 @@ export const Button = styled.button`
   margin: 15px 30px 30px;
   cursor: pointer;
   color: #413e3e;
+  /* text-shadow: 1px 0 #621010; */
   margin-top: 4rem;
   border-radius: 8px;
   font-weight: bold;

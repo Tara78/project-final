@@ -1,12 +1,12 @@
 import express from "express";
 import User from "../models/User.js";
 import bcrypt from "bcrypt-nodejs";
-import error from "../utils/error.js";
+// import error from "../utils/error.js";
 
 const router = express.Router();
 
 /*Get Users*/
-// localhost: 8000 / user
+// localhost: 8080 / user
 router.get("/", async (req, res, next) => {
   try {
     const user = await User.find({ name: req.body.name });

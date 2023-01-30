@@ -30,7 +30,6 @@ export const HeroTitle2 = styled.h2`
     font-size: 17px;
     line-height: 28px;
     color: #250303;
-    /* font-weight: bold; */
   }
 `;
 
@@ -80,7 +79,7 @@ export const SectionItem = styled.div`
 
 export const Title = styled.h3`
   color: #621010;
-  text-shadow: 1px 0 #621010;
+  text-shadow: .5px 0 #621010;
   font-size: 18px;
   @media (width: 375px) {
     font-size: 15px;
@@ -111,7 +110,7 @@ export const InfoText = styled.p`
 
 export const ReadMore = styled.div`
   color: #621010;
-  text-shadow: 1px 0 #621010;
+  text-shadow: .5px 0 #621010;
   display: flex;
   padding-top: 2rem;
   @media (width: 375px) {
