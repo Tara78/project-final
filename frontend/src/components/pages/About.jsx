@@ -26,17 +26,17 @@ const About = () => {
           le processus qui l'a mené à cette situation. Contrairement à une
           thérapie classique, nul besoin ici de se pencher sur le passé, de
           reconstituer l'histoire du la personne, en demande sauf si les
-          circonstances du moment présent le nécessitent.
-        </HeroSubText>
-        <HeroSubText>
-          La Gestalt-thérapie met l'accent sur la prise de conscience du
-          processus en cours, ce qui permet l'équilibre entre la personne qui
-          vient consulter et son environnement. Elle s'intéresse au présent de
-          chaque situation, c'est pourquoi on la classe dans le courant des
-          psychologies humanistes ou existentielles.
+          circonstances du moment présent le nécessitent. 
+          <span>
+            La Gestalt-thérapie met l'accent sur la prise de conscience du
+            processus en cours, ce qui permet l'équilibre entre la personne qui
+            vient consulter et son environnement. Elle s'intéresse au présent de
+            chaque situation, c'est pourquoi on la classe dans le courant des
+            psychologies humanistes ou existentielles.
+          </span>
         </HeroSubText>
 
-        <h2>La théorie du self</h2>
+        <h1>La théorie du self</h1>
         <AboutSecondText>
           La théorie du self est à la base de la Gestalt-thérapie. Le self est
           notre manière d'être au monde. En effet, la Gestalt place la personne
@@ -54,7 +54,7 @@ const About = () => {
         </AboutSecondText>
         <h2>L’ici et maintenant</h2>
         <AboutSecondText>
-          C’est la seconde force de la Gestalt thérapie : s’appuyer sur le
+          C’est la seconde force de la Gestalt thérapie: s’appuyer sur le
           moment présent en:
           <Point>
             - Eveillant ses sens en observant attentivement ce qui se passe

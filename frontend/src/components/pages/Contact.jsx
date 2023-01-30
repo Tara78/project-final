@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Page } from "../Base";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {location-dot } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import {
   WrapperSecondPart,
   HeroTitle2,
@@ -16,6 +16,7 @@ import {
   Label,
   Input,
   InputButton,
+  SectionItemDetails,
 } from "./Contact.styles";
 
 const Contact = () => {
@@ -29,8 +30,6 @@ const Contact = () => {
     setTelephone("");
     setMessage("");
   };
-
-  // const Map = <FontAwesomeIcon icon= {location-dot} />
 
   return (
     <Page>
@@ -97,15 +96,19 @@ const Contact = () => {
           </Form>
         </SectionItem>
         <SectionItem>
-          <Address>Adresse de CORRESPONDANCE UNIQUEMENT :</Address>
-          <AddressDetaile>
-            99 avenue Achille Peretti 92200 Neuilly-sur-Seine
-          </AddressDetaile>
-          <Tarifs>Pour les consultations, cf la page Tarifs et RDV</Tarifs>
-          <Mobile>Mobile: +33 611 69 8927 </Mobile>
-          <Email as="a" href="nicolasgestalt92@gmail.com">
-            nicolasgestalt92@gmail.com
-          </Email>
+          <SectionItemDetails>
+            <Address>Adresse de CORRESPONDANCE UNIQUEMENT :</Address>
+            
+            <AddressDetaile>
+              {/* <FontAwesomeIcon icon={faLocationDot} /> */}
+              99 avenue Achille Peretti 92200 Neuilly-sur-Seine
+            </AddressDetaile>
+            <Tarifs>Pour les consultations, cf la page Tarifs et RDV</Tarifs>
+            <Mobile>Mobile: +33 611 69 8927 </Mobile>
+            <Email as="a" href="nicolasgestalt92@gmail.com">
+              nicolasgestalt92@gmail.com
+            </Email>
+          </SectionItemDetails>
         </SectionItem>
       </WrapperSecondPart>
     </Page>

@@ -45,24 +45,38 @@ export const Textarea = styled.textarea`
   padding-left: 1rem;
 `;
 
+
+export const SectionItemDetails= styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+`
 export const Address = styled.h5`
   font-size: 22px;
   color: #413e3e;
   padding-top: 3rem;
+  
 `;
 
 export const Tarifs = styled.p`
   font-size: 22px;
   font-weight: bold;
   color: #413e3e;
+  padding-top: 5rem;
   @media (min-width: 375px) {
     font-size: 18px;
   }
 `;
 
+export const FontAwesomeIcon = styled.i`
+  font-size: 28px;
+  color: red;
+  
+`; 
+
 export const Mobile = styled.p`
   font-size: 22px;
-  padding-top: 7rem;
+  padding-top: 2rem;
   text-shadow: 1px 0 #621010;
   @media (width: 375px) {
     font-size: 20px;
@@ -73,10 +87,12 @@ export const Mobile = styled.p`
 export const AddressDetaile = styled.p`
   font-size: 22px;
   margin-top: -20px;
+  
   @media (min-width: 375px) {
     font-size: 18px;
   }
 `;
+
 
 export const Email = styled.p`
   font-size: 22px;
