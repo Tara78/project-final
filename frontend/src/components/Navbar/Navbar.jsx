@@ -18,6 +18,10 @@ const Navbar = () => {
     setShowNavbar(!showNavbar);
   };
 
+  // const change = (Option) =>{
+  //   localStorage.setItem('lang', option.target.value);
+  // }
+
   return (
     <header className={styles.header}>
       <nav
@@ -25,11 +29,15 @@ const Navbar = () => {
         ref={navRef}
       >
         <Link to="/">{t("menu.home")}</Link>
-        <Link to="/about">A propos de</Link>
-        <Link to="/login">Prendre RV</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/tarif">Tarif</Link>
-        <Link to="/why">La Gestalt-thérapie </Link>
+        <Link to="/about">{t("menu.about")}</Link>
+        <Link to="/login">{t("menu.login")}</Link>
+        <Link to="/contact">{t("menu.contact")}</Link>
+        <Link to="/tarif">{t("menu.tarif")}</Link>
+        <Link to="/why">{t("menu.why")} </Link>
+        {/* <select>
+          <option value="en">English</option>
+          <option value="fr">French</option>
+        </select> */}
         <button type="button" onClick={() => changeLanguage("fr")}>
           fr
         </button>

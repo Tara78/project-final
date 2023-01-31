@@ -1,7 +1,28 @@
 {
   "menu": {
     "home": "Home",
-    "about": "About"
+    "about": "About", 
+    "login": "Login",
+    "contact": "Contact",
+    "tarif":"Tarif",
+    "why": "Why Gestalt",
+    "about me": "About me"
   },
-  "home": {}
+  "home": {
+    "HeroTitle1": "BECOME WHO YOU ARE",
+    "HeroTitle2": "WITH THE SUPPORT OF GESTALT THERAPY",
+    "HeroSubText": "Gestalt therapy was born in the United States in the 1950s and has been known in Europe since the 1970s. It was Fritz Perls, a German psychologist who developed this therapy whose name Gestalt means in German to take shape, build. Here, we do not wonder why we suffer, but how did we arrive at this suffering and we place the person who comes to consult at the heart of his own reconstruction.",
+    "Title": "What are the principles of Gestalt?",
+    "SubTilte": "This therapy aims not to think of the human being as an individual, but is interested in interactions: the way in which we come into contact with ourselves, with others, but also with the world.",
+    "InfoText": "Read more...",
+    "TitleWhy": "Why choose Gestalt therapy?",
+    "SubTilteWhy": "Problems for adults, adolescents, children, couples, families, professionals.",
+    "TitleBooking": "Practical information and appointment booking",
+    "SubTilteBooking": "If you have any preliminary questions, do not hesitate to contact me by telephone to clarify your needs and decide on this therapeutic solution.",
+    "ReadMoreTarif": "Practical information - click",
+    "Ici": "here",
+    "ReadMoreBooking":"Appointment booking - click"
+    
+  }
+
 }

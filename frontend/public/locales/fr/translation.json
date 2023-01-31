@@ -1,8 +1,30 @@
 {
   "menu": {
     "home": "Accueil",
-    "about": "A propos de"
-
+    "about": "A propos de",
+    "login": "Prendre RV",
+    "contact": "Contact",
+    "tarif": "Tarif",
+    "why": "La Gestalt-thérapie",
+    "about me": "About me"
   },
-  "home": {}
+  "home": {
+    "HeroTitle1": "DEVIENS QUI TU ES",
+    "HeroTitle2": "AVEC LE SOUTIEN DE LA GESTALT-THÉRAPIE",
+    "HeroSubText":"La Gestalt-thérapie est née aux Etats-Unis dans les années 50 et est connue en Europe depuis les années 70.C'est Fritz Perls, psychologue allemand qui a mis au point cette thérapie dont le nom Gestalt signifie en allemand prendre forme, se construire. Ici, on ne se demande donc pas pourquoi on souffre, mais comment est-on arrivé à cette souffrance et on place la personne qui vient consulter au cœur de sa propre reconstruction.",
+    "Title":"Quels sont les principes de la Gestalt?",
+    "SubTilte":"Cette thérapie a pour but de ne pas penser l'être humain en tant qu'individu, mais s'intéresse aux interactions : la façon dont nous entrons en contact avec nous-même, avec les autres, mais aussi avec le monde.",
+    "InfoText":"En savoir plus ...",
+    "TitleWhy":"Pourquoi choisir la Gestalt-thérapie?",
+    "SubTilteWhy":"Problématiques adultes, adolescents, enfants, couple, famille, professionnelles.",
+"TitleBooking":"Infos pratiques et prise de rdv",
+
+"SubTilteBooking":"Si vous avez des questions préalables, n'hésitez pas à me contacter par téléphone pour larifier vos besoins et vous décider vers cette solution thérapeutique.",
+"ReadMoreTarif":"Infos pratiques - cliquer",
+"Ici":"ici",
+"ReadMoreBooking":"Prise de RDV - cliquer"
+
+
+    
+  }
 }

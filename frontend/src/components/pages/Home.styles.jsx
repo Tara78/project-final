@@ -86,12 +86,40 @@ export const Title = styled.h3`
   }
 `;
 
+export const TitleWhy = styled.h3`
+  color: #621010;
+  text-shadow: 0.5px 0 #621010;
+  font-size: 18px;
+  @media (width: 375px) {
+    font-size: 15px;
+  }
+`;
+
+export const TitleBooking = styled.h3`
+  color: #621010;
+  text-shadow: 0.5px 0 #621010;
+  font-size: 18px;
+  @media (width: 375px) {
+    font-size: 15px;
+  }
+`;
+
 export const SubTilte = styled.p`
   color: #242426;
   height: 150px;
   margin-block: 0;
 `;
+export const SubTilteWhy = styled.p`
+  color: #242426;
+  height: 150px;
+  margin-block: 0;
+`;
 
+export const SubTilteBooking = styled.p`
+  color: #242426;
+  height: 150px;
+  margin-block: 0;
+`;
 export const Ici = styled.span`
   text-decoration: underline;
   cursor: pointer;
@@ -118,3 +146,26 @@ export const ReadMore = styled.div`
     font-weight: bold;
   }
 `;
+
+export const ReadMoreTarif = styled.div`
+  color: #621010;
+  text-shadow: 0.5px 0 #621010;
+  display: flex;
+  padding-top: 2rem;
+  @media (width: 375px) {
+    padding-top: 10px;
+    font-weight: bold;
+  }
+`;
+
+export const ReadMoreBooking = styled.div`
+  color: #621010;
+  text-shadow: 0.5px 0 #621010;
+  display: flex;
+  padding-top: 2rem;
+  @media (width: 375px) {
+    padding-top: 10px;
+    font-weight: bold;
+  }
+`;
+
