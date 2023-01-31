@@ -49,9 +49,7 @@ const Home = () => {
   };
 
   const { t } = useTranslation();
-
  
-
   return (
     <>
       <Hero>
