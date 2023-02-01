@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import { useTranslation } from "react-i18next";
 
+
 const Navbar = () => {
   const navRef = useRef();
   const [showNavbar, setShowNavbar] = useState(false);
@@ -18,10 +19,6 @@ const Navbar = () => {
     setShowNavbar(!showNavbar);
   };
 
-  // const change = (Option) =>{
-  //   localStorage.setItem('lang', option.target.value);
-  // }
-
   return (
     <header className={styles.header}>
       <nav
@@ -35,15 +32,14 @@ const Navbar = () => {
         <Link to="/tarif">{t("menu.tarif")}</Link>
         <Link to="/why">{t("menu.why")} </Link>
         {/* <select>
-          <option value="en">English</option>
-          <option value="fr">French</option>
+          <option type="button" onClick={() => changeLanguage("en")}>
+            English
+          </option>
+          <option type="button" onClick={() => changeLanguage("fr")}>
+            French
+          </option>
         </select> */}
-        <button type="button" onClick={() => changeLanguage("fr")}>
-          fr
-        </button>
-        <button type="button" onClick={() => changeLanguage("en")}>
-          en
-        </button>
+
         <button
           className={`${styles.navBtn} ${styles.navCloseBtn}`}
           onClick={handleClick}
@@ -54,6 +50,31 @@ const Navbar = () => {
       <button className={styles.navBtn} onClick={handleClick}>
         <FaBars />
       </button>
+
+      <div className={styles.changeLanguage}>
+        <button
+          type="button"
+          onClick={() => changeLanguage("en")}
+          className={styles.item}
+        >
+          <img
+            className={styles.enFlag}
+            alt="english-flag"
+            src={require("./assets/uk.png")}
+          />
+        </button>
+        <button
+          type="button"
+          onClick={() => changeLanguage("fr")}
+          className={styles.item}
+        >
+          <img
+            className={styles.frFlag}
+            alt="frenchflag"
+            src={require("./assets/fr-round.png")}
+          />
+        </button>
+      </div>
     </header>
   );
 };

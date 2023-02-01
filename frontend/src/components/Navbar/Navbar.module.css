@@ -16,6 +16,23 @@
   color: var(--mainTextColor);
 }
 
+.changeLanguage {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.item {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.enFlag,
+.frFlag {
+  height: 20px;
+  width: 20px;
+}
+
 .nav {
   display: flex;
   align-items: center;
