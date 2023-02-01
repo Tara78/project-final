@@ -9,20 +9,20 @@ import Login from "./Login";
 import { Hero, SectionBackgroundImg, Page } from "../Base";
 import {
   ReadMore,
-  SubTilte,
+  SubTilteHome,
   SubTilteWhy,
   SubTilteBooking,
-  Title,
+  TitleHome,
   TitleWhy,
   TitleBooking,
   SectionItem,
   Section,
-  HeroSubText,
-  HeroTitle1,
-  HeroTitle2,
-  HeroText,
+  HeroHomeSubText,
+  HeroHomeTitle1,
+  HeroHomeTitle2,
+  HeroHomeText,
   Ici,
-  InfoText,
+  InfoTextHome,
   ReadMoreTarif,
   ReadMoreBooking,
 } from "./Home.styles";
@@ -54,20 +54,20 @@ const Home = () => {
     <>
       <Hero>
         <HeroBackgroundImg></HeroBackgroundImg>
-        <HeroTitle1>{t("home.HeroTitle1")}</HeroTitle1>
-        <HeroTitle2>{t("home.HeroTitle2")}</HeroTitle2>
-        <HeroText></HeroText>
+        <HeroHomeTitle1>{t("home.HeroHomeTitle1")}</HeroHomeTitle1>
+        <HeroHomeTitle2>{t("home.HeroHomeTitle2")}</HeroHomeTitle2>
+        <HeroHomeText></HeroHomeText>
       </Hero>
       <Page>
-        <HeroSubText>{t("home.HeroSubText")}</HeroSubText>
+        <HeroHomeSubText>{t("home.HeroHomeSubText")}</HeroHomeSubText>
 
         <div>
           <Section>
             <SectionItem>
-              <Title>{t("home.Title")}</Title>
-              <SubTilte>{t("home.SubTilte")}</SubTilte>
+              <TitleHome>{t("home.TitleHome")}</TitleHome>
+              <SubTilteHome>{t("home.SubTilteHome")}</SubTilteHome>
               <ReadMore onClick={navigateToAbout}>
-                <InfoText>{t("home.InfoText")}</InfoText>
+                <InfoTextHome>{t("home.InfoText")}</InfoTextHome>
               </ReadMore>
 
               <Routes>
@@ -81,7 +81,7 @@ const Home = () => {
                 <SubTilteWhy>{t("home.SubTilteWhy")}</SubTilteWhy>
               </div>
               <ReadMore onClick={navigateToWhy}>
-                <InfoText>{t("home.InfoText")}</InfoText>
+                <InfoTextHome>{t("home.InfoText")}</InfoTextHome>
               </ReadMore>
               <Routes>
                 <Route path="/why" element={<WhyPage />} />

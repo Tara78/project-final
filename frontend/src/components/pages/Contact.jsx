@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Page } from "../Base";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import {
   WrapperSecondPart,
   HeroTitle2,
@@ -19,7 +19,10 @@ import {
   SectionItemDetails,
 } from "./Contact.styles";
 
+import { useTranslation } from "react-i18next";
+
 const Contact = () => {
+  const { t } = useTranslation();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -33,13 +36,8 @@ const Contact = () => {
 
   return (
     <Page>
-      <HeroTitle2>
-        Les rdv se prennent de vive voix au 06 23 16 65 75 ou en ligne.
-      </HeroTitle2>
-      <p>
-        Pour les commandes de livres dédicacés et tout autre sujet, envoyez-moi
-        un message via le formulaire ci-dessous.
-      </p>
+      <HeroTitle2>{t("contact.HeroTitle2")}</HeroTitle2>
+      <p> {t("contact.p")}</p>
       <WrapperSecondPart>
         <SectionItem>
           <Form
@@ -91,19 +89,19 @@ const Contact = () => {
               }}
             />
             <InputButton type="submit" onClick={handleClick}>
-              Envoyer
+              {t("contact.InputButton")}
             </InputButton>
           </Form>
         </SectionItem>
         <SectionItem>
           <SectionItemDetails>
-            <Address>Adresse de CORRESPONDANCE UNIQUEMENT :</Address>
-            
+            <Address>{t("contact.Address")}</Address>
+
             <AddressDetaile>
               {/* <FontAwesomeIcon icon={faLocationDot} /> */}
-              99 avenue Achille Peretti 92200 Neuilly-sur-Seine
+              {t("contact.AddressDetaile")}
             </AddressDetaile>
-            <Tarifs>Pour les consultations, cf la page Tarifs et RDV</Tarifs>
+            <Tarifs>{t("contact.Tarif")}</Tarifs>
             <Mobile>Mobile: +33 611 69 8927 </Mobile>
             <Email as="a" href="nicolasgestalt92@gmail.com">
               nicolasgestalt92@gmail.com

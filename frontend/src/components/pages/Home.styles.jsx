@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeroText = styled.p`
+export const HeroHomeText = styled.p`
   font-size: 22px;
   font-style: italic;
   font-weight: bold;
@@ -8,14 +8,14 @@ export const HeroText = styled.p`
   top: 50px;
   left: 0;
 `;
-export const HeroTitle1 = styled.h1`
+export const HeroHomeTitle1 = styled.h1`
   z-index: 32;
   position: absolute;
   top: 0;
   left: 20px;
 `;
 
-export const HeroTitle2 = styled.h2`
+export const HeroHomeTitle2 = styled.h2`
   font-size: 22px;
   font-style: italic;
   font-weight: bold;
@@ -33,7 +33,7 @@ export const HeroTitle2 = styled.h2`
   }
 `;
 
-export const HeroSubText = styled.h5`
+export const HeroHomeSubText = styled.h5`
   color: #052a64;
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -77,7 +77,7 @@ export const SectionItem = styled.div`
   }
 `;
 
-export const Title = styled.h3`
+export const TitleHome = styled.h3`
   color: #621010;
   text-shadow: .5px 0 #621010;
   font-size: 18px;
@@ -104,7 +104,7 @@ export const TitleBooking = styled.h3`
   }
 `;
 
-export const SubTilte = styled.p`
+export const SubTilteHome = styled.p`
   color: #242426;
   height: 150px;
   margin-block: 0;
@@ -127,7 +127,7 @@ export const Ici = styled.span`
   text-shadow: 1px 0 #621010;
 `;
 
-export const InfoText = styled.p`
+export const InfoTextHome = styled.p`
   cursor: pointer;
   margin-block: 0;
   @media (width: 375px) {

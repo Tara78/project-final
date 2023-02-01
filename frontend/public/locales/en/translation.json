@@ -1,19 +1,19 @@
 {
   "menu": {
     "home": "Home",
-    "about": "About", 
+    "about": "About",
     "login": "Login",
     "contact": "Contact",
-    "tarif":"Tarif",
+    "tarif": "Tarif",
     "why": "Why Gestalt",
     "about me": "About me"
   },
   "home": {
-    "HeroTitle1": "BECOME WHO YOU ARE",
-    "HeroTitle2": "WITH THE SUPPORT OF GESTALT THERAPY",
-    "HeroSubText": "Gestalt therapy was born in the United States in the 1950s and has been known in Europe since the 1970s. It was Fritz Perls, a German psychologist who developed this therapy whose name Gestalt means in German to take shape, build. Here, we do not wonder why we suffer, but how did we arrive at this suffering and we place the person who comes to consult at the heart of his own reconstruction.",
-    "Title": "What are the principles of Gestalt?",
-    "SubTilte": "This therapy aims not to think of the human being as an individual, but is interested in interactions: the way in which we come into contact with ourselves, with others, but also with the world.",
+    "HeroHomeTitle1": "BECOME WHO YOU ARE",
+    "HeroHomeTitle2": "WITH THE SUPPORT OF GESTALT THERAPY",
+    "HeroHomeSubText": "Gestalt therapy was born in the United States in the 1950s and has been known in Europe since the 1970s. It was Fritz Perls, a German psychologist who developed this therapy whose name Gestalt means in German to take shape, build. Here, we do not wonder why we suffer, but how did we arrive at this suffering and we place the person who comes to consult at the heart of his own reconstruction.",
+    "TitleHome": "What are the principles of Gestalt?",
+    "SubTilteHome": "This therapy aims not to think of the human being as an individual, but is interested in interactions: the way in which we come into contact with ourselves, with others, but also with the world.",
     "InfoText": "Read more...",
     "TitleWhy": "Why choose Gestalt therapy?",
     "SubTilteWhy": "Problems for adults, adolescents, children, couples, families, professionals.",
@@ -21,8 +21,39 @@
     "SubTilteBooking": "If you have any preliminary questions, do not hesitate to contact me by telephone to clarify your needs and decide on this therapeutic solution.",
     "ReadMoreTarif": "Practical information - click",
     "Ici": "here",
-    "ReadMoreBooking":"Appointment booking - click"
+    "ReadMoreBooking": "Appointment booking - click"
+  },
+  "about": {
+    "TilteOne": "What are the principles of Gestalt?",
+    "HeroSubText": "This therapy aims not to think of the human being as an individual, but is interested in interactions: the way in which we come into contact with ourselves, with others, but also with the world. If intolerance reigns, if these contacts seem to be blocked, tense, cold, Gestalt therapy aims to restore flexibility because in Gestalt, the person is considered inseparable from his environment. Finally, this therapy also helps to focus on the present. Especially when we are faced with a difficulty. Indeed, rather than looking for the causes of a problem, Gestalt therapy invites the person to ask themselves how: what is the process that led them to this situation. Unlike conventional therapy, there is no need here to look into the past, to reconstruct the person's history, on demand unless the circumstances of the present moment require it.",
+    "HeroSubSubText": "Gestalt therapy emphasizes the awareness of the process in progress, which allows the balance between the person who comes to consult and his environment. It is interested in the present of each situation, which is why it is classified in the current of humanistic or existential psychology.",
+    "SecondText": "The theory of the self is the basis of Gestalt therapy. The self is  our way of being in the world. Indeed, the Gestalt places the person who comes to consult at the center of his own change, it makes him the main actor. It is therefore a question of improving one's ability to take care of oneself to meet our own needs, but always taking the outside into account. This is the most important thing to understand: in Gestalt therapy, the human being can never be independent of his environment, he is inseparable from what surrounds him, from his environment and he influences it as much as he is. influenced by him. And this is the most important thing to understand:",
+    "SecondTextSpan": "in Gestalt therapy, the person is an actor of his own change.",
+    "TilteTree": "The Here and Now",
+    "ThirdPart": "This is the second strength of Gestalt therapy: relying on the present moment by:",
+    "Point1": "- Awaken your senses by carefully observing what is happening around you.",
+    "Point2": "  - Prenant du plaisir à toute chose ou en faisant en sorte de trouver des bénéfices à des choses qui à priori n’en ont pas.",
+    "Point3": "- Accepting to let go, not always wanting to control everything, anticipating. The past no longer exists and the future does not yet exist. Therefore why not focus on the present moment made of surprises and simple happiness.",
+    "Point4": "- Favoring positive thoughts because the unconscious is receptive to them and thereby the way of behaving is positively affected."
+  },
+  "login": {
+    "LabelText": "Register",
+    "Button": "Submit"
+  },
+  "contact": {
+    "HeroTitle2": "Appointments are made in person on 06 23 16 65 75 or online.",
+    "p": "For orders of autographed books and any other subject, send me a message via the form below.",
+    "InputButton": "Send",
+    "Address": "CORRESPONDENCE ADDRESS ONLY:",
+    "AddressDetaile": "99 avenue Achille Peretti 92200 Neuilly-sur-Seine",
+    "Tarif": "For consultations, see the Rates and Appointments page"
+  },
+  "tarif": {
+    "HeroTitle1": "In practice",
+    "Title": "Consultations",
+    "Price": "Each consultation lasts approximately 1 hour and is cost €70."
+  },
+  "why": {
     
   }
-
 }

@@ -5,9 +5,12 @@ import { API_URL } from "../../utils/utils";
 import user from "../../reducers/user";
 import styled from "styled-components";
 import img from "./../../img/therapist.jpg";
-import {MainWrapper, FormWrapper, Label, Form, LabelText, Button, Section, Input, TextError } from "./Login.styles"
+import {MainWrapper, FormWrapper, Label, Form, LabelText, Button, Section, Input, TextError } from "./Login.styles";
+import { useTranslation } from "react-i18next";
+
 
 const Login = () => {
+   const { t } = useTranslation();
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
@@ -70,7 +73,7 @@ c.Reducer, dispatch and update store
       <FormWrapper>
         <Section>
           <Label htmlFor="register">
-            <LabelText> S'enregistrer</LabelText>
+            <LabelText>{t("login.LabelText")}</LabelText>
             <input
               type="radio"
               id="register"
@@ -89,6 +92,7 @@ c.Reducer, dispatch and update store
           </Label>
         </Section>
         <Form onSubmit={onFormSubmit}>
+          
           <Input
             type="text"
             placeholder=" Identifiant"
@@ -106,12 +110,12 @@ c.Reducer, dispatch and update store
           />
           <Input
             type="email"
-            placeholder=" Adresse email"
+            placeholder=" email"
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <Button type="submit">Soumettre</Button>
+          <Button type="submit">{t("login.Button")}</Button>
           {errorMessage && (
             <TextError>
               {errorMessage?.length <= 0

@@ -3,16 +3,19 @@ import styled from "styled-components";
 import imgGustald from "./../../img/Gustald-tree.jpg";
 import imgWhy from "./../../img/consultimg.png";
 import { Hero, SectionBackgroundImg, Page } from "../Base";
-import {SectionSubTitle, WhyGustaldText, BoldText} from "./Why.styles"
+import {Title, SectionSubTitle, WhyGustaldText, BoldText} from "./Why.styles";
+import { useTranslation } from "react-i18next";
 
 const WhyPage = () => {
+   const { t } = useTranslation();
   return (
     <>
       <Hero>
         <Section1BackgroundImg></Section1BackgroundImg>
       </Hero>
       <Page>
-        <h1>Pourquoi choisir la Gestalt-thérapie ?</h1>
+        {/* {t("tarif.Title")} */}
+        <Title>Pourquoi choisir la Gestalt-thérapie ?</Title>
         <SectionSubTitle>
           La Gestalt-thérapie s'adresse à tous, adultes, adolescents ou enfants
           pour traiter:

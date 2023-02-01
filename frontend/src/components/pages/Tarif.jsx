@@ -2,20 +2,20 @@ import React from "react";
 import styled from "styled-components";
 import img from "./../../img/redplant.png";
 import { Hero, SectionBackgroundImg, Page } from "../Base";
+import { useTranslation } from "react-i18next";
 
 const Tarif = () => {
+   const { t } = useTranslation();
   return (
     <>
       <Hero>
         <HeroBackgroundImg></HeroBackgroundImg>
-        <HeroTitle1>En pratique</HeroTitle1>
+        <HeroTitle1>{t("tarif.HeroTitle1")}</HeroTitle1>
       </Hero>
       <Page>
         <Section>
-          <Title>Les consultations</Title>
-          <Price>
-            chaque consultation dure environ 1 heure et est facturée 70€.
-          </Price>
+          <Title>{t("tarif.Title")}</Title>
+          <Price>{t("tarif.Price")}</Price>
         </Section>
       </Page>
     </>
