@@ -54,6 +54,36 @@
     "Price": "Each consultation lasts approximately 1 hour and is cost €70."
   },
   "why": {
-    
-  }
+    "Title": "Why Gestalt therapy?",
+    "SubTitle": "Gestalt therapy is for everyone, adults, adolescents or children to treat:",
+
+    "Point1": " shyness, feeling of exclusion. ",
+    "BoldText1": "• Relationship problems:",
+    "Point2": " couple problem, difficult separation, bereavement.",
+    "BoldText2": "• Emotional problems: ",
+
+    "BoldText3": "• Eating disorders.",
+    "Point4": " anxiety, depression, bipolar disorders, psychosomatic disorders.",
+    "BoldText4": "• Mental disorders:",
+    "BoldText5": "• Emotional disturbances:",
+    "Point5": "stress, anxiety.",
+    "BoldText6": "• Situations from the professional world: ",
+    "Point6": " harassment, unemployment, sense of work,…",
+    "WhyGustaldText": "From the problem of the person who comes to consult, the idea pursued is not only to allow him to better cope with it but also to allow him to take back his life in hand, to assert himself, to flourish, find its potential in what is called the",
+    "BoldTextWhy":"personal development.",
+    "TitleHow":" How does a Gestalt therapy session take place?"
+  }  ,
+
+"how":{
+  "TitleHow": "How does a Gestalt therapy session take place?",
+  "SubTitleHow": " Gestalt therapy is therefore practiced individually or in a group, it is the therapist who decides the form of therapy best suited to the patient's situation. It is part of the medium or long term therapies since in general it requires a session every 15 days over a period generally between 6 and 12 months. After a few months, the person who consults begins to feel better in their relationships and in their daily life and it is then important that they ensure that their achievements are consolidated in a sustainable way.",
+  "h3": "A session of this therapy is organized around 3 axes:",
+  "Paragrah1": " the person talks about his situation, his problem, the therapist helps him to remain attentive to his gestures and his emotions",
+  "BoldText1": "• Verbalization:",
+  "Paragrah2": " role play or artistic creativity to note how the patient interacts with themselves, others or objects. ",
+  "BoldText2": "• The experiment:",
+  "Paragrah3":" according to the second phase, the therapist looks for ways to lead to a change to be initiated in order to balance the contacts and the relationships between the person and his environment",
+  "BoldText3": "• The change:"
+}
+
 }

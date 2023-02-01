@@ -59,6 +59,42 @@
 
 }, 
 "why":{
-  
+  "Title": "Pourquoi choisir la Gestalt-thérapie ?",
+  "SubTitle": "La Gestalt-thérapie s'adresse à tous, adultes, adolescents ou enfants pour traiter:",
+  "Point1": " timidité, sentiment d’exclusion.",
+  "BoldText1": "• des problèmes relationnels:",
+  "Point2": " problème de couple, séparation difficile, deuil.",
+  "BoldText2": "• des problèmes affectifs: ",
+
+  "BoldText3": "• des troubles de conduites alimentaires.",
+  "Point4": " anxiété, dépression, troubles bipolaires, troubles psychosomatiques.",
+  "BoldText4":"• des troubles psychiques:",
+  "BoldText5":"• des troubles émotionnels:",
+  "Point5":"stress, angoisse.",
+  "BoldText6":"• des situations issues du monde professionnel:",
+  "Point6":" harassement, chômage, sens du travail,… ",
+  "WhyGustaldText":"A partir de la problématique de la personne qui vient consulter, l’idée poursuivie est non seulement de lui permettre de mieux faire face à celle-ci mais également de lui permettre de reprendre sa vie en main, s'affirmer, s'épanouir, trouver son potentiel dans ce que l’on appelle le ",
+  "BoldTextWhy":"développement personnel."
+ },
+
+"how":{
+  "TitleHow":" Comment se déroule une séance de Gestalt-thérapie?",
+  "SubTitleHow":"La Gestalt-thérapie se pratique donc de manière individuelle ou en             groupe, c'est le thérapeute qui décide de la forme de la thérapie la mieux adaptée à la situation du patient. Elle fait partie des thérapies à moyen ou long terme puisqu'en général elle nécessite une séance tous les 15 jours sur une durée généralement comprise entre 6 et 12 mois. Après quelques mois, la personne qui consulte commence à  ressentir un mieux dans ses relations et dans sa vie quotidienne et il est alors important qu’elle s’assure que ses acquis sont consolidés de façon pérenne.",
+
+  "h3":"Une séance de cette thérapie s'organise sur 3 axes:",
+ "Paragrah1":"la personne évoque sa situation, son problème, le thérapeute l'aide à rester attentive à ses gestes et à ses émotions",
+ "BoldText1":"• La verbalisation: ",
+ "Paragrah2":" jeux de rôle ou créativité artistique pour noter la façon dont le atient interagit avec lui-même, les autres ou les objets. ",
+ "BoldText2":"• L’expérimentation: ",
+ "Paragrah3":"en fonction de la deuxième phase, le thérapeute recherche les pistes pour mener à un changement à amorcer afin d'équilibrer les contacts  et les relations entre la personne et son environnement",
+"BoldText3": "• Le changement:"
+
+
+
+
 }
+
+
+  
+ 
 }
