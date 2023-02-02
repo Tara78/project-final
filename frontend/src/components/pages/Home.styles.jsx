@@ -108,17 +108,26 @@ export const SubTilteHome = styled.p`
   color: #242426;
   height: 150px;
   margin-block: 0;
+  @media (width: 375px) {
+    font-size: 17px;
+  }
 `;
 export const SubTilteWhy = styled.p`
   color: #242426;
   height: 150px;
   margin-block: 0;
+  @media (width: 375px) {
+    font-size: 17px;
+  }
 `;
 
 export const SubTilteBooking = styled.p`
   color: #242426;
   height: 150px;
   margin-block: 0;
+  @media (width: 375px) {
+    font-size: 17px;
+  }
 `;
 export const Ici = styled.span`
   text-decoration: underline;
@@ -132,7 +141,6 @@ export const InfoTextHome = styled.p`
   margin-block: 0;
   @media (width: 375px) {
     font-weight: bold;
-    padding: 10px;
   }
 `;
 
@@ -140,9 +148,7 @@ export const ReadMore = styled.div`
   color: #621010;
   text-shadow: .5px 0 #621010;
   display: flex;
-  padding-top: 2rem;
   @media (width: 375px) {
-    padding-top: 10px;
     font-weight: bold;
   }
 `;
@@ -151,10 +157,9 @@ export const ReadMoreTarif = styled.div`
   color: #621010;
   text-shadow: 0.5px 0 #621010;
   display: flex;
-  padding-top: 2rem;
   @media (width: 375px) {
-    padding-top: 10px;
-    font-weight: bold;
+     font-weight: bold;
+  
   }
 `;
 
@@ -162,7 +167,7 @@ export const ReadMoreBooking = styled.div`
   color: #621010;
   text-shadow: 0.5px 0 #621010;
   display: flex;
-  padding-top: 2rem;
+  padding-top: 1rem;
   @media (width: 375px) {
     padding-top: 10px;
     font-weight: bold;

@@ -5,9 +5,12 @@ import bodyParser from "body-parser";
 import userRouth from "./routes/user.js";
 import loginRouth from "./routes/login.js";
 import bookingRouth from "./routes/booking.js";
+import * as dotenv from "dotenv";
+
+dotenv.config();
 
 const mongoUrl =
-process.env.MONGO_URL || "mongodb://127.0.0.1/final-project-user";
+  process.env.MONGO_URL || "mongodb://127.0.0.1/final-project-user";
 
 mongoose.set("strictQuery", false);
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true });

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import { useTranslation } from "react-i18next";
 
-
 const Navbar = () => {
   const navRef = useRef();
   const [showNavbar, setShowNavbar] = useState(false);
@@ -31,15 +30,7 @@ const Navbar = () => {
         <Link to="/contact">{t("menu.contact")}</Link>
         <Link to="/tarif">{t("menu.tarif")}</Link>
         <Link to="/why">{t("menu.why")} </Link>
-        {/* <select>
-          <option type="button" onClick={() => changeLanguage("en")}>
-            English
-          </option>
-          <option type="button" onClick={() => changeLanguage("fr")}>
-            French
-          </option>
-        </select> */}
-
+     
         <button
           className={`${styles.navBtn} ${styles.navCloseBtn}`}
           onClick={handleClick}
