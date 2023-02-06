@@ -69,11 +69,11 @@ c.Reducer, dispatch and update store
   };
   return (
     <MainWrapper>
-      <HeroBackgroundImg></HeroBackgroundImg>
+      <HeroBackgroundImg alt="psychotrapist is listening to his client"></HeroBackgroundImg>
       <FormWrapper>
-        <Section>
+        <Section type="registration form">
           <Label htmlFor="register">
-            <LabelText>{t("login.LabelText")}</LabelText>
+            <LabelText type="text">{t("login.LabelText")}</LabelText>
             <input
               type="radio"
               id="register"
@@ -82,7 +82,7 @@ c.Reducer, dispatch and update store
             />
           </Label>
           <Label htmlFor="login">
-            <LabelText> login</LabelText>
+            <LabelText type="text"> login</LabelText>
             <input
               type="radio"
               id="login"
@@ -92,7 +92,6 @@ c.Reducer, dispatch and update store
           </Label>
         </Section>
         <Form onSubmit={onFormSubmit}>
-          
           <Input
             type="text"
             placeholder=" Identifiant"

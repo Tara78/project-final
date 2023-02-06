@@ -25,7 +25,8 @@ mongoose.connection.on("connected", () => {
   console.log("mongoDB Connected!");
 });
 
-const port = process.env.PORT || 8080;
+// const port = process.env.PORT || 8080;
+const port = 8080;
 const app = express();
 
 app.use(cors());
@@ -41,7 +42,7 @@ app.use("/user", userRouth);
 app.use("/login", loginRouth);
 app.use("/booking", bookingRouth);
 
-app.use((err, req, res) => {
+app.use((err, req, res, next) => {
   const errorStatus = err.status || 500;
   const errorMessage = err.message || "Something went wrong";
   return res.status(errorStatus).json({
@@ -50,6 +51,7 @@ app.use((err, req, res) => {
     message: errorMessage,
     stack: err.stack,
   });
+  
 });
 
 app.listen(port, () => {

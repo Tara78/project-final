@@ -30,15 +30,16 @@ const Navbar = () => {
         <Link to="/contact">{t("menu.contact")}</Link>
         <Link to="/tarif">{t("menu.tarif")}</Link>
         <Link to="/why">{t("menu.why")} </Link>
-     
+
         <button
+          type="button"
           className={`${styles.navBtn} ${styles.navCloseBtn}`}
           onClick={handleClick}
         >
           <FaTimes />
         </button>
       </nav>
-      <button className={styles.navBtn} onClick={handleClick}>
+      <button type="button" className={styles.navBtn} onClick={handleClick}>
         <FaBars />
       </button>
 
@@ -50,7 +51,7 @@ const Navbar = () => {
         >
           <img
             className={styles.enFlag}
-            alt="english-flag"
+            alt="english flag"
             src={require("./assets/uk.png")}
           />
         </button>
@@ -61,7 +62,7 @@ const Navbar = () => {
         >
           <img
             className={styles.frFlag}
-            alt="frenchflag"
+            alt="french flag"
             src={require("./assets/fr-round.png")}
           />
         </button>

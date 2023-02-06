@@ -25,19 +25,21 @@ const About = () => {
   return (
     <>
       <Hero>
-        <HeroBackgroundImg></HeroBackgroundImg>
+        <HeroBackgroundImg alt="child hood problem image"></HeroBackgroundImg>
       </Hero>
       <Page>
-        <TilteOne>{t("about.TilteOne")}</TilteOne>
-        <HeroSubText> {t("about.HeroSubText")}</HeroSubText>
-        <HeroSubSubText> {t("about.HeroSubSubText")}</HeroSubSubText>
-        <TilteTwo>La théorie du self</TilteTwo>
+        <TilteOne type="text">{t("about.TilteOne")}</TilteOne>
+        <HeroSubText type="text"> {t("about.HeroSubText")}</HeroSubText>
+        <HeroSubSubText type="text">{t("about.HeroSubSubText")}</HeroSubSubText>
+        <TilteTwo type="text">La théorie du self</TilteTwo>
         <SecondText>
           {t("about.SecondText")}
-          <SecondTextSpan>{t("about.SecondTextSpan")}</SecondTextSpan>
+          <SecondTextSpan type="text">
+            {t("about.SecondTextSpan")}
+          </SecondTextSpan>
         </SecondText>
-        <TilteTree>{t("about.TilteTree")}</TilteTree>
-        <ThirdPart>
+        <TilteTree type="text">{t("about.TilteTree")}</TilteTree>
+        <ThirdPart type="text">
           {t("about.ThirdPart")}
           <Point1>{t("about.Point1")}</Point1>
           <Point2>{t("about.Point2")}</Point2>

@@ -41,7 +41,7 @@ const Booking = () => {
   return (
     <>
       <Wrapper>
-        <MainCalendlar
+        <MainCalendlar typ="monthly calendar"
           onDateAndTimeSelected={handleDateAndTimeSelected}
           onEventScheduled={handleEventScheduled}
         >
@@ -54,7 +54,9 @@ const Booking = () => {
         </MainCalendlar>
       </Wrapper>
       <BackHomeButton>
-        <Button onClick={navigateToHome}>Accueil</Button>
+        <Button type="button" onClick={navigateToHome}>
+          Accueil
+        </Button>
       </BackHomeButton>
     </>
   );

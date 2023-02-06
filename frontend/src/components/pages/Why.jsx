@@ -23,43 +23,43 @@ const WhyPage = () => {
   return (
     <>
       <Hero>
-        <Section1BackgroundImg></Section1BackgroundImg>
+        <Section1BackgroundImg alt="Gushtald tehory image,you can see yourself in diffrent angles"></Section1BackgroundImg>
       </Hero>
       <Page>
-        <Title>{t("why.Title")}</Title>
+        <Title type="text">{t("why.Title")}</Title>
         <SectionSubTitle>
-          <SubTitle> {t("why.SubTitle")}</SubTitle>
+          <SubTitle type="text"> {t("why.SubTitle")}</SubTitle>
           <Point>
-            <BoldText> {t("why.BoldText1")} </BoldText>
+            <BoldText type="text"> {t("why.BoldText1")} </BoldText>
             {t("why.Point1")}
           </Point>
           <Point>
-            <BoldText>{t("why.BoldText2")}</BoldText>
+            <BoldText type="text">{t("why.BoldText2")}</BoldText>
             {t("why.Point2")}
           </Point>
           <Point>
-            <BoldText>{t("why.BoldText3")}</BoldText>
+            <BoldText type="text">{t("why.BoldText3")}</BoldText>
           </Point>
           <Point>
-            <BoldText>{t("why.BoldText4")}</BoldText>
+            <BoldText type="text">{t("why.BoldText4")}</BoldText>
             {t("why.Point4")}
           </Point>
           <Point>
-            <BoldText>{t("why.BoldText5")} </BoldText>
+            <BoldText type="text">{t("why.BoldText5")} </BoldText>
             {t("why.Point5")}
           </Point>
           <Point>
-            <BoldText>{t("why.BoldText6")}</BoldText>
+            <BoldText type="text">{t("why.BoldText6")}</BoldText>
             {t("why.Point6")}
           </Point>
         </SectionSubTitle>
-        <WhyGustaldText>
+        <WhyGustaldText type="text">
           {t("why.WhyGustaldText")}
           <BoldText> {t("why.BoldTextWhy")}</BoldText>
         </WhyGustaldText>
 
         <Hero>
-          <Section2BackgroundImg></Section2BackgroundImg>
+          <Section2BackgroundImg alt="psychotrapist is  listening to his client"></Section2BackgroundImg>
         </Hero>
         <SectionSubTitle>
           <TitleHow>{t("how.TitleHow")}</TitleHow>

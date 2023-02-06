@@ -53,7 +53,7 @@ const Home = () => {
   return (
     <>
       <Hero>
-        <HeroBackgroundImg></HeroBackgroundImg>
+        <HeroBackgroundImg alt="home page image"></HeroBackgroundImg>
         <HeroHomeTitle1>{t("home.HeroHomeTitle1")}</HeroHomeTitle1>
         <HeroHomeTitle2>{t("home.HeroHomeTitle2")}</HeroHomeTitle2>
         <HeroHomeText></HeroHomeText>
@@ -64,43 +64,59 @@ const Home = () => {
         <div>
           <Section>
             <SectionItem>
-              <TitleHome>{t("home.TitleHome")}</TitleHome>
-              <SubTilteHome>{t("home.SubTilteHome")}</SubTilteHome>
+              <TitleHome type="text">{t("home.TitleHome")}</TitleHome>
+              <SubTilteHome type="text">{t("home.SubTilteHome")}</SubTilteHome>
               <ReadMore onClick={navigateToAbout}>
-                <InfoTextHome>{t("home.InfoText")}</InfoTextHome>
+                <InfoTextHome type="text">{t("home.InfoText")}</InfoTextHome>
               </ReadMore>
 
               <Routes>
-                <Route path="/about" element={<About />} />
+                <Route
+                  path="/about"
+                  type="navigate to About page"
+                  element={<About />}
+                />
               </Routes>
             </SectionItem>
 
             <SectionItem>
-              <TitleWhy>{t("home.TitleWhy")}</TitleWhy>
+              <TitleWhy type="text">{t("home.TitleWhy")}</TitleWhy>
               <div>
-                <SubTilteWhy>{t("home.SubTilteWhy")}</SubTilteWhy>
+                <SubTilteWhy type="text">{t("home.SubTilteWhy")}</SubTilteWhy>
               </div>
               <ReadMore onClick={navigateToWhy}>
                 <InfoTextHome>{t("home.InfoText")}</InfoTextHome>
               </ReadMore>
               <Routes>
-                <Route path="/why" element={<WhyPage />} />
+                <Route
+                  path="/why"
+                  type="navigate to Why page"
+                  element={<WhyPage />}
+                />
               </Routes>
             </SectionItem>
             <SectionItem>
-              <TitleBooking>{t("home.TitleBooking")}</TitleBooking>
+              <TitleBooking type="text">{t("home.TitleBooking")}</TitleBooking>
               <SubTilteBooking>{t("home.SubTilteBooking")}</SubTilteBooking>
               <ReadMoreTarif onClick={navigateToTarif}>
                 {t("home.ReadMoreTarif")} <Ici> {t("home.Ici")}</Ici>
               </ReadMoreTarif>
               <Routes>
-                <Route path="/tarif" element={<Tarif />} />
+                <Route
+                  path="/tarif"
+                  type="navigate to Tarif page"
+                  element={<Tarif />}
+                />
               </Routes>
               <ReadMoreBooking onClick={navigateToLogin}>
                 {t("home.ReadMoreBooking")} <Ici> {t("home.Ici")}</Ici>
               </ReadMoreBooking>
               <Routes>
-                <Route path="/login" element={<Login />} />
+                <Route
+                  path="/login"
+                  type="navigate to Login page"
+                  element={<Login />}
+                />
               </Routes>
             </SectionItem>
           </Section>
