@@ -16,9 +16,16 @@ Aafer that I used the URL which I created in the Calendly event and render it on
 
 
 ## View it live
+<<<<<<< HEAD
 Netlify:
+=======
+Netlify
+>>>>>>> 766f8dadf53f23f544640c78878fd5d034ef0f32
 https://app.netlify.com/sites/final-project-49725f/overview.
 GoogleCloud:
+https://project-final-zisc7ottla-lz.a.run.app
+
+GoogleCloud
 https://project-final-zisc7ottla-lz.a.run.app
 
 

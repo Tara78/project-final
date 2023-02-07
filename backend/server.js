@@ -25,7 +25,6 @@ mongoose.connection.on("connected", () => {
   console.log("mongoDB Connected!");
 });
 
-// const port = process.env.PORT || 8080;
 const port = 8080;
 const app = express();
 
