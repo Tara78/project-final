@@ -26,7 +26,7 @@ GoogleCloud:
 https://project-final-zisc7ottla-lz.a.run.app
 
 GoogleCloud
-https://project-final-zisc7ottla-lz.a.run.app
+https://project-final-tpiwomq62a-lz.a.run.app
 
 
 ## Installation
