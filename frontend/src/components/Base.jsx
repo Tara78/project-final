@@ -4,12 +4,11 @@ const Hero = styled.div`
   height: 400px;
   width: 100%;
   color: #621010;
-  text-shadow: 2px 0 #621010;
+  text-shadow: 1px 0 #621010;
   position: relative;
   margin-bottom: 1.5rem;
   margin: auto 0px;
-  font-family: "Nunito", sans-serif;
-
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   @media (max-width: 768px) {
     width: 100%;
     font-size: 80%;
@@ -20,11 +19,10 @@ const SectionBackgroundImg = styled.div`
   height: 100%;
   width: 100%;
   display: fixed;
-  /* filter: blur(1px); */
+  filter: blur(1px);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
   @media (max-width: 768px) {
     height: 100%;
     width: 100%;
@@ -39,21 +37,18 @@ const Page = styled.div`
   h3,
   h4,
   h5 {
-    font-family: "Poppins", sans-serif;
-    color: #343131;
+    color: #4b4646;
     line-height: 29px;
-    font-size: 18px;
+    font-size: 22px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
-
   @media (max-width: 375px) {
-    width: 90%;
-    font-size: 15px;
     h1,
     h2,
     h4,
-    h5
-   {
+    h5 {
       font-size: 15px;
+      width: 90%;
     }
   }
 `;

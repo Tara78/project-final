@@ -44,8 +44,9 @@
     "HeroTitle2": "Appointments are made in person on 06 23 16 65 75 or online.",
     "p": "For orders of autographed books and any other subject, send me a message via the form below.",
     "InputButton": "Send",
-    "Address": "CORRESPONDENCE ADDRESS ONLY:",
-    "AddressDetaile": "99 avenue Achille Peretti 92200 Neuilly-sur-Seine",
+    "Address": "CORRESPONDENCE ADDRESS ONLY ;",
+    "AddressDetaile": "99 avenue Achille Peretti 92200 ",
+    "AddressDetaileCity":"Neuilly-sur-Seine",
     "Tarif": "For consultations, see the Rates and Appointments page"
   },
   "tarif": {

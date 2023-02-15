@@ -7,11 +7,23 @@ export const WrapperSecondPart = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(38rem, 1fr));
   column-gap: 2.5rem;
   margin-top: 2rem;
-`;
+  `;
 
 export const HeroTitle2 = styled.h2`
   font-size: 22px;
   font-weight: bold;
+
+`;
+export const AppointmentsInfo = styled.p`
+  /* font-weight: bold; */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  color: #343131;
+  padding-top: 10px;
+  @media (min-width: 375px) {
+    font-size: 18px;
+    line-height: 32px;
+  }
 `;
 
 export const SectionItem = styled.div`
@@ -32,7 +44,7 @@ export const SectionItem = styled.div`
     width: 48%;
     font-size: 18px;
   }
-  `;
+`;
 
 export const Textarea = styled.textarea`
   height: 200px;
@@ -45,49 +57,56 @@ export const Textarea = styled.textarea`
   padding-left: 1rem;
 `;
 
-
-export const SectionItemDetails= styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-`
+export const SectionItemDetails = styled.div`
+  display: flex;
+  width: 80%;
+  height: auto;
+  margin-top: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  color: #555151;
+  font-size: 28px;
+`;
 export const Address = styled.h5`
   font-size: 22px;
-  color: #413e3e;
-  padding-top: 3rem;
-  
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+   margin-top: 2rem;
 `;
 
 export const Tarifs = styled.p`
-  font-size: 22px;
   font-weight: bold;
-  color: #413e3e;
-  padding-top: 5rem;
+  padding-top: 2rem;
   @media (min-width: 375px) {
     font-size: 18px;
   }
 `;
 
-export const FontAwesomeIcon = styled.i`
-  font-size: 28px;
-  color: red;
-  
-`; 
+// export const FontAwesomeIcon = styled.i`
+//   font-size: 28px;
+//   color: red;
+// `;
 
 export const Mobile = styled.p`
   font-size: 22px;
   padding-top: 2rem;
-  text-shadow: 1px 0 #621010;
+  text-shadow: #413e3e;
   @media (width: 375px) {
-    font-size: 20px;
     padding-top: 1rem;
   }
 `;
 
 export const AddressDetaile = styled.p`
-  font-size: 22px;
-  margin-top: -20px;
-  
+  margin-top: -1rem;
+  @media (min-width: 375px) {
+    font-size: 18px;
+  }
+`;
+export const AddressDetaileCity = styled.p`
+  margin-top: -1rem;
   @media (min-width: 375px) {
     font-size: 18px;
   }
@@ -96,6 +115,23 @@ export const AddressDetaile = styled.p`
 
 export const Email = styled.p`
   font-size: 22px;
+  text-decoration: none;
+  color: #555151;
+`;
+
+export const ReadMoreTarif = styled.div`
+  display: flex;
+  justify-content: center;
+  @media (width: 375px) {
+    font-weight: bold;
+  }
+`;
+
+export const Ici = styled.span`
+  text-decoration: underline;
+  cursor: pointer;
+  padding-left: 7px;
+  /* text-shadow: 1px 0 #621010; */
 `;
 
 export const Form = styled.div`
@@ -135,9 +171,9 @@ export const Input = styled.input.attrs((props) => ({
 `;
 
 export const InputButton = styled.button`
-  height: 50px;
-  width: 30%;
-  font-size: 22px;
+  height: 40px;
+  width: 25%;
+  font-size: 17px;
   color: #413e3e;
   font-weight: 600;
   align-items: center;
@@ -161,7 +197,6 @@ export const InputButton = styled.button`
     background-color: #b0becd;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-
   }
 
   @media (max-width: 375px) {

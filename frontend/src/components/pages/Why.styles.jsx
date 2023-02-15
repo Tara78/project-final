@@ -1,11 +1,7 @@
 import styled from "styled-components";
 
 export const Title = styled.h1`
-  font-family: "Poppins", sans-serif;
-  color: #343131;
-  line-height: 29px;
-  font-size: 22px;
-
+   
   @media (max-width: 375px) {
     width: 90%;
     font-size: 15px;
@@ -29,7 +25,7 @@ export const SubTitle = styled.p`
 
 export const Point = styled.p`
   font-size: 20px;
-  line-height: 39px;
+  line-height: 32px;
 `;
 
 export const BoldText = styled.span`

@@ -44,14 +44,14 @@
     "Button":"Soumettre"
   },
   "contact":{
-    "HeroTitle2":"Les rdv se prennent de vive voix au 06 23 16 65 75 ou en ligne.", 
-    "p":"Pour les commandes de livres dédicacés et tout autre sujet, envoyez-moi un message via le formulaire ci-dessous.",
-    "InputButton":" Envoyer",
-    "Address":"Adresse de CORRESPONDANCE UNIQUEMENT :",
-    "AddressDetaile":"99 avenue Achille Peretti 92200 Neuilly-sur-Seine",
-    "Tarif":"Pour les consultations, cf la page Tarifs et RDV"
-    
-},
+    "HeroTitle2": "Les rdv se prennent de vive voix au 06 23 16 65 75 ou en ligne.",
+    "p": "Pour les commandes de livres dédicacés et tout autre sujet, envoyez-moi un message via le formulaire ci-dessous.",
+    "InputButton": " Envoyer",
+    "Address": "Adresse de CORRESPONDANCE UNIQUEMENT ;",
+    "AddressDetaile": "99 avenue Achille Peretti 92200",
+    "AddressDetaileCity": "Neuilly-sur-Seine",
+    "Tarif": "Pour les consultations, cf la page Tarifs et RDV"
+  },
 "tarif":{
   "HeroTitle1":"En pratique",
   "Title":"Les consultations",

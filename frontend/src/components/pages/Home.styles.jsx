@@ -1,26 +1,19 @@
 import styled from "styled-components";
 
-export const HeroHomeText = styled.p`
-  font-size: 22px;
-  font-style: italic;
-  font-weight: bold;
-  position: absolute;
-  top: 50px;
-  left: 0;
-`;
+
 export const HeroHomeTitle1 = styled.h1`
   z-index: 32;
   position: absolute;
   top: 0;
   left: 20px;
-`;
+  `;
 
 export const HeroHomeTitle2 = styled.h2`
-  font-size: 22px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 28px;
   font-style: italic;
-  font-weight: bold;
   position: absolute;
-  text-shadow: 0 0;
+  color: #3b0d0d;
   top: 90px;
   left: 0;
   margin-left: 20px;
@@ -29,19 +22,31 @@ export const HeroHomeTitle2 = styled.h2`
     width: 80%;
     font-size: 17px;
     line-height: 28px;
-    color: #250303;
+    /* color: #250303; */
   }
 `;
+export const HeroHomeText = styled.p`
+  /* font-size: 22px;
+  font-style: italic;
+  font-weight: bold;
+  position: absolute;
+  top: 50px;
+  left: 0; */
+`;
 
-export const HeroHomeSubText = styled.h5`
+export const HeroHomeSubText = styled.p`
   color: #052a64;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
   display: flex;
   justify-content: center;
   margin-bottom: 1.5rem;
+  line-height: 29px;
+  /* width: 95%; */
 
   @media (width: 375px) {
-    width: 100%;
+    width: 90%;
   }
 `;
 
@@ -55,7 +60,7 @@ export const Section = styled.div`
 `;
 
 export const SectionItem = styled.div`
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-size: 22px;
   border-radius: 10px;
   background-color: #d9dee1;
@@ -63,7 +68,7 @@ export const SectionItem = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 2.5rem;
   line-height: 32px;
   text-align: start;
   box-shadow: 0 9px 4px #92959a;
@@ -133,7 +138,7 @@ export const Ici = styled.span`
   text-decoration: underline;
   cursor: pointer;
   padding-left: 7px;
-  text-shadow: 1px 0 #621010;
+  /* text-shadow: 1px 0 #621010; */
 `;
 
 export const InfoTextHome = styled.p`
@@ -146,8 +151,9 @@ export const InfoTextHome = styled.p`
 
 export const ReadMore = styled.div`
   color: #621010;
-  text-shadow: .5px 0 #621010;
+  /* text-shadow: 0.5px 0 #621010; */
   display: flex;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   @media (width: 375px) {
     font-weight: bold;
   }
@@ -155,19 +161,20 @@ export const ReadMore = styled.div`
 
 export const ReadMoreTarif = styled.div`
   color: #621010;
-  text-shadow: 0.5px 0 #621010;
+  /* text-shadow: 0.5px 0 #621010; */
   display: flex;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   @media (width: 375px) {
-     font-weight: bold;
-  
+    font-weight: bold;
   }
 `;
 
 export const ReadMoreBooking = styled.div`
   color: #621010;
-  text-shadow: 0.5px 0 #621010;
+  /* text-shadow: 0px 0 #621010; */
   display: flex;
   padding-top: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   @media (width: 375px) {
     padding-top: 10px;
     font-weight: bold;

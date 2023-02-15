@@ -65,7 +65,8 @@ const Home = () => {
           <Section>
             <SectionItem>
               <TitleHome type="text">{t("home.TitleHome")}</TitleHome>
-              <SubTilteHome type="text">{t("home.SubTilteHome")}</SubTilteHome>
+              <SubTilteHome type="text">{t("home.SubTilteHome")}
+              </SubTilteHome>
               <ReadMore onClick={navigateToAbout}>
                 <InfoTextHome type="text">{t("home.InfoText")}</InfoTextHome>
               </ReadMore>

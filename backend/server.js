@@ -25,7 +25,7 @@ mongoose.connection.on("connected", () => {
   console.log("mongoDB Connected!");
 });
 
-const port = 8000;
+const port = 8080;
 const app = express();
 
 app.use(cors());

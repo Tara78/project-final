@@ -5,7 +5,7 @@ import { Hero, SectionBackgroundImg, Page } from "../Base";
 import { useTranslation } from "react-i18next";
 
 const Tarif = () => {
-   const { t } = useTranslation();
+  const { t } = useTranslation();
   return (
     <>
       <Hero>
@@ -25,7 +25,7 @@ const Tarif = () => {
 const HeroTitle1 = styled.h1`
   position: absolute;
   top: 5;
-  left: 20px;
+  left: 12px;
 `;
 
 const HeroBackgroundImg = styled(SectionBackgroundImg)`
@@ -39,16 +39,19 @@ const Section = styled.div`
   flex-direction: column;
   margin-top: 2rem;
   color: #2e2e2e;
-   @media (min-width: 375px) {
+  margin-right: 2rem;
+  @media (min-width: 375px) {
     margin-top: 1rem;
-   }
+  }
 `;
+
 const Title = styled.h2`
-  padding-top: 1rem;
+  padding-top: 2rem;
 `;
 
 const Price = styled.p`
   font-size: 22px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   @media (min-width: 375px) {
     font-size: 1.2rem;
   }
