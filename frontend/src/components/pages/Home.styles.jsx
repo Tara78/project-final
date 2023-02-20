@@ -78,7 +78,8 @@ export const SectionItem = styled.div`
     height: auto;
     font-size: 16px;
     padding: 10px;
-    margin-top: 1rem;
+    margin-top: 10px;
+    padding-bottom: 1rem;
   }
 `;
 
@@ -156,7 +157,8 @@ export const ReadMore = styled.div`
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   @media (width: 375px) {
     font-weight: bold;
-  }
+    padding-top: 1rem;
+    }
 `;
 
 export const ReadMoreTarif = styled.div`
