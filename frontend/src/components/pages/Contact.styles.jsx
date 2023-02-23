@@ -43,7 +43,7 @@ export const SectionItem = styled.div`
   @media (width: 375px) {
     width: 48%;
     font-size: 18px;
-  }
+    }
 `;
 
 export const Textarea = styled.textarea`
