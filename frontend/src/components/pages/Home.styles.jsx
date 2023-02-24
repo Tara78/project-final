@@ -19,7 +19,7 @@ export const HeroHomeTitle2 = styled.h2`
   margin-left: 20px;
 
   @media (min-width: 375px) {
-    width: 80%;
+    width: 100%;
     font-size: 17px;
     line-height: 28px;
     /* color: #250303; */
@@ -43,11 +43,7 @@ export const HeroHomeSubText = styled.p`
   justify-content: center;
   margin-bottom: 1.5rem;
   line-height: 29px;
-  /* width: 95%; */
-
-  @media (width: 375px) {
-    width: 90%;
-  }
+  
 `;
 
 export const Section = styled.div`
@@ -57,6 +53,7 @@ export const Section = styled.div`
   column-gap: 1.5rem;
   line-height: 29px;
   margin-top: 3rem;
+  
 `;
 
 export const SectionItem = styled.div`
@@ -74,8 +71,6 @@ export const SectionItem = styled.div`
   box-shadow: 0 9px 4px #92959a;
 
   @media (width: 375px) {
-    width: 65%;
-    height: auto;
     font-size: 16px;
     padding: 10px;
     margin-top: 10px;

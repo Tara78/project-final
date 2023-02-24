@@ -53,7 +53,7 @@
 }
 
 .navBtn {
-  padding: 5px;
+  /* padding: 5px; */
   cursor: pointer;
   background: transparent;
   border: none;
@@ -64,7 +64,13 @@
   font-size: 1.8rem;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen 
+
+/* and (min-width: 45em) */
+and (max-width : 820px)
+and (max-width : 1024px)
+/* and (orientation:landscape)  */
+{
   .navBtn {
     visibility: visible;
     opacity: 1;
@@ -93,7 +99,7 @@
 
   .navCloseBtn {
     position: absolute;
-    top: 3rem;
+    top: 2rem;
     right: 2.5rem;
   }
 

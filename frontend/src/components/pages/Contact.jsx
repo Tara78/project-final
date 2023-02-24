@@ -25,7 +25,9 @@ import {
   Ici,
 } from "./Contact.styles";
 import { useTranslation } from "react-i18next";
-
+/* import emailjs from '@emailjs/browser';
+import React, { useRef } from 'react';
+ */
 const Contact = () => {
   const navigate = useNavigate();
   const navigateToTarif = () => {
@@ -45,6 +47,22 @@ const Contact = () => {
     setMessage("");
   };
 
+/*   const ContactForm = () => {
+    const form = useRef();
+    const sendEmail = (e) => {
+      e.preventDefault();
+
+      emailjs.sendForm('****', 'template_****', form.current, '****')
+      .then((result) => {
+        console.log(result.text);
+        alert('Message sending successfully!');
+        form = "";
+      }, (error) => {
+        console.log(error.text);
+      });
+    }
+  } */
+ /*  https://stackoverflow.com/questions/73795082/sending-email-in-react-js */
   return (
     <Page>
       <HeroTitle2>{t("contact.HeroTitle2")}</HeroTitle2>
@@ -55,6 +73,7 @@ const Contact = () => {
             action="mailto: nicolasgestalt92@gmail.com?subject=contact"
             method="post"
             enctype="text/plain"
+           
           >
             <Label>
               <Input
