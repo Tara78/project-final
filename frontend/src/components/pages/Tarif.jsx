@@ -26,6 +26,7 @@ const HeroTitle1 = styled.h1`
   position: absolute;
   top: 5;
   left: 12px;
+  letter-spacing:2px;
 `;
 
 const HeroBackgroundImg = styled(SectionBackgroundImg)`
@@ -47,11 +48,13 @@ const Section = styled.div`
 
 const Title = styled.h2`
   padding-top: 2rem;
+  letter-spacing:1px;
 `;
 
 const Price = styled.p`
   font-size: 22px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing:.5px;
   @media (min-width: 375px) {
     font-size: 1.2rem;
   }

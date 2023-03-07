@@ -12,6 +12,7 @@ export const WrapperSecondPart = styled.div`
 export const HeroTitle2 = styled.h2`
   font-size: 22px;
   font-weight: bold;
+  letter-spacing:1px;
 
 `;
 export const AppointmentsInfo = styled.p`
@@ -20,6 +21,7 @@ export const AppointmentsInfo = styled.p`
   font-size: 20px;
   color: #343131;
   padding-top: 10px;
+  letter-spacing:.5px;
   @media (min-width: 375px) {
     font-size: 18px;
     line-height: 32px;
@@ -75,11 +77,13 @@ export const Address = styled.h5`
   font-weight: bold;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
    margin-top: 2rem;
+   letter-spacing:1px;
 `;
 
 export const Tarifs = styled.p`
   font-weight: bold;
   padding-top: 2rem;
+  letter-spacing:1px;
   @media (min-width: 375px) {
     font-size: 18px;
   }
@@ -94,6 +98,7 @@ export const Mobile = styled.p`
   font-size: 22px;
   padding-top: 2rem;
   text-shadow: #413e3e;
+  letter-spacing:1px;
   @media (width: 375px) {
     padding-top: 1rem;
   }
@@ -101,12 +106,14 @@ export const Mobile = styled.p`
 
 export const AddressDetaile = styled.p`
   margin-top: -1rem;
+  letter-spacing:.5px;
   @media (min-width: 375px) {
     font-size: 18px;
   }
 `;
 export const AddressDetaileCity = styled.p`
   margin-top: -1rem;
+  letter-spacing:.5px;
   @media (min-width: 375px) {
     font-size: 18px;
   }
@@ -117,6 +124,7 @@ export const Email = styled.p`
   font-size: 22px;
   text-decoration: none;
   color: #555151;
+  letter-spacing:.5px;
 `;
 
 export const ReadMoreTarif = styled.div`
@@ -131,6 +139,7 @@ export const Ici = styled.span`
   text-decoration: underline;
   cursor: pointer;
   padding-left: 7px;
+  letter-spacing:.5px;
   /* text-shadow: 1px 0 #621010; */
 `;
 

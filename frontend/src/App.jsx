@@ -13,6 +13,7 @@ import { Provider } from "react-redux";
 import user from "./reducers/user";
 import booking from "./reducers/booking";
 import Navbar from "./components/Navbar/Navbar";
+/* import NewNavbar from "./components/Navbar/NewNavbar" */
 
 const reducer = combineReducers({
   user: user.reducer,

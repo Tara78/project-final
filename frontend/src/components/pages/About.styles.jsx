@@ -21,6 +21,7 @@ export const TilteOne = styled.h1`
     color: #343131;
     line-height: 29px;
     font-size: 18px;
+    letter-spacing:2px;
   @media (max-width: 375px) {
     width: 90%;
     font-size: 15px;}
@@ -32,6 +33,7 @@ export const TilteTwo = styled.h2`
   color: #343131;
   line-height: 29px;
   font-size: 18px;
+  letter-spacing:1px;
   @media (max-width: 375px) {
     width: 90%;
     font-size: 15px;
@@ -44,6 +46,7 @@ export const TilteTree = styled.h2`
   color: #343131;
   line-height: 29px;
   font-size: 18px;
+  letter-spacing:1px;
   @media (max-width: 375px) {
     width: 90%;
     font-size: 15px;
