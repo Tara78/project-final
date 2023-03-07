@@ -58,6 +58,7 @@ function Navbar() {
               />
             </button>
           </div>
+          
           <Link to="/">{t("menu.home")}</Link>
           <Link to="/about">{t("menu.about")}</Link>
           <Link to="/login">{t("menu.login")}</Link>

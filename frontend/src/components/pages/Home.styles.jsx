@@ -20,14 +20,8 @@ export const HeroHomeTitle2 = styled.h2`
   left: 0;
   margin-left: 20px;
   letter-spacing: 2px;
-
- /*  @media (min-width: 375px) {
-    width: 100%;
-    font-size: 17px;
-    line-height: 28px;
-
-  } */
 `;
+
 export const HeroHomeText = styled.p`
   /* font-size: 22px;
   font-style: italic;
@@ -46,8 +40,7 @@ export const HeroHomeSubText = styled.p`
   justify-content: center;
   margin-bottom: 1.5rem;
   line-height: 1.5;
-    
-`;
+    `;
 
 export const Section = styled.div`
   width: 100%;
@@ -56,8 +49,14 @@ export const Section = styled.div`
   column-gap: 1.5rem;
   line-height: 29px;
   margin-top: 3rem;
-  
-  
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    margin-top: 0; 
+    height:100%;
+    width: 100%;
+    grid-gap: 2rem;
+  }
+    
 `;
 
 export const SectionItem = styled.div`
@@ -74,12 +73,14 @@ export const SectionItem = styled.div`
   text-align: start;
   box-shadow: 0 9px 4px #92959a;
 
-  @media (width: 375px) {
-    font-size: 16px;
-    padding: 10px;
-    margin-top: 10px;
-    padding-bottom: 1rem;
-  }
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    height: 100%;
+    font-size:18px;
+    padding-top:0px;
+    margin-bottom:1rem;
+    }
+
 `;
 
 export const TitleHome = styled.h3`
@@ -87,19 +88,13 @@ export const TitleHome = styled.h3`
   text-shadow: .5px 0 #621010;
   font-size: 18px;
   letter-spacing: 1px;
-  @media (width: 375px) {
-    font-size: 15px;
-  }
-`;
+ `;
 
 export const TitleWhy = styled.h3`
   color: #621010;
   text-shadow: 0.5px 0 #621010;
   font-size: 18px;
   letter-spacing: 1px;
-  @media (width: 375px) {
-    font-size: 15px;
-  }
 `;
 
 export const TitleBooking = styled.h3`
@@ -107,69 +102,55 @@ export const TitleBooking = styled.h3`
   text-shadow: 0.5px 0 #621010;
   font-size: 18px;
   letter-spacing: 1px;
-  @media (width: 375px) {
-    font-size: 15px;
-  }
-`;
+  `;
 
 export const SubTilteHome = styled.p`
   color: #242426;
   height: 150px;
-  margin-block: 0;
-    @media (width: 375px) {
-    font-size: 17px;
-  }
-`;
+ 
+  `;
+
 export const SubTilteWhy = styled.p`
   color: #242426;
   height: 150px;
-  margin-block: 0;
-  @media (width: 375px) {
-    font-size: 17px;
-  }
-`;
+ 
+ `;
 
 export const SubTilteBooking = styled.p`
   color: #242426;
   height: 150px;
-  margin-block: 0;
-  @media (width: 375px) {
-    font-size: 17px;
-  }
 `;
+
 export const Ici = styled.span`
   text-decoration: underline;
   cursor: pointer;
   padding-left: 7px;
-  /* text-shadow: 1px 0 #621010; */
+  text-shadow: 1px 0 #621010;
 `;
 
 export const InfoTextHome = styled.p`
   cursor: pointer;
-  margin-block: 0;
-  @media (width: 375px) {
-    font-weight: bold;
-  }
+
 `;
 
 export const ReadMore = styled.div`
   color: #621010;
-  /* text-shadow: 0.5px 0 #621010; */
   display: flex;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  @media (width: 375px) {
-    font-weight: bold;
-    padding-top: 1rem;
-    }
+  @media only screen and (max-width: 600px) {
+    margin-top:2.8rem;
+    font-size:16px;
+  }
 `;
 
 export const ReadMoreTarif = styled.div`
   color: #621010;
   /* text-shadow: 0.5px 0 #621010; */
   display: flex;
+ 
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  @media (width: 375px) {
-    font-weight: bold;
+  @media only screen and (max-width: 600px) {
+
   }
 `;
 
@@ -179,9 +160,6 @@ export const ReadMoreBooking = styled.div`
   display: flex;
   padding-top: 1rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  @media (width: 375px) {
-    padding-top: 10px;
-    font-weight: bold;
-  }
+
 `;
 

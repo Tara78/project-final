@@ -27,6 +27,7 @@ const SectionBackgroundImg = styled.div`
     height: 100%;
     width: 100%;
     display: flex;
+    float:left;
   }
 `;
 
@@ -42,13 +43,13 @@ const Page = styled.div`
     font-size: 22px;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     h1,
     h2,
     h4,
     h5 {
       font-size: 15px;
-      width: 90%;
+      width: 100%;
     }
   }
 `;

@@ -23,8 +23,8 @@ export const FormWrapper = styled.div`
   z-index: 28;
   position: absolute;
 
-  @media (width: 375px) {
-    width: 85%;
+  @media screen and (max-width: 600px) {
+    width: 80%;
     font-size: 18px;
     padding: 1rem;
     margin-right: 1.2rem;
@@ -34,12 +34,15 @@ export const FormWrapper = styled.div`
 
 export const Label = styled.label`
   display: flex;
-
   input {
     font-family: "Inconsolata";
     font-size: 18px;
     width: 20px;
   }
+  @media screen and (max-width: 600px) {
+    
+  }
+
 `;
 
 export const Form = styled.form`
