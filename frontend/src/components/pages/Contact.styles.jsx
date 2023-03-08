@@ -7,30 +7,30 @@ export const WrapperSecondPart = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(38rem, 1fr));
   column-gap: 2.5rem;
   margin-top: 2rem;
+
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    width:100%;
+  }
+  @media only screen and (max-width: 1200px) {
+    grid-gap: 2rem;
   `;
 
 export const HeroTitle2 = styled.h2`
   font-size: 22px;
   font-weight: bold;
-  letter-spacing:1px;
-
+  letter-spacing: 1px;
 `;
 export const AppointmentsInfo = styled.p`
-  /* font-weight: bold; */
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 20px;
   color: #343131;
   padding-top: 10px;
-  letter-spacing:.5px;
-  @media (min-width: 375px) {
-    font-size: 18px;
-    line-height: 32px;
-  }
+  letter-spacing: 0.5px;
 `;
 
 export const SectionItem = styled.div`
   height: 600px;
-  margin-bottom: 1rem;
   font-size: 22px;
   border-radius: 15px;
   background-color: #edf1f3;
@@ -42,13 +42,16 @@ export const SectionItem = styled.div`
   line-height: 32px;
   text-align: start;
 
-  @media (width: 375px) {
-    width: 48%;
-    font-size: 18px;
-    }
+  @media only screen and (max-width: 600px) {
+    padding: 0;
+    height: auto;
+  }
 `;
 
 export const Textarea = styled.textarea`
+  &::placeholder {
+    font-size: 14px;
+  }
   height: 200px;
   margin: 1rem;
   box-shadow: 0 3px 3px #92959a;
@@ -57,35 +60,56 @@ export const Textarea = styled.textarea`
   font-size: bold;
   padding-top: 1rem;
   padding-left: 1rem;
+
+  @media only screen and (max-width: 600px) {
+    margin: 0;
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
 `;
 
 export const SectionItemDetails = styled.div`
   display: flex;
-  width: 80%;
+  width: 90%;
   height: auto;
   margin-top: 2rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 18px;
   color: #555151;
   font-size: 28px;
-`;
-export const Address = styled.h5`
-  font-size: 22px;
-  font-weight: bold;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-   margin-top: 2rem;
-   letter-spacing:1px;
 `;
 
-export const Tarifs = styled.p`
-  font-weight: bold;
-  padding-top: 2rem;
-  letter-spacing:1px;
-  @media (min-width: 375px) {
+export const Address = styled.h5`
+  margin-top: 2rem;
+  letter-spacing: 1px;
+`;
+
+export const Tarifs = styled.div`
+  padding: 1rem;
+  font-size: 22px;
+  margin-top: 2rem;
+  dislay: flex;
+  text-align: center;
+
+  @media only screen and (max-width: 600px) {
     font-size: 18px;
+    dislay: flex;
+    align-items: center;
+  }
+`;
+
+export const ReadMoreTarif = styled.span`
+  font-size: 22px;
+  width: 90%;
+  dislay: flex;
+  text-align: center;
+  padding-left: 5px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 16px;
   }
 `;
 
@@ -98,40 +122,33 @@ export const Mobile = styled.p`
   font-size: 22px;
   padding-top: 2rem;
   text-shadow: #413e3e;
-  letter-spacing:1px;
-  @media (width: 375px) {
-    padding-top: 1rem;
+  letter-spacing: 1px;
+  color: #555151;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 20px;
+    text-align: center;
   }
 `;
 
 export const AddressDetaile = styled.p`
   margin-top: -1rem;
-  letter-spacing:.5px;
-  @media (min-width: 375px) {
-    font-size: 18px;
-  }
+  letter-spacing: 0.5px;
 `;
 export const AddressDetaileCity = styled.p`
   margin-top: -1rem;
-  letter-spacing:.5px;
-  @media (min-width: 375px) {
-    font-size: 18px;
-  }
+  letter-spacing: 0.5px;
 `;
-
 
 export const Email = styled.p`
   font-size: 22px;
   text-decoration: none;
   color: #555151;
-  letter-spacing:.5px;
-`;
+  padding-bottom: 1rem;
+  letter-spacing: 1px;
 
-export const ReadMoreTarif = styled.div`
-  display: flex;
-  justify-content: center;
-  @media (width: 375px) {
-    font-weight: bold;
+  @media only screen and (max-width: 600px) {
+    font-size: 20px;
   }
 `;
 
@@ -139,7 +156,7 @@ export const Ici = styled.span`
   text-decoration: underline;
   cursor: pointer;
   padding-left: 7px;
-  letter-spacing:.5px;
+  letter-spacing: 0.5px;
   /* text-shadow: 1px 0 #621010; */
 `;
 
@@ -149,9 +166,6 @@ export const Form = styled.div`
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
-  @media (width: 375px) {
-    font-size: 18px;
-  }
 `;
 
 export const Label = styled.label`
@@ -173,9 +187,16 @@ export const Input = styled.input.attrs((props) => ({
   width: 60%;
   margin: ${(props) => props.size};
   padding: ${(props) => props.size};
+  &::placeholder {
+    font-size: 14px;
+  }
 
-  @media (width: 375px) {
-    font-size: 12px;
+  @media only screen and (max-width: 600px) {
+    margin: 0;
+    width: 100%;
+    &::placeholder {
+      font-size: 13px;
+    }
   }
 `;
 
@@ -208,9 +229,10 @@ export const InputButton = styled.button`
     transform: translateY(4px);
   }
 
-  @media (max-width: 375px) {
-    height: 30px;
-    width: 30%;
+  @media (max-width: 600px) {
+    height: 40px;
+    width: 40%;
     font-size: 15px;
+    margin-top: 2rem;
   }
 `;

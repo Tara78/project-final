@@ -10,7 +10,7 @@ const Tarif = () => {
     <>
       <Hero>
         <HeroBackgroundImg></HeroBackgroundImg>
-        <HeroTitle1>{t("tarif.HeroTitle1")}</HeroTitle1>
+        {/* <HeroTitle1>{t("tarif.HeroTitle1")}</HeroTitle1> */}
       </Hero>
       <Page>
         <Section>
@@ -27,10 +27,13 @@ const HeroTitle1 = styled.h1`
   top: 5;
   left: 12px;
   letter-spacing:2px;
+  @media only screen and (max-width: 600px) {
+    position:relative; 
+  }
 `;
 
 const HeroBackgroundImg = styled(SectionBackgroundImg)`
-  filter: blur(2px);
+  filter: blur(1px);
   background-image: url(${img});
 `;
 
@@ -41,9 +44,7 @@ const Section = styled.div`
   margin-top: 2rem;
   color: #2e2e2e;
   margin-right: 2rem;
-  @media (min-width: 375px) {
-    margin-top: 1rem;
-  }
+ 
 `;
 
 const Title = styled.h2`

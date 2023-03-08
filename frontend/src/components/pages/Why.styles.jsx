@@ -2,13 +2,10 @@ import styled from "styled-components";
 
 export const Title = styled.h1`
    letter-spacing:2px;
-  @media (max-width: 375px) {
-    width: 90%;
-    font-size: 15px;
-  }
+   font-family:font-family: 'PT Sans', sans-serif;
 `;
 
-export const Title2How= styled.h2`
+export const Title2How= styled.h1`
 letter-spacing:1px;
 `
 
@@ -22,10 +19,6 @@ export const SubTitle = styled.p`
   line-height: 29px;
   font-size: 22px;
   letter-spacing:.5px;
-  @media (max-width: 375px) {
-    width: 90%;
-    font-size: 15px;
-  }
 `;
 
 export const Point = styled.p`
@@ -51,34 +44,28 @@ export const TitleHow = styled.h2`
   line-height: 29px;
   margin-top: 2rem;
   font-size: 18px;
-  letter-spacing:1px;
-  
-  @media (max-width: 375px) {
-    width: 90%;
-    font-size: 15px;
-  }
+  letter-spacing:1px;   
 `;
+
 export const SubTitleHow = styled.p`
    color: #343131;
   line-height: 29px;
   font-size: 20px;
   letter-spacing:.5px;
-  @media (max-width: 375px) {
-    width: 90%;
-    font-size: 15px;
-  }
-  
 `;
+
 export const Paragrah1 = styled.p`
   font-size: 20px;
   line-height: 39px;
   letter-spacing:.5px;
 `;
+
 export const Paragrah2 = styled.p`
   font-size: 20px;
   line-height: 39px;
   letter-spacing:.5px;
 `;
+
 export const Paragrah3 = styled.p`
   font-size: 20px;
   line-height: 39px;

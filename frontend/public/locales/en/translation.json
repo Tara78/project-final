@@ -30,7 +30,7 @@
     "TitleTwo":"The theory of the self",
     "SecondText": "The theory of the self is the basis of Gestalt therapy. The self is  our way of being in the world. Indeed, the Gestalt places the person who comes to consult at the center of his own change, it makes him the main actor. It is therefore a question of improving one's ability to take care of oneself to meet our own needs, but always taking the outside into account. This is the most important thing to understand: in Gestalt therapy, the human being can never be independent of his environment, he is inseparable from what surrounds him, from his environment and he influences it as much as he is. influenced by him. And this is the most important thing to understand:",
     "SecondTextSpan": " in Gestalt therapy, the person is an actor of his own change.",
-    "TilteTree": "The Here and Now",
+    "TilteTree": "Here and Now",
     "ThirdPart": "This is the second strength of Gestalt therapy: relying on the present moment by:",
     "Point1": "- Awaken your senses by carefully observing what is happening around you.",
     "Point2": "  - Prenant du plaisir à toute chose ou en faisant en sorte de trouver des bénéfices à des choses qui à priori n’en ont pas.",
@@ -48,7 +48,8 @@
     "Address": "CORRESPONDENCE ADDRESS ONLY ;",
     "AddressDetaile": "99 avenue Achille Peretti 92200 ",
     "AddressDetaileCity":"Neuilly-sur-Seine",
-    "Tarif": "For consultations, see the Rates and Appointments page"
+    "Tarif": "For consultations, see the Rates and Appointments page",
+    "Click":"click"
   },
   "tarif": {
     "HeroTitle1": "In practice",

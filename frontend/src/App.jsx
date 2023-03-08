@@ -12,8 +12,8 @@ import Login from "./components/pages/Login";
 import { Provider } from "react-redux";
 import user from "./reducers/user";
 import booking from "./reducers/booking";
-/* import Navbar from "./components/Navbar/Navbar"; */
- import NewNavbar from "./components/Navbar/NewNavbar" 
+import Navbar from "./components/Navbar/Navbar";
+/*  import NewNavbar from "./components/Navbar/NewNavbar"  */
 
 const reducer = combineReducers({
   user: user.reducer,
@@ -26,7 +26,7 @@ function App() {
   return (
     <Provider store={store}>
       <Router>
-        <NewNavbar />
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

@@ -30,6 +30,9 @@ export const FormWrapper = styled.div`
     margin-right: 1.2rem;
     margin-top: 2rem;
   }
+  @media only screen and (max-width: 1200px) {
+    width: 70%;
+  }
 `;
 
 export const Label = styled.label`
