@@ -34,8 +34,13 @@ const SectionBackgroundImg = styled.div`
 const Page = styled.div`
   padding: 1rem;
   h1,
-  h2,
-  h3,
+  h2 {
+    font-size: 28px;
+    font-family:font-family: 'PT Sans', sans-serif;
+    color: #4b4646;
+    line-height: 35px;
+  },
+    h3,
   h4,
   h5,
   p {
@@ -46,11 +51,13 @@ const Page = styled.div`
   }
   @media (max-width: 600px) {
     h1,
-    h2,
+    h2{
+      font-size: 18px;
+    }
     h4,
     h5,
     p {
-      font-size: 18px;
+      font-size: 16px;
       width: 100%;
     }
   }

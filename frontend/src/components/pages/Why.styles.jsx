@@ -3,13 +3,14 @@ import styled from "styled-components";
 export const Title = styled.h1`
    letter-spacing:2px;
    font-family:font-family: 'PT Sans', sans-serif;
+   font-size:2rem; 
 `;
 
 export const Title2How= styled.h1`
 letter-spacing:1px;
 `
 
-export const SectionSubTitle = styled.div`
+export const SectionSubTitle = styled.p`
   line-height: 39px;
   color: #343131;
 `;
@@ -17,13 +18,10 @@ export const SectionSubTitle = styled.div`
 export const SubTitle = styled.p`
   color: #343131;
   line-height: 29px;
-  font-size: 22px;
   letter-spacing:.5px;
 `;
 
 export const Point = styled.p`
-  font-size: 20px;
-  line-height: 32px;
   letter-spacing:.5px;
 `;
 
@@ -32,18 +30,16 @@ export const BoldText = styled.span`
 `;
 
 export const WhyGustaldText = styled.p`
-  font-size: 20px;
-  margin-bottom: 4rem;
+   margin-bottom: 4rem;
   line-height: 39px;
   letter-spacing:.5px;
 `;
 
-export const TitleHow = styled.h2`
+export const TitleHow = styled.h1`
   /* font-family: "Poppins", sans-serif; */
   color: #343131;
   line-height: 29px;
   margin-top: 2rem;
-  font-size: 18px;
   letter-spacing:1px;   
 `;
 
