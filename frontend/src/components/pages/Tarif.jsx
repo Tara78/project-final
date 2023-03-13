@@ -10,7 +10,7 @@ const Tarif = () => {
     <>
       <Hero>
         <HeroBackgroundImg></HeroBackgroundImg>
-        {/* <HeroTitle1>{t("tarif.HeroTitle1")}</HeroTitle1> */}
+    <HeroTitle1>{t("tarif.HeroTitle1")}</HeroTitle1> 
       </Hero>
       <Page>
         <Section>
