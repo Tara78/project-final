@@ -20,9 +20,6 @@ Aafer that I used the URL which I created in the Calendly event and render it on
 Netlify:
 https://nicolas-verdeille-gestalt-therapy.netlify.app/
 
-GoogleCloud
-https://project-final-tpiwomq62a-lz.a.run.app
-
 
 ## Installation
 For the backend I used 
