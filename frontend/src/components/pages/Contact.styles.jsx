@@ -113,11 +113,6 @@ export const ReadMoreTarif = styled.span`
   }
 `;
 
-// export const FontAwesomeIcon = styled.i`
-//   font-size: 28px;
-//   color: red;
-// `;
-
 export const Mobile = styled.p`
   font-size: 22px;
   padding-top: 2rem;

@@ -21,9 +21,7 @@ export const TilteOne = styled.h1`
 
 export const TilteTwo = styled.h2`
   color: #343131;
- 
- 
-`;
+  `;
 
 export const TilteTree = styled.h2`
 font-family:font-family: 'PT Sans', sans-serif;
