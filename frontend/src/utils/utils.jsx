@@ -1,6 +1,7 @@
 const BASE_URL =
 
-  process.env.API_URL || "http://localhost:8080";
+  process.env.API_URL || "https://squealing-bath-production.up.railway.app"
+ /*  "http://localhost:8080"; */
 /*   "https://project-final-tpiwomq62a-lz.a.run.app";  */
 
 
