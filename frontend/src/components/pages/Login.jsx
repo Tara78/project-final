@@ -8,7 +8,6 @@ import img from "./../../img/therapist.jpg";
 import {MainWrapper, FormWrapper, Label, Form, LabelText, Button, Section, Input, TextError } from "./Login.styles";
 import { useTranslation } from "react-i18next";
 
-
 const Login = () => {
    const { t } = useTranslation();
   const [name, setName] = useState("");
