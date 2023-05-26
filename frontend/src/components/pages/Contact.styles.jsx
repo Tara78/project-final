@@ -101,6 +101,7 @@ export const Tarifs = styled.div`
   }
 `;
 
+
 export const ReadMoreTarif = styled.span`
   font-size: 22px;
   width: 90%;
@@ -112,11 +113,6 @@ export const ReadMoreTarif = styled.span`
     font-size: 16px;
   }
 `;
-
-// export const FontAwesomeIcon = styled.i`
-//   font-size: 28px;
-//   color: red;
-// `;
 
 export const Mobile = styled.p`
   font-size: 22px;

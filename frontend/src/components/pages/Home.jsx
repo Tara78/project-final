@@ -70,7 +70,6 @@ const Home = () => {
               <ReadMore onClick={navigateToAbout}>
                 <InfoTextHome type="text">{t("home.InfoText")}</InfoTextHome>
               </ReadMore>
-
               <Routes>
                 <Route
                   path="/about"
