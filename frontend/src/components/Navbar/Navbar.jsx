@@ -5,6 +5,7 @@ import styles from "./Navbar.module.css";
 import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  
   const navRef = useRef();
   const [showNavbar, setShowNavbar] = useState(false);
 

@@ -9,7 +9,7 @@ const Hero = styled.div`
   margin-bottom: 1.5rem;
   margin: auto 0px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
     width: 100%;
     font-size: 80%;
   }
@@ -23,32 +23,42 @@ const SectionBackgroundImg = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  @media (max-width: 768px) {
+  @media (max-width:600px) {
     height: 100%;
     width: 100%;
     display: flex;
+    float:left;
   }
 `;
 
 const Page = styled.div`
   padding: 1rem;
   h1,
-  h2,
-  h3,
-  h4,
-  h5 {
+  h2 {
+    font-size: 28px;
+    font-family:font-family: 'PT Sans', sans-serif;
     color: #4b4646;
-    line-height: 29px;
+    line-height: 35px;
+  },
+    h3,
+  h4,
+  h5,
+  p {
+    color: #4b4646;
+    line-height: 35px;
     font-size: 22px;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-family:font-family: 'PT Sans', sans-serif;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 600px) {
     h1,
-    h2,
+    h2{
+      font-size: 18px;
+    }
     h4,
-    h5 {
-      font-size: 15px;
-      width: 90%;
+    h5,
+    p {
+      font-size: 16px;
+      width: 100%;
     }
   }
 `;

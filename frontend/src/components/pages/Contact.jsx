@@ -134,10 +134,10 @@ const Contact = () => {
             <AddressDetaileCity>
               {t("contact.AddressDetaileCity")}
             </AddressDetaileCity>
-            <Tarifs>
+              <Tarifs>
               {t("contact.Tarif")}
               <ReadMoreTarif onClick={navigateToTarif}>
-                {t("home.ReadMoreTarif")} <Ici> {t("home.Ici")}</Ici>
+                {t("contact.Click")}<Ici>{t("home.Ici")}</Ici>
                 <Routes>
                   <Route
                     path="/tarif"

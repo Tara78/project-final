@@ -11,6 +11,7 @@ import {
   BoldText,
   Point,
   TitleHow,
+  Title2How,
   SubTitleHow,
   Paragrah1,
   Paragrah2,
@@ -64,7 +65,7 @@ const WhyPage = () => {
         <SectionSubTitle>
           <TitleHow>{t("how.TitleHow")}</TitleHow>
           <SubTitleHow>{t("how.SubTitleHow")}</SubTitleHow>
-          <h3>{t("how.h3")}</h3>
+          <Title2How>{t("how.Title2How")}</Title2How>
           <Paragrah1>
             <BoldText> {t("how.BoldText1")}</BoldText>
             {t("how.Paragrah1")}

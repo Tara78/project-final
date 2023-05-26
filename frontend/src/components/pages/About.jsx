@@ -31,7 +31,7 @@ const About = () => {
         <TilteOne type="text">{t("about.TilteOne")}</TilteOne>
         <HeroSubText type="text"> {t("about.HeroSubText")}</HeroSubText>
         <HeroSubSubText type="text">{t("about.HeroSubSubText")}</HeroSubSubText>
-        <TilteTwo type="text">La théorie du self</TilteTwo>
+        <TilteTwo type="text">{t("about.TitleTwo")}</TilteTwo>
         <SecondText>
           {t("about.SecondText")}
           <SecondTextSpan type="text">
