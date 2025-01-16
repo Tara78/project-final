@@ -107,7 +107,9 @@ export const TitleBooking = styled.h3`
 export const SubTilteHome = styled.p`
   color: #242426;
   height: 150px;
-   `;
+
+  `;
+
 
 export const SubTilteWhy = styled.p`
   color: #242426;
@@ -148,6 +150,7 @@ export const ReadMoreTarif = styled.div`
   display: flex;
  
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
 `;
 
 export const ReadMoreBooking = styled.div`

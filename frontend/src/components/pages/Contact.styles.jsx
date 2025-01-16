@@ -102,6 +102,7 @@ export const Tarifs = styled.div`
   }
 `;
 
+
 export const ReadMoreTarif = styled.span`
   font-size: 22px;
   width: 90%;
