@@ -86,6 +86,7 @@ export const Address = styled.h5`
   margin-top: 2rem;
   letter-spacing: 1px;
 `;
+export const AddressStreet= styled.h5;
 
 export const Tarifs = styled.div`
   padding: 1rem;

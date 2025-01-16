@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import imgGustald from "./../../img/Gustald-tree.jpg";
-import imgWhy from "./../../img/consultimg.png";
+import imgWhy from "./../../img/consulting.png";
 import { Hero, SectionBackgroundImg, Page } from "../Base";
 import {
   Title,

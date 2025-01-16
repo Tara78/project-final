@@ -14,6 +14,7 @@ import {
   Address,
   Mobile,
   AddressDetaile,
+  AddressStreet,
   AddressDetaileCity,
   Email,
   Form,
@@ -131,6 +132,11 @@ const Contact = () => {
               {/* <FontAwesomeIcon icon={faLocationDot} /> */}
               {t("contact.AddressDetaile")}
             </AddressDetaile>
+
+            <AddressDetaileCity>
+            {t("contact.AddressStreet")}
+            </AddressDetaileCity>
+
             <AddressDetaileCity>
               {t("contact.AddressDetaileCity")}
             </AddressDetaileCity>
@@ -147,7 +153,7 @@ const Contact = () => {
                 </Routes>
               </ReadMoreTarif>
             </Tarifs>
-            <Mobile>Mobile: +33 611 69 8927 </Mobile>
+            <Mobile>Mobile: +33 6 11 69 89 27 </Mobile>
             <Email as="a" href="nicolasgestalt92@gmail.com">
               nicolasgestalt92@gmail.com
             </Email>

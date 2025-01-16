@@ -44,7 +44,7 @@ const About = () => {
           <Point1>{t("about.Point1")}</Point1>
           <Point2>{t("about.Point2")}</Point2>
           <Point3>{t("about.Point3")}</Point3>
-          <Point4>{t("about.Point3")}</Point4>
+          <Point4>{t("about.Point4")}</Point4>
         </ThirdPart>
       </Page>
     </>

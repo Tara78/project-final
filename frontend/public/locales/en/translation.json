@@ -46,8 +46,9 @@
     "p": "For orders of autographed books and any other subject, send me a message via the form below.",
     "InputButton": "Send",
     "Address": "CORRESPONDENCE ADDRESS ONLY ;",
-    "AddressDetaile": "99 avenue Achille Peretti 92200 ",
-    "AddressDetaileCity":"Neuilly-sur-Seine",
+   "AddressDetaile": "Centre EVOLEOZ",
+    "AddressStreet":"45 rue Colbert",
+    "AddressDetaileCity": "92700 Colombes",
     "Tarif": "For consultations, see the Rates and Appointments page",
     "Click":"click"
   },

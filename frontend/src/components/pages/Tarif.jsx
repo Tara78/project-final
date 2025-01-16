@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import img from "./../../img/redplant.png";
+import img from "./../../img/photo-boush.avif";
 import { Hero, SectionBackgroundImg, Page } from "../Base";
 import { useTranslation } from "react-i18next";
 
@@ -14,7 +14,7 @@ const Tarif = () => {
       </Hero>
       <Page>
         <Section>
-          <Title>{t("tarif.Title")}</Title>
+         {/** <Title>{t("tarif.Title")}</Title> */}
           <Price>{t("tarif.Price")}</Price>
         </Section>
       </Page>
@@ -33,7 +33,7 @@ const HeroTitle1 = styled.h1`
 `;
 
 const HeroBackgroundImg = styled(SectionBackgroundImg)`
-  filter: blur(1px);
+  
   background-image: url(${img});
 `;
 
@@ -52,8 +52,9 @@ const Title = styled.h2`
   letter-spacing:1px;
 `;
 
-const Price = styled.p`
-  font-size: 22px;
+const Price = styled.h2`
+  padding-top: 2.5rem;
+  font-size: 32px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   letter-spacing:.5px;
   @media (min-width: 375px) {
