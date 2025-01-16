@@ -18,7 +18,7 @@ Aafer that I used the URL which I created in the Calendly event and render it on
 ## View it live
 
 Netlify:
-https://nicolas-verdeille-gestalt-therapy.netlify.app/
+https://nicolas-verdeille-gestalt-therapie.netlify.app
 
 
 ## Installation
